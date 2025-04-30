@@ -1,333 +1,368 @@
 ---
 title: "Habilidades Técnicas"
 subtitle: "Competencias y herramientas en Data Science"
+editor: 
+  markdown: 
+    wrap: 72
 ---
 
-<div class="skills-header">
-  <h1>Mi Conjunto de Habilidades</h1>
-  <p>Como analista de datos y data scientist, he desarrollado una amplia gama de habilidades técnicas que me permiten abordar proyectos desde múltiples perspectivas, desde la extracción y procesamiento de datos hasta su visualización y análisis avanzado.</p>
-</div>
+::: skills-header
+<h1>Mi Conjunto de Habilidades</h1>
+
+<p>Como analista de datos y data scientist, he desarrollado una amplia
+gama de habilidades técnicas que me permiten abordar proyectos desde
+múltiples perspectivas, desde la extracción y procesamiento de datos
+hasta su visualización y análisis avanzado.</p>
+:::
 
 ## Lenguajes de Programación
 
-:::: {.skill-grid}
+::::::::::::::: skill-grid
+::::: skill-card
+![](Images/python.png){.skill-icon} \### Python
 
-::: {.skill-card}
-![](Images/python.png){.skill-icon}
-### Python
-<div class="skill-level">
-  <div class="skill-bar" style="width: 95%"></div>
-</div>
-
-- **Bibliotecas de análisis**: Pandas, NumPy, SciPy
-- **Aprendizaje automático**: Scikit-learn, TensorFlow, Keras
-- **Visualización**: Matplotlib, Seaborn, Plotly
-- **Automatización**: Scripts para ETL y procesamiento por lotes
+:::: skill-level
+::: {.skill-bar style="width: 95%"}
 :::
-
-::: {.skill-card}
-![](Images/r.png){.skill-icon}
-### R
-<div class="skill-level">
-  <div class="skill-bar" style="width: 85%"></div>
-</div>
-
-- **Análisis estadístico**: tidyverse, dplyr, ggplot2
-- **Modelado predictivo**: caret, randomForest
-- **Reportes dinámicos**: R Markdown, Shiny
-- **Manipulación de datos**: data.table, reshape2
-:::
-
-::: {.skill-card}
-![](Images/sql.png){.skill-icon}
-### SQL
-<div class="skill-level">
-  <div class="skill-bar" style="width: 90%"></div>
-</div>
-
-- **Consultas complejas**: Joins, subqueries, window functions
-- **Optimización de rendimiento**: Indexación, planes de ejecución
-- **Procedimientos almacenados**: Funciones y triggers
-- **Diferentes dialectos**: T-SQL, MySQL, PostgreSQL
-:::
-
-::: {.skill-card}
-![](Images/html.png){.skill-icon}
-### HTML/SVG
-<div class="skill-level">
-  <div class="skill-bar" style="width: 80%"></div>
-</div>
-
-- **Marcado semántico**: Estructura y accesibilidad
-- **Gráficos vectoriales**: Creación y manipulación de SVG
-- **Integración con D3.js**: Visualizaciones web interactivas
-- **Responsive design**: Adaptación a diferentes dispositivos
-:::
-
 ::::
+
+-   **Bibliotecas de análisis**: Pandas, NumPy, SciPy
+-   **Aprendizaje automático**: Scikit-learn, TensorFlow, Keras
+-   **Visualización**: Matplotlib, Seaborn, Plotly
+-   **Automatización**: Scripts para ETL y procesamiento por lotes
+:::::
+
+::::: skill-card
+![](Images/r.png){.skill-icon} \### R
+
+:::: skill-level
+::: {.skill-bar style="width: 85%"}
+:::
+::::
+
+-   **Análisis estadístico**: tidyverse, dplyr, ggplot2
+-   **Modelado predictivo**: caret, randomForest
+-   **Reportes dinámicos**: R Markdown, Shiny
+-   **Manipulación de datos**: data.table, reshape2
+:::::
+
+::::: skill-card
+![](Images/sql.png){.skill-icon} \### SQL
+
+:::: skill-level
+::: {.skill-bar style="width: 90%"}
+:::
+::::
+
+-   **Consultas complejas**: Joins, subqueries, window functions
+-   **Optimización de rendimiento**: Indexación, planes de ejecución
+-   **Procedimientos almacenados**: Funciones y triggers
+-   **Diferentes dialectos**: T-SQL, MySQL, PostgreSQL
+:::::
+
+::::: skill-card
+![](Images/html.png){.skill-icon} \### HTML/SVG
+
+:::: skill-level
+::: {.skill-bar style="width: 80%"}
+:::
+::::
+
+-   **Marcado semántico**: Estructura y accesibilidad
+-   **Gráficos vectoriales**: Creación y manipulación de SVG
+-   **Integración con D3.js**: Visualizaciones web interactivas
+-   **Responsive design**: Adaptación a diferentes dispositivos
+:::::
+:::::::::::::::
 
 ## Visualización de Datos
 
-:::: {.skill-grid}
+::::::::::::::: skill-grid
+::::: skill-card
+![](Images/powerbi.png){.skill-icon} \### Microsoft Power BI
 
-::: {.skill-card}
-![](Images/powerbi.png){.skill-icon}
-### Microsoft Power BI
-<div class="skill-level">
-  <div class="skill-bar" style="width: 95%"></div>
-</div>
-
-- **Modelado de datos**: Relaciones, métricas calculadas, DAX
-- **Dashboards interactivos**: Filtros cruzados, drill-down
-- **Power Query**: Transformación y limpieza de datos
-- **Integración con fuentes externas**: SQL, Excel, servicios web
+:::: skill-level
+::: {.skill-bar style="width: 95%"}
 :::
-
-::: {.skill-card}
-![](Images/grafana.png){.skill-icon}
-### Grafana
-<div class="skill-level">
-  <div class="skill-bar" style="width: 90%"></div>
-</div>
-
-- **Monitoreo en tiempo real**: Sistemas y aplicaciones
-- **Paneles personalizados**: Variables, anotaciones
-- **Alertas y notificaciones**: Configuración de umbrales
-- **Integración con diferentes fuentes**: InfluxDB, Prometheus
-:::
-
-::: {.skill-card}
-![](Images/matplotlib.png){.skill-icon}
-### Matplotlib/Seaborn
-<div class="skill-level">
-  <div class="skill-bar" style="width: 85%"></div>
-</div>
-
-- **Gráficos estadísticos**: Distribuciones, correlaciones
-- **Visualizaciones personalizadas**: Configuración avanzada
-- **Estilos y temas**: Diseño visual consistente
-- **Integración con Jupyter**: Notebooks interactivos
-:::
-
-::: {.skill-card}
-![](Images/tableau.png){.skill-icon}
-### Tableau
-<div class="skill-level">
-  <div class="skill-bar" style="width: 80%"></div>
-</div>
-
-- **Storytelling visual**: Dashboards narrativos
-- **Análisis exploratorio**: Drag-and-drop
-- **Visualizaciones geoespaciales**: Mapas y territorios
-- **Publicación y compartición**: Tableau Server/Public
-:::
-
 ::::
+
+-   **Modelado de datos**: Relaciones, métricas calculadas, DAX
+-   **Dashboards interactivos**: Filtros cruzados, drill-down
+-   **Power Query**: Transformación y limpieza de datos
+-   **Integración con fuentes externas**: SQL, Excel, servicios web
+:::::
+
+::::: skill-card
+![](Images/grafana.png){.skill-icon} \### Grafana
+
+:::: skill-level
+::: {.skill-bar style="width: 90%"}
+:::
+::::
+
+-   **Monitoreo en tiempo real**: Sistemas y aplicaciones
+-   **Paneles personalizados**: Variables, anotaciones
+-   **Alertas y notificaciones**: Configuración de umbrales
+-   **Integración con diferentes fuentes**: InfluxDB, Prometheus
+:::::
+
+::::: skill-card
+![](Images/matplotlib.png){.skill-icon} \### Matplotlib/Seaborn
+
+:::: skill-level
+::: {.skill-bar style="width: 85%"}
+:::
+::::
+
+-   **Gráficos estadísticos**: Distribuciones, correlaciones
+-   **Visualizaciones personalizadas**: Configuración avanzada
+-   **Estilos y temas**: Diseño visual consistente
+-   **Integración con Jupyter**: Notebooks interactivos
+:::::
+
+::::: skill-card
+![](Images/tableau.png){.skill-icon} \### Tableau
+
+:::: skill-level
+::: {.skill-bar style="width: 80%"}
+:::
+::::
+
+-   **Storytelling visual**: Dashboards narrativos
+-   **Análisis exploratorio**: Drag-and-drop
+-   **Visualizaciones geoespaciales**: Mapas y territorios
+-   **Publicación y compartición**: Tableau Server/Public
+:::::
+:::::::::::::::
 
 ## Bases de Datos
 
-:::: {.skill-grid}
+::::::::::::::: skill-grid
+::::: skill-card
+![](Images/mongodb.png){.skill-icon} \### MongoDB
 
-::: {.skill-card}
-![](Images/mongodb.png){.skill-icon}
-### MongoDB
-<div class="skill-level">
-  <div class="skill-bar" style="width: 85%"></div>
-</div>
-
-- **Modelado de documentos**: Schemas flexibles
-- **Consultas avanzadas**: Agregación, indexación
-- **Integración con Python**: PyMongo
-- **Optimización de rendimiento**: Sharding, replicación
+:::: skill-level
+::: {.skill-bar style="width: 85%"}
 :::
-
-::: {.skill-card}
-![](Images/sqlserver.png){.skill-icon}
-### SQL Server
-<div class="skill-level">
-  <div class="skill-bar" style="width: 90%"></div>
-</div>
-
-- **Administración de bases de datos**: Mantenimiento, backup
-- **Consultas complejas**: Store procedures, CTEs
-- **Business Intelligence**: Integration Services, Analysis Services
-- **Optimización de consultas**: Planes de ejecución, índices
-:::
-
-::: {.skill-card}
-![](Images/influxdb.png){.skill-icon}
-### InfluxDB
-<div class="skill-level">
-  <div class="skill-bar" style="width: 85%"></div>
-</div>
-
-- **Series temporales**: Métricas de rendimiento
-- **InfluxQL**: Consultas y agregaciones
-- **Políticas de retención**: Gestión de datos históricos
-- **Integración con sistemas de monitoreo**: Grafana, Telegraf
-:::
-
-::: {.skill-card}
-![](Images/mysql.png){.skill-icon}
-### MySQL
-<div class="skill-level">
-  <div class="skill-bar" style="width: 80%"></div>
-</div>
-
-- **Administración**: Usuarios, permisos, optimización
-- **Diseño de schemas**: Normalización, relaciones
-- **Consultas optimizadas**: Índices, EXPLAIN
-- **Replicación y clustering**: Alta disponibilidad
-:::
-
 ::::
+
+-   **Modelado de documentos**: Schemas flexibles
+-   **Consultas avanzadas**: Agregación, indexación
+-   **Integración con Python**: PyMongo
+-   **Optimización de rendimiento**: Sharding, replicación
+:::::
+
+::::: skill-card
+![](Images/sqlserver.png){.skill-icon} \### SQL Server
+
+:::: skill-level
+::: {.skill-bar style="width: 90%"}
+:::
+::::
+
+-   **Administración de bases de datos**: Mantenimiento, backup
+-   **Consultas complejas**: Store procedures, CTEs
+-   **Business Intelligence**: Integration Services, Analysis Services
+-   **Optimización de consultas**: Planes de ejecución, índices
+:::::
+
+::::: skill-card
+![](Images/influxdb.png){.skill-icon} \### InfluxDB
+
+:::: skill-level
+::: {.skill-bar style="width: 85%"}
+:::
+::::
+
+-   **Series temporales**: Métricas de rendimiento
+-   **InfluxQL**: Consultas y agregaciones
+-   **Políticas de retención**: Gestión de datos históricos
+-   **Integración con sistemas de monitoreo**: Grafana, Telegraf
+:::::
+
+::::: skill-card
+![](Images/mysql.png){.skill-icon} \### MySQL
+
+:::: skill-level
+::: {.skill-bar style="width: 80%"}
+:::
+::::
+
+-   **Administración**: Usuarios, permisos, optimización
+-   **Diseño de schemas**: Normalización, relaciones
+-   **Consultas optimizadas**: Índices, EXPLAIN
+-   **Replicación y clustering**: Alta disponibilidad
+:::::
+:::::::::::::::
 
 ## Herramientas y Tecnologías
 
-:::: {.skill-grid}
+::::::::::::::: skill-grid
+::::: skill-card
+![](Images/github.png){.skill-icon} \### Git/GitHub
 
-::: {.skill-card}
-![](Images/github.png){.skill-icon}
-### Git/GitHub
-<div class="skill-level">
-  <div class="skill-bar" style="width: 85%"></div>
-</div>
-
-- **Control de versiones**: Ramificación, fusión
-- **Colaboración**: Pull requests, issues
-- **CI/CD**: Automatización de pruebas y despliegue
-- **GitHub Actions**: Flujos de trabajo automatizados
+:::: skill-level
+::: {.skill-bar style="width: 85%"}
 :::
-
-::: {.skill-card}
-![](Images/excel.png){.skill-icon}
-### Excel Avanzado
-<div class="skill-level">
-  <div class="skill-bar" style="width: 95%"></div>
-</div>
-
-- **Fórmulas avanzadas**: BUSCARV, INDICE, COINCIDIR
-- **Power Query**: ETL y transformación de datos
-- **Power Pivot**: Modelado de datos y DAX
-- **Macros y VBA**: Automatización de tareas
-:::
-
-::: {.skill-card}
-![](Images/adobe.png){.skill-icon}
-### Adobe Suite
-<div class="skill-level">
-  <div class="skill-bar" style="width: 80%"></div>
-</div>
-
-- **Photoshop**: Edición de imágenes y diseño gráfico
-- **Premiere Pro**: Edición de video
-- **After Effects**: Animación y efectos visuales
-- **Integración multimedia**: Contenido para visualizaciones
-:::
-
-::: {.skill-card}
-![](Images/3d.png){.skill-icon}
-### Modelado 3D
-<div class="skill-level">
-  <div class="skill-bar" style="width: 75%"></div>
-</div>
-
-- **Autodesk Maya**: Modelado y animación
-- **3ds Max**: Visualizaciones y entornos
-- **MudBox**: Esculpido digital
-- **Aplicaciones en visualización de datos**: Representaciones 3D
-:::
-
 ::::
+
+-   **Control de versiones**: Ramificación, fusión
+-   **Colaboración**: Pull requests, issues
+-   **CI/CD**: Automatización de pruebas y despliegue
+-   **GitHub Actions**: Flujos de trabajo automatizados
+:::::
+
+::::: skill-card
+![](Images/excel.png){.skill-icon} \### Excel Avanzado
+
+:::: skill-level
+::: {.skill-bar style="width: 95%"}
+:::
+::::
+
+-   **Fórmulas avanzadas**: BUSCARV, INDICE, COINCIDIR
+-   **Power Query**: ETL y transformación de datos
+-   **Power Pivot**: Modelado de datos y DAX
+-   **Macros y VBA**: Automatización de tareas
+:::::
+
+::::: skill-card
+![](Images/adobe.png){.skill-icon} \### Adobe Suite
+
+:::: skill-level
+::: {.skill-bar style="width: 80%"}
+:::
+::::
+
+-   **Photoshop**: Edición de imágenes y diseño gráfico
+-   **Premiere Pro**: Edición de video
+-   **After Effects**: Animación y efectos visuales
+-   **Integración multimedia**: Contenido para visualizaciones
+:::::
+
+::::: skill-card
+![](Images/3d.png){.skill-icon} \### Modelado 3D
+
+:::: skill-level
+::: {.skill-bar style="width: 75%"}
+:::
+::::
+
+-   **Autodesk Maya**: Modelado y animación
+-   **3ds Max**: Visualizaciones y entornos
+-   **MudBox**: Esculpido digital
+-   **Aplicaciones en visualización de datos**: Representaciones 3D
+:::::
+:::::::::::::::
 
 ## Metodologías y Enfoques
 
-:::: {.methodology-grid}
-
-::: {.methodology-card}
+::::::: methodology-grid
+::: methodology-card
 ### Análisis Exploratorio de Datos (EDA)
-Proceso sistemático para investigar conjuntos de datos, descubrir patrones, anomalías y verificar hipótesis mediante técnicas estadísticas y visuales.
+
+Proceso sistemático para investigar conjuntos de datos, descubrir
+patrones, anomalías y verificar hipótesis mediante técnicas estadísticas
+y visuales.
 :::
 
-::: {.methodology-card}
+::: methodology-card
 ### ETL (Extract, Transform, Load)
-Diseño e implementación de flujos de trabajo para extraer datos de múltiples fuentes, transformarlos para análisis y cargarlos en sistemas de almacenamiento.
+
+Diseño e implementación de flujos de trabajo para extraer datos de
+múltiples fuentes, transformarlos para análisis y cargarlos en sistemas
+de almacenamiento.
 :::
 
-::: {.methodology-card}
+::: methodology-card
 ### Metodologías Ágiles
-Aplicación de Scrum y Kanban para gestionar proyectos de análisis de datos, con iteraciones rápidas y entregas incrementales de valor.
+
+Aplicación de Scrum y Kanban para gestionar proyectos de análisis de
+datos, con iteraciones rápidas y entregas incrementales de valor.
 :::
 
-::: {.methodology-card}
+::: methodology-card
 ### Análisis Estadístico
-Aplicación de técnicas estadísticas para extraer conclusiones significativas de los datos, incluyendo pruebas de hipótesis y análisis de regresión.
-:::
 
-::::
+Aplicación de técnicas estadísticas para extraer conclusiones
+significativas de los datos, incluyendo pruebas de hipótesis y análisis
+de regresión.
+:::
+:::::::
 
 ## Proyectos que Demuestran mis Habilidades
 
-:::: {.project-showcase}
-
-::: {.showcase-item}
+:::::: project-showcase
+::: showcase-item
 ![](Images/project_automation.png)
 
 ### Automatización de Informes de Producción
+
 **Tecnologías:** Python, SQL Server, Power BI
 
-Desarrollo de un sistema automatizado que extrae datos de producción diaria, los procesa mediante scripts de Python y genera dashboards actualizados en Power BI, reduciendo el tiempo de generación de informes de 4 horas a 15 minutos.
+Desarrollo de un sistema automatizado que extrae datos de producción
+diaria, los procesa mediante scripts de Python y genera dashboards
+actualizados en Power BI, reduciendo el tiempo de generación de informes
+de 4 horas a 15 minutos.
 
 [Ver detalles →](/projects/lacordual/automation.qmd)
 :::
 
-::: {.showcase-item}
+::: showcase-item
 ![](Images/project_monitoring.png)
 
 ### Sistema de Monitoreo de Consumos
+
 **Tecnologías:** Grafana, InfluxDB, Python
 
-Implementación de un sistema de monitoreo en tiempo real que captura datos de consumo energético de máquinas industriales, permitiendo la detección temprana de anomalías y reduciendo el consumo energético un 15%.
+Implementación de un sistema de monitoreo en tiempo real que captura
+datos de consumo energético de máquinas industriales, permitiendo la
+detección temprana de anomalías y reduciendo el consumo energético un
+15%.
 
 [Ver detalles →](/projects/lacordual/monitoring.qmd)
 :::
 
-::: {.showcase-item}
+::: showcase-item
 ![](Images/project_predictive.png)
 
 ### Análisis Predictivo de Mantenimiento
+
 **Tecnologías:** Python (Scikit-learn), Power BI
 
-Desarrollo de un modelo de mantenimiento predictivo que analiza patrones en datos históricos para anticipar fallos en equipos, reduciendo el tiempo de inactividad y optimizando los costos de mantenimiento.
+Desarrollo de un modelo de mantenimiento predictivo que analiza patrones
+en datos históricos para anticipar fallos en equipos, reduciendo el
+tiempo de inactividad y optimizando los costos de mantenimiento.
 
 [Ver detalles →](/projects/bigdata/predictive.qmd)
 :::
-
-::::
+::::::
 
 ## Formación Continua
 
-Estoy constantemente actualizando mis conocimientos y habilidades a través de cursos, certificaciones y proyectos personales. Algunas de mis formaciones recientes incluyen:
+Estoy constantemente actualizando mis conocimientos y habilidades a
+través de cursos, certificaciones y proyectos personales. Algunas de mis
+formaciones recientes incluyen:
 
-:::: {.training-grid}
+:::::: training-grid
+::: training-card
+![](Images/cert_powerbi.png){.cert-icon} \### Microsoft Power BI Data
+Analyst **Microsoft** \| 2024
 
-::: {.training-card}
-![](Images/cert_powerbi.png){.cert-icon}
-### Microsoft Power BI Data Analyst
-**Microsoft** | 2024
-
-Certificación oficial en análisis y visualización de datos empresariales con Microsoft Power BI.
+Certificación oficial en análisis y visualización de datos empresariales
+con Microsoft Power BI.
 :::
 
-::: {.training-card}
-![](Images/cert_python.png){.cert-icon}
-### Python para Data Science e IA
-**Udemy** | 2024
+::: training-card
+![](Images/cert_python.png){.cert-icon} \### Python para Data Science e
+IA **Udemy** \| 2024
 
-Curso avanzado sobre técnicas de análisis de datos y machine learning con Python.
+Curso avanzado sobre técnicas de análisis de datos y machine learning
+con Python.
 :::
 
-::: {.training-card}
-![](Images/cert_visualization.png){.cert-icon}
-### Visualización de Datos Avanzada
-**DataCamp** | 2023
+::: training-card
+![](Images/cert_visualization.png){.cert-icon} \### Visualización de
+Datos Avanzada **DataCamp** \| 2023
+:::
+::::::

@@ -2,23 +2,23 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Portfolio de Data Science",
+    "title": "Portfolio",
     "section": "",
     "text": "Soy Sandra Caeiro Pires, profesional especializada en análisis de datos con experiencia en transformar información en conocimiento y optimizar procesos. Mi enfoque combina programación, conocimiento de bases de datos y visualización para generar impacto y apoyar decisiones estratégicas.\nMi formación en Inteligencia Artificial y Big Data de Miguel Altuna y mi experiencia profesional en Lacor Menaje me han permitido desarrollar soluciones de automatización y visualización para mejorar la toma de decisiones y optimizar procesos productivos.\n\n\n\n\n\n\n\n Mendaro, Guipuzkoa\n\n\n 688 607 204\n\n\n sandracapi03@gmail.com"
   },
   {
     "objectID": "index.html#áreas-de-especialización",
     "href": "index.html#áreas-de-especialización",
-    "title": "Portfolio de Data Science",
+    "title": "Portfolio",
     "section": "Áreas de Especialización",
-    "text": "Áreas de Especialización\n\n\n ### Visualización de Datos Creación de dashboards interactivos y sistemas de seguimiento en tiempo real utilizando Power BI, Grafana, Matplotlib y Tableau.\n\n\n ### Automatización Desarrollo de scripts y soluciones automatizadas para extracción, transformación y monitoreo de datos de producción.\n\n\n ### Análisis Avanzado Optimización de procesos productivos mediante análisis de datos y algoritmos de eficiencia."
+    "text": "Áreas de Especialización\n\nETL\n\n\n ### Visualización de Datos Creación de dashboards interactivos y sistemas de seguimiento en tiempo real utilizando Power BI, Grafana, Matplotlib y Tableau.\n\n\n ### Automatización Desarrollo de scripts y soluciones automatizadas para extracción, transformación y monitoreo de datos de producción.\n\n\n ### Análisis Avanzado Optimización de procesos productivos mediante análisis de datos y algoritmos de eficiencia."
   },
   {
     "objectID": "index.html#proyectos-destacados",
     "href": "index.html#proyectos-destacados",
-    "title": "Portfolio de Data Science",
+    "title": "Portfolio",
     "section": "Proyectos Destacados",
-    "text": "Proyectos Destacados\n\n\nVisualización y Automatización en Lacor\n\nImplementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas y diseño de dashboards interactivos para la toma de decisiones estratégicas.\nExplorar proyecto →\n\n\nProyectos de Big Data\n\nDesarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R. Gestión de bases de datos y creación de reportes interactivos.\nExplorar proyecto →"
+    "text": "Proyectos Destacados\n\n\nVisualización y Automatización en Lacor\n\nDesarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R. Gestión de bases de datos y creación de reportes interactivos.\nImplementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas y diseño de dashboards interactivos para la toma de decisiones estratégicas.\nExplorar proyecto →\n\n\nExtracción de datos de Consumos WebScraping en Lacor\n\nExtracción de Informes de los consumos tanto de las maquinas como de la planta y las placas solares para un futuro implemento de saber cuantos gastos tiene cada una.\nExplorar proyecto →\n\n\n\nLenguajes de Programación\n\n\n #### Python Análisis de datos, automatización y desarrollo de scripts para ETL (Extract, Transform, Load).\n\n\n #### R Análisis estadístico y visualización de datos para proyectos de data science.\n\n\n #### SQL Gestión, consulta y optimización de bases de datos relacionales.\n\n\n #### HTML/SVG Desarrollo de interfaces web y gráficos vectoriales para visualizaciones.\n\n\n\n\nVisualización de Datos\n\n\n #### Power BI Creación de dashboards interactivos y análisis de datos empresariales.\n\n\n #### Grafana Implementación de sistemas de monitoreo y visualización en tiempo real.\n\n\n #### Matplotlib/Seaborn Visualización de datos científicos con librerías de Python.\n\n\n #### Tableau Desarrollo de visualizaciones dinámicas para análisis de negocio.\n\n\n\n\nBases de Datos\n\n\n #### MongoDB Gestión de bases de datos NoSQL para datos no estructurados.\n\n\n #### SQL Server Administración de bases de datos empresariales.\n\n\n #### InfluxDB Bases de datos de series temporales para monitoreo.\n\n\n #### MySQL Gestión de bases de datos relacionales open source.\n\n\n\n\nHerramientas y Tecnologías\n\n\n #### Git/GitHub Control de versiones y colaboración en desarrollo de software.\n\n\n #### Excel Avanzado Análisis, modelado y visualización de datos corporativos.\n\n\n #### Adobe Suite Photoshop, Premiere Pro, After Effects para edición visual.\n\n\n #### Modelado 3D Autodesk Maya, 3ds Max, MudBox para diseño tridimensional."
   },
   {
     "objectID": "index.html#competencias-técnicas",
@@ -30,15 +30,71 @@
   {
     "objectID": "index.html#formación-académica",
     "href": "index.html#formación-académica",
-    "title": "Portfolio de Data Science",
+    "title": "Portfolio",
     "section": "Formación Académica",
     "text": "Formación Académica\n\n\nEspecialización en Inteligencia Artificial y Big Data\nMiguel Altuna | Septiembre 2024 - Mayo 2025\n\nDesarrollo de scripts para extracción, limpieza y consolidación de datos\nAnálisis y transformación mediante Python y R\nGestión de bases de datos y creación de dashboards interactivos\n\n\n\nGrado Superior en Animación 3D y Programación\nCeinpro | Septiembre 2019 - Junio 2021\n\nDiseño y desarrollo de entornos interactivos y multimedia\nProgramación de aplicaciones y sistemas visuales"
   },
   {
     "objectID": "index.html#idiomas-y-habilidades-adicionales",
     "href": "index.html#idiomas-y-habilidades-adicionales",
-    "title": "Portfolio de Data Science",
+    "title": "Portfolio",
     "section": "Idiomas y Habilidades Adicionales",
     "text": "Idiomas y Habilidades Adicionales\n\n\n\nIdiomas\n\nEspañol: Nativo\nEuskera: Nativo, B2\nInglés: B2\n\n\n\n\n\n\nCualidades Personales\n\nAlta capacidad para trabajo en equipo\nActitud positiva y proactiva\nOrientación a resultados\nCarné de conducir y vehículo propio\n\n\n\n\n\nConocer más sobre mí Ver mis proyectos"
+  },
+  {
+    "objectID": "about.html",
+    "href": "about.html",
+    "title": "Sobre Mí",
+    "section": "",
+    "text": "Soy una profesional en análisis de datos con experiencia en transformar información en conocimiento y optimizar procesos. Mi especialización en programación, bases de datos y visualización me permite generar impacto y apoyar decisiones estratégicas en entornos empresariales.\nMi formación combina conocimientos técnicos en Inteligencia Artificial y Big Data con habilidades creativas adquiridas en mi formación en Animación 3D y Programación, lo que me brinda un enfoque único para resolver problemas de datos y crear visualizaciones impactantes.\n\n\n\n\n\nLacor Menaje | Diciembre 2024 - Mayo 2025\n\nDesarrollo y programación de soluciones automatizadas para monitoreo y análisis de datos de producción\nImplementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas\nDiseño de dashboards interactivos para facilitar la toma de decisiones estratégicas\nOptimización de procesos productivos mediante análisis avanzado de datos y algoritmos de eficiencia\nCreación de scripts automatizados para extracción y transformación de datos desde múltiples fuentes\n\n\n\n\n\n\n\nMiguel Altuna | Septiembre 2024 - Mayo 2025\n\nDesarrollo de scripts para la extracción, limpieza y consolidación de datos desde diversas fuentes\nAnálisis, limpieza y transformación de datos mediante programación en Python y R\nGestión y análisis de diferentes Bases de Datos\nCreación de dashboards y reportes interactivos\nAutomatización de flujos de datos y mejora de la infraestructura\n\n\n\n\nCeinpro | Septiembre 2019 - Junio 2021\n\nDiseño y desarrollo de entornos interactivos y multimedia\nProgramación de aplicaciones y sistemas visuales\nCreación de contenidos visuales para diferentes plataformas\nDesarrollo de habilidades técnicas y artísticas para el sector multimedia\n\n\n\n\n\n\n\n\n\n📍 Mendaro, Guipuzkoa\n📞 688 607 204\n📧 sandracapi03@gmail.com\n🔗 LinkedIn\n🐙 GitHub\n\n\n\n\nEspañol: Nativo\nEuskera: Nativo, B2\nInglés: B2\n\n\n\n\n\nCarné de conducir y vehículo propio\nAlta capacidad para trabajo en equipo\nActitud positiva y proactiva\nOrientación a resultados"
+  },
+  {
+    "objectID": "about.html#perfil-profesional",
+    "href": "about.html#perfil-profesional",
+    "title": "Sobre Mí",
+    "section": "",
+    "text": "Soy una profesional en análisis de datos con experiencia en transformar información en conocimiento y optimizar procesos. Mi especialización en programación, bases de datos y visualización me permite generar impacto y apoyar decisiones estratégicas en entornos empresariales.\nMi formación combina conocimientos técnicos en Inteligencia Artificial y Big Data con habilidades creativas adquiridas en mi formación en Animación 3D y Programación, lo que me brinda un enfoque único para resolver problemas de datos y crear visualizaciones impactantes."
+  },
+  {
+    "objectID": "about.html#experiencia-profesional",
+    "href": "about.html#experiencia-profesional",
+    "title": "Sobre Mí",
+    "section": "",
+    "text": "Lacor Menaje | Diciembre 2024 - Mayo 2025\n\nDesarrollo y programación de soluciones automatizadas para monitoreo y análisis de datos de producción\nImplementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas\nDiseño de dashboards interactivos para facilitar la toma de decisiones estratégicas\nOptimización de procesos productivos mediante análisis avanzado de datos y algoritmos de eficiencia\nCreación de scripts automatizados para extracción y transformación de datos desde múltiples fuentes"
+  },
+  {
+    "objectID": "about.html#formación-académica",
+    "href": "about.html#formación-académica",
+    "title": "Sobre Mí",
+    "section": "",
+    "text": "Miguel Altuna | Septiembre 2024 - Mayo 2025\n\nDesarrollo de scripts para la extracción, limpieza y consolidación de datos desde diversas fuentes\nAnálisis, limpieza y transformación de datos mediante programación en Python y R\nGestión y análisis de diferentes Bases de Datos\nCreación de dashboards y reportes interactivos\nAutomatización de flujos de datos y mejora de la infraestructura\n\n\n\n\nCeinpro | Septiembre 2019 - Junio 2021\n\nDiseño y desarrollo de entornos interactivos y multimedia\nProgramación de aplicaciones y sistemas visuales\nCreación de contenidos visuales para diferentes plataformas\nDesarrollo de habilidades técnicas y artísticas para el sector multimedia"
+  },
+  {
+    "objectID": "about.html#competencias-técnicas",
+    "href": "about.html#competencias-técnicas",
+    "title": "Sobre Mí",
+    "section": "Competencias Técnicas",
+    "text": "Competencias Técnicas\n\nLenguajes de Programación\n\n\n #### Python Análisis de datos, automatización y desarrollo de scripts para ETL (Extract, Transform, Load).\n\n\n #### R Análisis estadístico y visualización de datos para proyectos de data science.\n\n\n #### SQL Gestión, consulta y optimización de bases de datos relacionales.\n\n\n #### HTML/SVG Desarrollo de interfaces web y gráficos vectoriales para visualizaciones.\n\n\n\n\nVisualización de Datos\n\n\n #### Power BI Creación de dashboards interactivos y análisis de datos empresariales.\n\n\n #### Grafana Implementación de sistemas de monitoreo y visualización en tiempo real.\n\n\n #### Matplotlib/Seaborn Visualización de datos científicos con librerías de Python.\n\n\n #### Tableau Desarrollo de visualizaciones dinámicas para análisis de negocio.\n\n\n\n\nBases de Datos\n\n\n #### MongoDB Gestión de bases de datos NoSQL para datos no estructurados.\n\n\n #### SQL Server Administración de bases de datos empresariales.\n\n\n #### InfluxDB Bases de datos de series temporales para monitoreo.\n\n\n #### MySQL Gestión de bases de datos relacionales open source.\n\n\n\n\nHerramientas y Tecnologías\n\n\n #### Git/GitHub Control de versiones y colaboración en desarrollo de software.\n\n\n #### Excel Avanzado Análisis, modelado y visualización de datos corporativos.\n\n\n #### Adobe Suite Photoshop, Premiere Pro, After Effects para edición visual.\n\n\n #### Modelado 3D Autodesk Maya, 3ds Max, MudBox para diseño tridimensional."
+  },
+  {
+    "objectID": "about.html#mi-enfoque",
+    "href": "about.html#mi-enfoque",
+    "title": "Sobre Mí",
+    "section": "Mi Enfoque",
+    "text": "Mi Enfoque\n\n“La visualización de datos es donde la ciencia y el arte se encuentran para transformar información en conocimiento accionable.”\n\nMi objetivo profesional es seguir desarrollando soluciones de análisis de datos que tengan un impacto significativo en la toma de decisiones empresariales. Me apasiona encontrar patrones ocultos en los datos y comunicarlos de manera efectiva a través de visualizaciones claras e intuitivas.\nMi combinación de formación técnica en análisis de datos y habilidades creativas en diseño visual me permite abordar los desafíos desde una perspectiva única, creando soluciones que son tanto funcionales como visualmente atractivas."
+  },
+  {
+    "objectID": "about.html#proyectos-destacados",
+    "href": "about.html#proyectos-destacados",
+    "title": "Sobre Mí",
+    "section": "Proyectos Destacados",
+    "text": "Proyectos Destacados\n\n\nSistema de Monitoreo en Tiempo Real\n\nImplementación de un sistema de visualización en tiempo real para el seguimiento de consumos de máquinas en planta de producción, utilizando Grafana e InfluxDB.\nVer detalles →\n\n\nDashboard Ejecutivo para Toma de Decisiones\n\nDiseño de un panel de control interactivo para la dirección, facilitando el análisis de KPIs y la toma de decisiones estratégicas mediante Power BI.\nVer detalles →"
+  },
+  {
+    "objectID": "about.html#formación-complementaria",
+    "href": "about.html#formación-complementaria",
+    "title": "Sobre Mí",
+    "section": "Formación Complementaria",
+    "text": "Formación Complementaria\n\nCertificación en Microsoft Power BI Data Analyst | Microsoft | 2024\nPython para Data Science e Inteligencia Artificial | Udemy | 2024\nVisualización de Datos Avanzada | DataCamp | 2023"
   }
 ]
