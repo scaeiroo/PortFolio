@@ -1,0 +1,239 @@
+---
+title: "Sobre Mí"
+subtitle: "Sandra Caeiro Pires | Analista de Datos & Data Scientist"
+---
+
+:::: {.columns}
+
+::: {.column width="70%"}
+
+## Perfil Profesional
+
+Soy una profesional en análisis de datos con experiencia en transformar información en conocimiento y optimizar procesos. Mi especialización en programación, bases de datos y visualización me permite generar impacto y apoyar decisiones estratégicas en entornos empresariales.
+
+Mi formación combina conocimientos técnicos en Inteligencia Artificial y Big Data con habilidades creativas adquiridas en mi formación en Animación 3D y Programación, lo que me brinda un enfoque único para resolver problemas de datos y crear visualizaciones impactantes.
+
+## Experiencia Profesional
+
+### Especialista en Visualización y Automatización
+**Lacor Menaje** | Diciembre 2024 - Mayo 2025
+
+- Desarrollo y programación de soluciones automatizadas para monitoreo y análisis de datos de producción
+- Implementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas
+- Diseño de dashboards interactivos para facilitar la toma de decisiones estratégicas
+- Optimización de procesos productivos mediante análisis avanzado de datos y algoritmos de eficiencia
+- Creación de scripts automatizados para extracción y transformación de datos desde múltiples fuentes
+
+## Formación Académica
+
+### Especialización en Inteligencia Artificial y Big Data
+**Miguel Altuna** | Septiembre 2024 - Mayo 2025
+
+- Desarrollo de scripts para la extracción, limpieza y consolidación de datos desde diversas fuentes
+- Análisis, limpieza y transformación de datos mediante programación en Python y R
+- Gestión y análisis de diferentes Bases de Datos
+- Creación de dashboards y reportes interactivos
+- Automatización de flujos de datos y mejora de la infraestructura
+
+### Grado Superior en Animación 3D y Programación
+**Ceinpro** | Septiembre 2019 - Junio 2021
+
+- Diseño y desarrollo de entornos interactivos y multimedia
+- Programación de aplicaciones y sistemas visuales
+- Creación de contenidos visuales para diferentes plataformas
+- Desarrollo de habilidades técnicas y artísticas para el sector multimedia
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="25%"}
+![](Images/Sandra.png){.rounded width=200px}
+
+### Contacto
+
+📍 Mendaro, Guipuzkoa  
+📞 688 607 204  
+📧 [sandracapi03@gmail.com](mailto:sandracapi03@gmail.com)  
+🔗 [LinkedIn](https://linkedin.com/in/sandracaeiropires)  
+🐙 [GitHub](https://github.com/sandracaeiropires)
+
+### Idiomas
+
+- Español: Nativo
+- Euskera: Nativo, B2
+- Inglés: B2
+
+### Información Adicional
+
+- Carné de conducir y vehículo propio
+- Alta capacidad para trabajo en equipo
+- Actitud positiva y proactiva
+- Orientación a resultados
+
+:::
+
+::::
+
+## Competencias Técnicas
+
+### Lenguajes de Programación
+
+:::: {.grid}
+
+::: {.g-col-3 .tech-skill}
+![](Images/python.png){.tech-icon}
+#### Python
+Análisis de datos, automatización y desarrollo de scripts para ETL (Extract, Transform, Load).
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/r.png){.tech-icon}
+#### R
+Análisis estadístico y visualización de datos para proyectos de data science.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/sql.png){.tech-icon}
+#### SQL
+Gestión, consulta y optimización de bases de datos relacionales.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/html.png){.tech-icon}
+#### HTML/SVG
+Desarrollo de interfaces web y gráficos vectoriales para visualizaciones.
+:::
+
+::::
+
+### Visualización de Datos
+
+:::: {.grid}
+
+::: {.g-col-3 .tech-skill}
+![](Images/powerbi.png){.tech-icon}
+#### Power BI
+Creación de dashboards interactivos y análisis de datos empresariales.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/grafana.png){.tech-icon}
+#### Grafana
+Implementación de sistemas de monitoreo y visualización en tiempo real.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/matplotlib.png){.tech-icon}
+#### Matplotlib/Seaborn
+Visualización de datos científicos con librerías de Python.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/tableau.png){.tech-icon}
+#### Tableau
+Desarrollo de visualizaciones dinámicas para análisis de negocio.
+:::
+
+::::
+
+### Bases de Datos
+
+:::: {.grid}
+
+::: {.g-col-3 .tech-skill}
+![](Images/mongodb.png){.tech-icon}
+#### MongoDB
+Gestión de bases de datos NoSQL para datos no estructurados.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/sqlserver.png){.tech-icon}
+#### SQL Server
+Administración de bases de datos empresariales.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/influxdb.png){.tech-icon}
+#### InfluxDB
+Bases de datos de series temporales para monitoreo.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/mysql.png){.tech-icon}
+#### MySQL
+Gestión de bases de datos relacionales open source.
+:::
+
+::::
+
+### Herramientas y Tecnologías
+
+:::: {.grid}
+
+::: {.g-col-3 .tech-skill}
+![](Images/github.png){.tech-icon}
+#### Git/GitHub
+Control de versiones y colaboración en desarrollo de software.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/excel.png){.tech-icon}
+#### Excel Avanzado
+Análisis, modelado y visualización de datos corporativos.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/adobe.png){.tech-icon}
+#### Adobe Suite
+Photoshop, Premiere Pro, After Effects para edición visual.
+:::
+
+::: {.g-col-3 .tech-skill}
+![](Images/3d.png){.tech-icon}
+#### Modelado 3D
+Autodesk Maya, 3ds Max, MudBox para diseño tridimensional.
+:::
+
+::::
+
+## Mi Enfoque
+
+> "La visualización de datos es donde la ciencia y el arte se encuentran para transformar información en conocimiento accionable."
+
+Mi objetivo profesional es seguir desarrollando soluciones de análisis de datos que tengan un impacto significativo en la toma de decisiones empresariales. Me apasiona encontrar patrones ocultos en los datos y comunicarlos de manera efectiva a través de visualizaciones claras e intuitivas.
+
+Mi combinación de formación técnica en análisis de datos y habilidades creativas en diseño visual me permite abordar los desafíos desde una perspectiva única, creando soluciones que son tanto funcionales como visualmente atractivas.
+
+## Proyectos Destacados
+
+:::: {.grid}
+
+::: {.g-col-6 .project-box}
+### Sistema de Monitoreo en Tiempo Real
+
+![](Images/monitoring_system.png)
+
+Implementación de un sistema de visualización en tiempo real para el seguimiento de consumos de máquinas en planta de producción, utilizando Grafana e InfluxDB.
+
+[Ver detalles →](/projects/lacordual/monitoring.qmd)
+:::
+
+::: {.g-col-6 .project-box}
+### Dashboard Ejecutivo para Toma de Decisiones
+
+![](Images/executive_dashboard.png)
+
+Diseño de un panel de control interactivo para la dirección, facilitando el análisis de KPIs y la toma de decisiones estratégicas mediante Power BI.
+
+[Ver detalles →](/projects/lacordual/dashboard.qmd)
+:::
+
+::::
+
+## Formación Complementaria
+
+- **Certificación en Microsoft Power BI Data Analyst** | Microsoft | 2024
+- **Python para Data Science e Inteligencia Artificial** | Udemy | 2024
+- **Visualización de Datos Avanzada** | DataCamp | 2023

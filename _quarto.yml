@@ -1,0 +1,68 @@
+project:
+  type: website
+  output-dir: _portfolio
+
+website:
+  title: "Sandra Caeiro Pires"
+  description: "Portfolio de Analista de Datos / Data Scientist"
+  favicon: Images/favicon.png
+  
+  navbar:
+    background: "#33546D"
+    foreground: "#ffffff"
+    search: true
+    logo: Images/Sandra.png
+    left:
+      - text: "Inicio"
+        file: index.qmd
+      - text: "Proyectos"
+        menu:
+          - text: "Visualización y Automatización en Lacor"
+            file: projects/lacordual/index.qmd
+          - text: "Proyectos de Big Data"
+            file: projects/bigdata/index.qmd
+          - text: "Modelado 3D y Visual"
+            file: projects/3D/index.qmd
+      - text: "Sobre mí"
+        file: about.qmd
+      - text: "Habilidades"
+        file: skills.qmd
+    right:
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sandra-caeiro-pires-3547b3293/
+      - icon: github
+        href: https://github.com/scaeiroo
+      - icon: envelope
+        href: mailto:sandracapi03@gmail.com
+
+  page-footer:
+    left: "© 2025 Sandra Caeiro Pires | Data Scientist & Analista de Datos"
+    right: 
+      - icon: github
+        href: https://github.com/scaeiroo
+      - icon: linkedin
+        href: https://www.linkedin.com/in/sandra-caeiro-pires-3547b3293/
+      - icon: envelope
+        href: mailto:sandracapi03@gmail.com
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    toc-depth: 3
+    number-sections: false 
+    section-divs: true
+    code-link: true
+    code-copy: true
+    code-tools: true
+    highlight-style: textmate
+    fontsize: 1em
+    linestretch: 1.5
+    grid:
+      sidebar-width: 280px
+      body-width: 900px
+      margin-width: 200px
+      gutter-width: 1.5rem
+
+editor: visual

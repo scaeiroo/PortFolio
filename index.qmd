@@ -1,0 +1,171 @@
+---
+title: "Portfolio de Data Science"
+subtitle: "Sandra Caeiro Pires"
+page-layout: full
+---
+
+:::: {.columns}
+
+::: {.column width="60%"}
+# Analista de Datos & Data Scientist
+
+Soy **Sandra Caeiro Pires**, profesional especializada en análisis de datos con experiencia en transformar información en conocimiento y optimizar procesos. Mi enfoque combina programación, conocimiento de bases de datos y visualización para generar impacto y apoyar decisiones estratégicas.
+
+Mi formación en **Inteligencia Artificial y Big Data** de Miguel Altuna y mi experiencia profesional en **Lacor Menaje** me han permitido desarrollar soluciones de automatización y visualización para mejorar la toma de decisiones y optimizar procesos productivos.
+
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="35%"}
+![](Images/Sandra.png){.rounded width=250px}
+
+<div class="contact-info">
+<p><i class="bi bi-geo-alt"></i> Mendaro, Guipuzkoa</p>
+<p><i class="bi bi-telephone"></i> 688 607 204</p>
+<p><i class="bi bi-envelope"></i> <a href="mailto:sandracapi03@gmail.com">sandracapi03@gmail.com</a></p>
+</div>
+:::
+
+::::
+
+## Áreas de Especialización
+
+:::: {.grid}
+
+::: {.g-col-4 .specialty-box}
+![](Images/data_viz.png){.specialty-icon}
+### Visualización de Datos
+Creación de dashboards interactivos y sistemas de seguimiento en tiempo real utilizando Power BI, Grafana, Matplotlib y Tableau.
+:::
+
+::: {.g-col-4 .specialty-box}
+![](Images/automation.png){.specialty-icon}
+### Automatización
+Desarrollo de scripts y soluciones automatizadas para extracción, transformación y monitoreo de datos de producción.
+:::
+
+::: {.g-col-4 .specialty-box}
+![](Images/analytics.png){.specialty-icon}
+### Análisis Avanzado
+Optimización de procesos productivos mediante análisis de datos y algoritmos de eficiencia.
+:::
+
+::::
+
+## Proyectos Destacados
+
+:::: {.grid}
+
+::: {.g-col-6}
+### [Visualización y Automatización en Lacor](/projects/lacordual/index.qmd)
+
+![](Images/lacordual_preview.png)
+
+Implementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas y diseño de dashboards interactivos para la toma de decisiones estratégicas.
+
+[Explorar proyecto →](/projects/lacordual/index.qmd)
+:::
+
+::: {.g-col-6}
+### [Proyectos de Big Data](/projects/bigdata/index.qmd)
+
+![](Images/bigdata_preview.png)
+
+Desarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R. Gestión de bases de datos y creación de reportes interactivos.
+
+[Explorar proyecto →](/projects/bigdata/index.qmd)
+:::
+
+::::
+
+## Competencias Técnicas
+
+:::: {.skill-grid}
+
+::: {.skill-category}
+#### Lenguajes de Programación
+- Python
+- R
+- SQL
+- HTML/SVG
+:::
+
+::: {.skill-category}
+#### Visualización de Datos
+- Microsoft Power BI
+- Grafana
+- Matplotlib, Seaborn
+- Tableau
+:::
+
+::: {.skill-category}
+#### Bases de Datos
+- MongoDB
+- SQL Server
+- InfluxDB
+- MySQL
+:::
+
+::: {.skill-category}
+#### Herramientas y Tecnologías
+- Git/GitHub
+- Excel Avanzado
+- Adobe: Photoshop, Premiere Pro, After Effects
+- Modelado 3D: Autodesk Maya, 3ds Max, MudBox
+:::
+
+::::
+
+## Formación Académica
+
+:::: {.education-container}
+
+::: {.education-item}
+### Especialización en Inteligencia Artificial y Big Data
+**Miguel Altuna** | Septiembre 2024 - Mayo 2025
+
+- Desarrollo de scripts para extracción, limpieza y consolidación de datos
+- Análisis y transformación mediante Python y R
+- Gestión de bases de datos y creación de dashboards interactivos
+:::
+
+::: {.education-item}
+### Grado Superior en Animación 3D y Programación
+**Ceinpro** | Septiembre 2019 - Junio 2021
+
+- Diseño y desarrollo de entornos interactivos y multimedia
+- Programación de aplicaciones y sistemas visuales
+:::
+
+::::
+
+## Idiomas y Habilidades Adicionales
+
+:::: {.columns}
+
+::: {.column width="45%"}
+### Idiomas
+- Español: Nativo
+- Euskera: Nativo, B2
+- Inglés: B2
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+### Cualidades Personales
+- Alta capacidad para trabajo en equipo
+- Actitud positiva y proactiva
+- Orientación a resultados
+- Carné de conducir y vehículo propio
+:::
+
+::::
+
+<div class="cta-container">
+<a href="about.qmd" class="btn btn-primary">Conocer más sobre mí</a>
+<a href="projects/lacordual/index.qmd" class="btn btn-outline">Ver mis proyectos</a>
+</div>

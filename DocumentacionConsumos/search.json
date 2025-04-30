@@ -1,0 +1,244 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "",
+    "text": "Introducción al Proyecto",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#comprensión-del-sistema-de-monitoreo-de-placas-solares",
+    "href": "index.html#comprensión-del-sistema-de-monitoreo-de-placas-solares",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Comprensión del Sistema de Monitoreo de Placas Solares",
+    "text": "Comprensión del Sistema de Monitoreo de Placas Solares\nPara iniciar este proyecto, fue esencial entender cómo funciona el sistema de monitoreo de placas solares implementado en Lacor. El sistema actual permite el acceso a datos de consumo energético a través de una aplicación web, pero presenta limitaciones en la extracción automática de informes y su posterior análisis. La observación detallada de los datos disponibles, su formato y el método manual de extracción fueron clave para diseñar una solución eficiente que automatice este proceso.",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#problemática-identificada",
+    "href": "index.html#problemática-identificada",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Problemática Identificada",
+    "text": "Problemática Identificada\nLa primera fase consistió en crear una máquina virtual con Ubuntu 24.04.1. En ella, instalé El principal desafío identificado fue la imposibilidad de extraer de manera automatizada todos los datos necesarios utilizando las librerías estándar de Python. Las API disponibles no proporcionaban la totalidad de la información que sí está accesible mediante la descarga manual desde la interfaz web. Esta limitación obligaba a un proceso manual y tedioso para la obtención de los informes diarios, mensuales y anuales, dificultando el análisis continuo del rendimiento de las placas solares.\n\n\n\n\n\n\nLos intentos iniciales con diversas librerías de Python revelaron que los datos obtenidos no coincidían en cantidad ni calidad con los descargables manualmente desde la plataforma, lo que hizo necesario replantear la estrategia de extracción.",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#objetivos-del-proyecto",
+    "href": "index.html#objetivos-del-proyecto",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Objetivos del Proyecto",
+    "text": "Objetivos del Proyecto\nEl proyecto se estructura en torno a dos objetivos principales:\n1- Desarrollo de una aplicación de escritorio que permita:\n  - Extracción automatizada de informes diarios, mensuales y anuales\n  - Visualización gráfica de los datos obtenidos\n  - Interfaz intuitiva para la interacción con los datos\n2- Implementación de un script de automatización que:\n  - Ejecute diariamente la extracción de datos\n  - Almacene la información en una base de datos MySQL\n  - Garantice la continuidad del registro histórico",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#configuración-del-entorno-de-desarrollo",
+    "href": "index.html#configuración-del-entorno-de-desarrollo",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Configuración del Entorno de Desarrollo",
+    "text": "Configuración del Entorno de Desarrollo\nPara abordar este proyecto, se configuró un entorno de desarrollo con las siguientes herramientas:\n\nPython 3.10: Lenguaje principal para el desarrollo del scraping y la aplicación\nSelenium: Framework para automatizar la navegación web y extracción de datos\nMySQL: Sistema de gestión de base de datos para el almacenamiento permanente\nPyQt5/Tkinter: Bibliotecas para el desarrollo de la interfaz gráfica\nMatplotlib/Seaborn: Herramientas para la visualización gráfica de datos\nGitHub: Sistema de control de versiones para el seguimiento del desarrollo\n\n\n  \n\nEste conjunto de herramientas proporciona la base tecnológica necesaria para desarrollar una solución robusta que cumpla con los requisitos establecidos. La elección de Selenium como herramienta de web scraping responde directamente a la necesidad de emular la navegación humana para acceder a todos los datos disponibles en la plataforma.",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#metodología-de-trabajo",
+    "href": "index.html#metodología-de-trabajo",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Metodología de Trabajo",
+    "text": "Metodología de Trabajo\nEl desarrollo del proyecto sigue una metodología iterativa:\n1- Análisis preliminar: Estudio de la estructura de la web y los datos disponibles\n2- Desarrollo del scraper: Implementación del sistema de extracción automatizada\n3- Construcción de la aplicación: Desarrollo de la interfaz y funcionalidades de usuario\n4- Automatización: Creación del script para la ejecución programada\n5- Pruebas y optimización: Verificación de la fiabilidad y rendimiento del sistema\nEsta aproximación garantiza la adaptabilidad del sistema ante posibles cambios en la plataforma de origen, manteniendo la integridad de los datos y la continuidad del servicio.",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Informes Consumos</span>"
+    ]
+  },
+  {
+    "objectID": "app.html",
+    "href": "app.html",
+    "title": "App",
+    "section": "",
+    "text": "Desarrollo de la Aplicación de Escritorio",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "app.html#arquitectura-del-sistema",
+    "href": "app.html#arquitectura-del-sistema",
+    "title": "App",
+    "section": "Arquitectura del Sistema",
+    "text": "Arquitectura del Sistema\nPara iniciar este proyecto, fue esencial entender cómo funciona el sistema de monitoreo de placas solares implementado en Lacor. El sistema actual permite el acceso a datos de consumo energético a través de una aplicación web, pero presenta limitaciones en la extracción automática de informes y su posterior análisis. La observación detallada de los datos disponibles, su formato y el método manual de extracción fueron clave para diseñar una solución eficiente que automatice este proceso.\nLa aplicación se estructura en tres componentes principales que interactúan para garantizar un flujo de trabajo eficiente:\n\n1. Gestión de Configuración\nClases clave: ConfigManager, SetupDialog\n\nAlmacena rutas de directorios para informes y descargas\nPersiste configuraciones entre sesiones mediante archivo TXT\nValida estructura de carpetas (InformesMensuales, InformesAnuales, InformesDiarios)\n\n\n\n2. Núcleo de Automatización\nClases clave: GoodWeApp (métodos de scraping)\n\nImplementa navegación web automatizada con Selenium\nManeja autenticación, selección de plantas solares y parámetros temporales\nEjecuta descargas en segundo plano con gestión de threads\n\n\n\n3. Interfaz Gráfica\nComponentes: ttk.Notebook, FigureCanvasTkAgg, ScrolledText\n\nSistema de pestañas para diferentes funcionalidades\nVisualización interactiva de gráficos con Matplotlib\nPanel de registro de actividades con colores semánticos\n\n# Ejemplo de estructura principal\nclass GoodWeApp:\n    def __init__(self, root):\n        self.config_manager = ConfigManager()\n        self._create_notebook()\n        self._crear_interfaz_generar_informe()\n        self._crear_interfaz_graficar_informe()",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "app.html#funcionalidades-clave",
+    "href": "app.html#funcionalidades-clave",
+    "title": "App",
+    "section": "Funcionalidades Clave",
+    "text": "Funcionalidades Clave\n\n1. Generación Automatizada de Informes\nTipos soportados:\n    - Diarios: Descarga paralela de dos plantas solares\n\n    - Mensuales: Consolidación en archivo único\n\n    - Anuales: Agregación de datos mensuales\n\n\n\n\n\n\nProceso optimizado:\ndef proceso_descarga_informes(self):\n    chrome_options = Options()\n    chrome_options.add_argument(\"--headless=new\")  # Ejecución sin UI\n    driver = webdriver.Chrome(service=Service(...), options=chrome_options)\n    # Flujo completo de navegación automatizada\n\n\n2. Sistema Inteligente de Gestión de Archivos\n\nRenombrado automático según convención:\n\nDD_MM_YYYY_Planta[1|2].xls para diarios\nMM_YYYY_Planta_1_2.xls para mensuales\n\nLimpieza de duplicados en destino\nValidación de integridad de archivos\n\n\n\n3. Visualización Interactiva\n\nDetección automática del tipo de informe\nGráficos temporales con resolución diaria/mensual\nPersonalización de ejes y leyendas\n\ndef graficar_datos_mensuales(self, df, grafica_frame, archivo):\n    fig, ax = plt.subplots(figsize=(10, 5))\n    ax.plot(df['Día'], df['Consumo(kWh)'], marker='o')\n    canvas = FigureCanvasTkAgg(fig, master=grafica_frame)",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "app.html#flujo-de-trabajo-del-usuario",
+    "href": "app.html#flujo-de-trabajo-del-usuario",
+    "title": "App",
+    "section": "Flujo de Trabajo del Usuario",
+    "text": "Flujo de Trabajo del Usuario\n1- Configuración Inicial\n\nDiálogo guiado para selección de directorios\nValidación de rutas típicas de descargas\n\n\n\n\n\n\n\n2- Generación de Informes\n\nSelección de parámetros mediante controles intuitivos\nBarra de progreso indeterminada durante operaciones\n\n\n\n\n\n\n\n3- Visualización de Datos\n\nSelector de archivos integrado\nRegeneración dinámica de gráficos",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "app.html#manejo-de-errores-avanzado",
+    "href": "app.html#manejo-de-errores-avanzado",
+    "title": "App",
+    "section": "Manejo de Errores Avanzado",
+    "text": "Manejo de Errores Avanzado\nSistema de logging multi-nivel:\n    - Registro en interfaz y archivo simultáneo\n\n    - Codificación por colores y emojis\n\n    - Salida formateada para diagnóstico\ndef log(self, mensaje, tipo=\"info\"):\n    emoji_map = {\"success\": \"✅\", \"error\": \"❌\", \"path\": \"📂\"}\n    self.log_text.insert(tk.END, f\"[{timestamp}] {emoji} {mensaje}\\n\")\nMecanismos de recuperación:\n  - Reintentos automáticos en fallos de conexión\n\n  - Validación de formatos de fecha\n\n  - Manejo de timeouts en elementos dinámicos\n  \nProcesamiento de Datos\n  - Detección automática de encabezados en Excel\n\n  - Normalización de nombres de plantas\n\n  - Manejo de valores faltantes y outliers",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "app.html#diagrama-de-flujo-principal",
+    "href": "app.html#diagrama-de-flujo-principal",
+    "title": "App",
+    "section": "Diagrama de Flujo Principal",
+    "text": "Diagrama de Flujo Principal\n\n\n\n\n\ngraph TD\n  A[Inicio] --&gt; B{Configuración válida?}\n  B --&gt;|No| C[Mostrar diálogo de configuración]\n  B --&gt;|Sí| D[Mostrar interfaz principal]\n  D --&gt; E[Seleccionar tipo de informe]\n  E --&gt; F[Introducir parámetros temporales]\n  F --&gt; G[Ejecutar scraping en background]\n  G --&gt; H{Mover y renombrar archivo?}\n  H --&gt;|Éxito| I[Mostrar gráfico]\n  H --&gt;|Error| J[Registrar en log y notificar]\n\n\n\n\n\n\n\n\n\n\n\n\nLa aplicación logra reducir el tiempo de generación de informes de 15 minutos (manual) a 2 minutos promedio, con una tasa de éxito del 98% en condiciones normales de red.",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html",
+    "href": "automatizacion.html",
+    "title": "Automatización de Informes",
+    "section": "",
+    "text": "Sistema de Automatización",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#arquitectura-del-sistema",
+    "href": "automatizacion.html#arquitectura-del-sistema",
+    "title": "App",
+    "section": "Arquitectura del Sistema",
+    "text": "Arquitectura del Sistema\nPara iniciar este proyecto, fue esencial entender cómo funciona el sistema de monitoreo de placas solares implementado en Lacor. El sistema actual permite el acceso a datos de consumo energético a través de una aplicación web, pero presenta limitaciones en la extracción automática de informes y su posterior análisis. La observación detallada de los datos disponibles, su formato y el método manual de extracción fueron clave para diseñar una solución eficiente que automatice este proceso.\nLa aplicación se estructura en tres componentes principales que interactúan para garantizar un flujo de trabajo eficiente:\n\n1. Gestión de Configuración\nClases clave: ConfigManager, SetupDialog\n\nAlmacena rutas de directorios para informes y descargas\nPersiste configuraciones entre sesiones mediante archivo TXT\nValida estructura de carpetas (InformesMensuales, InformesAnuales, InformesDiarios)\n\n\n\n2. Núcleo de Automatización\nClases clave: GoodWeApp (métodos de scraping)\n\nImplementa navegación web automatizada con Selenium\nManeja autenticación, selección de plantas solares y parámetros temporales\nEjecuta descargas en segundo plano con gestión de threads\n\n\n\n3. Interfaz Gráfica\nComponentes: ttk.Notebook, FigureCanvasTkAgg, ScrolledText\n\nSistema de pestañas para diferentes funcionalidades\nVisualización interactiva de gráficos con Matplotlib\nPanel de registro de actividades con colores semánticos\n\n# Ejemplo de estructura principal\nclass GoodWeApp:\n    def __init__(self, root):\n        self.config_manager = ConfigManager()\n        self._create_notebook()\n        self._crear_interfaz_generar_informe()\n        self._crear_interfaz_graficar_informe()",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#funcionalidades-clave",
+    "href": "automatizacion.html#funcionalidades-clave",
+    "title": "Automatización de Informes",
+    "section": "Funcionalidades Clave",
+    "text": "Funcionalidades Clave\n\n1. Ejecución Programada\nProgramación mediante Crontab Se ejecuta diariamente a las 23:30 horas para capturar datos consolidados:\n# Configuración en crontab -e\n0 22 * * * /bin/bash /ruta/EjecuccionDiaria_Informes.sh\nModo Headless Chrome se ejecuta sin interfaz gráfica para optimizar recursos:\nchrome_options.add_argument(\"--headless=new\")\nchrome_options.add_argument(\"--disable-gpu\")\n\n\n2. Flujo de Datos\n\nDescarga paralela de 2 plantas solares\nRenombrado inteligente de archivos\nValidación de estructura de datos\nCarga en base de datos MySQL\nEliminación segura de temporales\n\n\n\n2. Flujo de Datos\nEstructura de Directorios\n├── InformesDiarios/\n│   ├── 15_06_2024_Planta1.xls\n│   └── 15_06_2024_Planta2.xls\n└── Logs/\n    └── Log_2024-06-15T23:30:01.log\nRenombrado automatático\nbase_name = f\"{day:02d}_{month:02d}_{year}_Planta\"",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#flujo-de-trabajo-del-usuario",
+    "href": "automatizacion.html#flujo-de-trabajo-del-usuario",
+    "title": "App",
+    "section": "Flujo de Trabajo del Usuario",
+    "text": "Flujo de Trabajo del Usuario\n1- Configuración Inicial\n\nDiálogo guiado para selección de directorios\nValidación de rutas típicas de descargas\n\n\n\n\n\n\n\n2- Generación de Informes\n\nSelección de parámetros mediante controles intuitivos\nBarra de progreso indeterminada durante operaciones\n\n\n\n\n\n\n\n3- Visualización de Datos\n\nSelector de archivos integrado\nRegeneración dinámica de gráficos",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#manejo-de-errores-avanzado",
+    "href": "automatizacion.html#manejo-de-errores-avanzado",
+    "title": "App",
+    "section": "Manejo de Errores Avanzado",
+    "text": "Manejo de Errores Avanzado\nSistema de logging multi-nivel:\n    - Registro en interfaz y archivo simultáneo\n\n    - Codificación por colores y emojis\n\n    - Salida formateada para diagnóstico\ndef log(self, mensaje, tipo=\"info\"):\n    emoji_map = {\"success\": \"✅\", \"error\": \"❌\", \"path\": \"📂\"}\n    self.log_text.insert(tk.END, f\"[{timestamp}] {emoji} {mensaje}\\n\")\nMecanismos de recuperación:\n  - Reintentos automáticos en fallos de conexión\n\n  - Validación de formatos de fecha\n\n  - Manejo de timeouts en elementos dinámicos\n  \nProcesamiento de Datos\n  - Detección automática de encabezados en Excel\n\n  - Normalización de nombres de plantas\n\n  - Manejo de valores faltantes y outliers",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#diagrama-de-flujo-principal",
+    "href": "automatizacion.html#diagrama-de-flujo-principal",
+    "title": "App",
+    "section": "Diagrama de Flujo Principal",
+    "text": "Diagrama de Flujo Principal\n\n\n\n\n\ngraph TD\n  A[Inicio] --&gt; B{Configuración válida?}\n  B --&gt;|No| C[Mostrar diálogo de configuración]\n  B --&gt;|Sí| D[Mostrar interfaz principal]\n  D --&gt; E[Seleccionar tipo de informe]\n  E --&gt; F[Introducir parámetros temporales]\n  F --&gt; G[Ejecutar scraping en background]\n  G --&gt; H{Mover y renombrar archivo?}\n  H --&gt;|Éxito| I[Mostrar gráfico]\n  H --&gt;|Error| J[Registrar en log y notificar]\n\n\n\n\n\n\n\n\n\n\n\n\nLa aplicación logra reducir el tiempo de generación de informes de 15 minutos (manual) a 2 minutos promedio, con una tasa de éxito del 98% en condiciones normales de red.",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>App</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#arquitectura-del-proceso",
+    "href": "automatizacion.html#arquitectura-del-proceso",
+    "title": "Automatización de Informes",
+    "section": "Arquitectura del Proceso",
+    "text": "Arquitectura del Proceso\nEl sistema está diseñado para ejecutarse autónomamente en un servidor Linux, realizando descargas diarias de datos de producción y consumo de plantas solares durante la madrugada. La solución combina técnicas de web scraping, procesamiento de datos ETL y gestión de bases de datos, operando completamente en segundo plano sin intervención humana.\n\nComponentes Principales\n\n\n\n\n\ngraph LR\n  A[Servidor Linux] --&gt; B[Crontab]\n  B --&gt; C[Script Shell]\n  C --&gt; D[Scraping con Selenium]\n  D --&gt; E[Procesamiento XLS]\n  E --&gt; F[MySQL]\n  F --&gt; G[Limpieza de Archivos]",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#mecanismos-de-robustez",
+    "href": "automatizacion.html#mecanismos-de-robustez",
+    "title": "Automatización de Informes",
+    "section": "Mecanismos de Robustez",
+    "text": "Mecanismos de Robustez\n\n1. Manejo de Errores\n\nReintentos automáticos en fallos de conexión\nValidación de columnas esenciales en Excel\nRegistro detallado con códigos de color:\n\ndef log_color(mensaje, color, nivel=logging.INFO):\n    logging.log(nivel, f\"{color}{mensaje}{COLOR_RESET}\")\n\n\n2. Seguridad de Datos\n\nTransacciones ACID en MySQL\nManejo de valores nulos:\n\nrow['capacidad_kw'] if pd.notna(row['capacidad_kw']) else None\n\nEliminación verificada de archivos procesados",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#proceso-de-carga-en-mysql",
+    "href": "automatizacion.html#proceso-de-carga-en-mysql",
+    "title": "Automatización de Informes",
+    "section": "Proceso de Carga en MySQL",
+    "text": "Proceso de Carga en MySQL\n\nDetalle del Flujo de Datos\n\n\n\n\n\ngraph TB\n    A[Archivo XLS Descargado] --&gt; B{Procesamiento}\n    B --&gt; C[Extracción de Columnas Clave]\n    C --&gt; D[Validación de Datos]\n    D --&gt; E[Conversión de Tipos]\n    E --&gt; F[Limpieza de Valores Nulos]\n    F --&gt; G[Generación de Query SQL]\n    G --&gt; H[Inserción en MySQL]\n    H --&gt; I[Commit Transacción]\n    I --&gt; J[Eliminación Segura del Archivo]\n\n\n\n\n\n\n\n\nExplicación de la Consulta SQL\nINSERT INTO InformesDiariosGoodWe (\n    fecha,         # Fecha del informe (YYYY-MM-DD)\n    hora,          # Hora de registro (HH:MM)\n    planta,        # Número de planta (1/2)\n    clasificacion, # Tipo de registro (Ej: \"Generación\")\n    capacidad_kw,  # Capacidad instalada (kW)\n    generacion_kwh,# Energía generada (kWh)\n    salida_kwh,    # Energía entregada a red (kWh)\n    vender_kwh,    # Energía vendida (kWh)\n    comprar_kwh,   # Energía comprada (kWh)\n    consumo_kwh,   # Consumo total (kWh)\n    autoconsumo_fv_kwh, # Autoconsumo fotovoltaico (kWh)\n    proporcion_personal, # % de uso personal\n    contribution_ratio,  # Ratio de contribución\n    ingresos             # Ingresos monetarios ()\n) \nVALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)\n\nMapeo de Datos\n\n\n\n\n\n\n\n\n\nCampo MySQL\nOrigen Excel\nTipo Dato\nRestricciones\n\n\n\n\nfecha\nNombre del archivo (DD_MM_YYYY)\nDATE\nNOT NULL\n\n\nhora\nPrimera columna del XLS\nVARCHAR\n-\n\n\nplanta\nSufijo _PlantaX en nombre archivo\nINT\nCHECK (1 ≤ planta ≤ 2)\n\n\nclasificacion\nColumna \"Clasificación\"\nVARCHAR\n-\n\n\ncapacidad_kw\nColumna \"Capacidad(kW)\"\nFLOAT\nDEFAULT 0\n\n\n\n\n\n\nMecanismos de Seguridad\n1- Validación de Tipos: Conversión explícita a tipos MySQL\ndf['capacidad_kw'] = pd.to_numeric(df['Capacidad(kW)'], errors='coerce')\n2- Manejo de Nulos:\nrow['generacion_kwh'] if pd.notna(row['generacion_kwh']) else None\n3- Transacciones ACID:\ntry:\n    cursor.execute(query, values)\n    con.commit()  # Confirmación explícita\nexcept:\n    con.rollback()",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  },
+  {
+    "objectID": "automatizacion.html#flujo-completo",
+    "href": "automatizacion.html#flujo-completo",
+    "title": "Automatización de Informes",
+    "section": "Flujo Completo",
+    "text": "Flujo Completo\n\n\n\n\n\nsequenceDiagram\n    participant Script\n    participant Excel\n    participant MySQL\n    \n    Script-&gt;&gt;Excel: Leer archivo XLS\n    Excel-&gt;&gt;Script: DataFrame con 14 columnas\n    Script-&gt;&gt;Script: Normalizar nombres de campos\n    Script-&gt;&gt;Script: Eliminar filas corruptas\n    Script-&gt;&gt;MySQL: Establecer conexión\n    loop Para cada fila\n        Script-&gt;&gt;MySQL: Ejecutar INSERT\n    end\n    MySQL-&gt;&gt;Script: Confirmar transacción\n    Script-&gt;&gt;Excel: Eliminar archivo procesado",
+    "crumbs": [
+      "Desarrollo",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Automatización de Informes</span>"
+    ]
+  }
+]
