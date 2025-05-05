@@ -5,25 +5,26 @@ project:
 website:
   title: "Sandra Caeiro Pires"
   description: "Portfolio de Analista de Datos / Data Scientist"
-  favicon: Images/favicon.png
+  favicon: Images/DATA.png
 
   # INCLUIMOS LOS SUB-PROYECTOS COMO PÁGINAS
   navbar:
     background: "#33546D"
     foreground: "#ffffff"
     search: true
-    logo: Images/Sandra.png
+    logo: Images/DATA.png
     left:
       - text: "Inicio"
         file: index.qmd
+      - text: "Habilidades"
+        file: skills.qmd
       - text: "Proyectos"
         menu:
           - text: "Visualización y Automatización en Lacor"
             file: DocumentacionLacor/index.html
           - text: "Extracción de datos de Consumos WebScraping en Lacor"
             file: DocumentacionConsumos/index.html
-      - text: "Habilidades"
-        file: skills.qmd
+
 
     right:
       - icon: linkedin
@@ -55,9 +56,6 @@ format:
     toc-depth: 3
     number-sections: false 
     section-divs: true
-    code-link: true
-    code-copy: true
-    code-tools: true
     highlight-style: textmate
     fontsize: 1em
     linestretch: 1.5

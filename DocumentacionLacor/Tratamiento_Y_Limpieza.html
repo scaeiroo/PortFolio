@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c5ba3ce9f3bca652ae79623c25ac8478.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-95b62f042ab9d4bf515f17af017dd8d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -277,7 +277,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Automatizacion_Proceso.html">Desarrollo</a></li><li class="breadcrumb-item"><a href="./Tratamiento_Y_Limpieza.html"><span class="chapter-title">Tratamiento y Limpieza de Datos</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Tratamiento y Limpieza de Datos</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title"><span class="chapter-title">Tratamiento y Limpieza de Datos</span></h1>
 </div>
 
 
@@ -391,8 +391,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <hr>
 
 
-<!-- -->
-
 </section>
 
 </main> <!-- /main -->
@@ -483,57 +481,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -875,142 +822,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-title">Funciones Adicionales</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb11" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Tratamiento y Limpieza de Datos"</span></span>
-<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> html_document</span></span>
-<span id="cb11-4"><a href="#cb11-4" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb11-5"><a href="#cb11-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb11-6"><a href="#cb11-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-7"><a href="#cb11-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## [2_Mantener_DatosActualizados.R]{style="color:#5DAFD5;"}</span></span>
-<span id="cb11-8"><a href="#cb11-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-9"><a href="#cb11-9" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Carga y Actualización de Datos:]{style="color:#D99A2B;"}</span></span>
-<span id="cb11-10"><a href="#cb11-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>Este script está diseñado para actualizar y fusionar datos de producción, asegurando que los archivos se mantengan al día con la información más reciente.</span>
-<span id="cb11-12"><a href="#cb11-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-13"><a href="#cb11-13" aria-hidden="true" tabindex="-1"></a><span class="ss">0.  </span>**Creacio del RData Diario** Antes de iniciar el proceso sacamos los datos del mismo dia y cerramos conexiones ya que la consulta ya esta realizada.</span>
-<span id="cb11-14"><a href="#cb11-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-15"><a href="#cb11-15" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-16"><a href="#cb11-16" aria-hidden="true" tabindex="-1"></a>      <span class="co">#===========================================================#</span></span>
-<span id="cb11-17"><a href="#cb11-17" aria-hidden="true" tabindex="-1"></a>      <span class="co">#         CREAR RDATA DIARIO Y CERRAR CONEXIONES            #</span></span>
-<span id="cb11-18"><a href="#cb11-18" aria-hidden="true" tabindex="-1"></a>      <span class="co">#===========================================================#</span></span>
-<span id="cb11-19"><a href="#cb11-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">Actualizar_Datos_ProduccionDiario</span>(conn)</span>
-<span id="cb11-20"><a href="#cb11-20" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Desconexion SQLServer</span></span>
-<span id="cb11-21"><a href="#cb11-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">dbDisconnectAllSQLServer</span>()</span>
-<span id="cb11-22"><a href="#cb11-22" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-23"><a href="#cb11-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-24"><a href="#cb11-24" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Cargar los DataFrames:** El primer paso es cargar los archivos de producción diaria y total para el día actual. Usamos <span class="in">`Sys.Date()`</span> para obtener la fecha actual y luego cargamos los archivos correspondientes.</span>
-<span id="cb11-25"><a href="#cb11-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-26"><a href="#cb11-26" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-27"><a href="#cb11-27" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Obtener la fecha actual 📅</span></span>
-<span id="cb11-28"><a href="#cb11-28" aria-hidden="true" tabindex="-1"></a>      fecha_actual <span class="ot">&lt;-</span> <span class="fu">Sys.Date</span>()</span>
-<span id="cb11-29"><a href="#cb11-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-30"><a href="#cb11-30" aria-hidden="true" tabindex="-1"></a>      archivo_diario <span class="ot">&lt;-</span> <span class="fu">paste0</span>(<span class="st">"./Output/Produccion_Diario_DIA_"</span>, fecha_actual, <span class="st">".RData"</span>)</span>
-<span id="cb11-31"><a href="#cb11-31" aria-hidden="true" tabindex="-1"></a>      archivo_total <span class="ot">&lt;-</span> <span class="st">"./Output/Produccion_TOTAL.RData"</span></span>
-<span id="cb11-32"><a href="#cb11-32" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-33"><a href="#cb11-33" aria-hidden="true" tabindex="-1"></a>      <span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"🔄 Iniciando la Fusión de Datos para actualizar el archivo:</span><span class="sc">\n</span><span class="st">"</span>))</span>
-<span id="cb11-34"><a href="#cb11-34" aria-hidden="true" tabindex="-1"></a>      DF_ProduccionDiario <span class="ot">&lt;-</span> <span class="fu">CargarRData</span>(archivo_diario)</span>
-<span id="cb11-35"><a href="#cb11-35" aria-hidden="true" tabindex="-1"></a>      DF_Produccion_TOTAL <span class="ot">&lt;-</span> <span class="fu">CargarRData</span>(archivo_total)</span>
-<span id="cb11-36"><a href="#cb11-36" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-37"><a href="#cb11-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-38"><a href="#cb11-38" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Fusión de Datos:** Una vez cargados los datos, se verifica la estructura de los DataFrames y se ajustan las columnas para garantizar que ambos DataFrames tengan el mismo formato. Esto se hace eliminando la última columna del DataFrame diario y renombrando las columnas para que coincidan con el DataFrame total.</span>
-<span id="cb11-39"><a href="#cb11-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-40"><a href="#cb11-40" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-41"><a href="#cb11-41" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Verificación de la estructura de los datos y renombrado de columnas</span></span>
-<span id="cb11-42"><a href="#cb11-42" aria-hidden="true" tabindex="-1"></a>    columnas_Produccion_diario_df <span class="ot">&lt;-</span> <span class="fu">colnames</span>(ProduccionDiarioDF)</span>
-<span id="cb11-43"><a href="#cb11-43" aria-hidden="true" tabindex="-1"></a>    columnas_Produccion_total_df <span class="ot">&lt;-</span> <span class="fu">colnames</span>(ProduccionDiario_TOTAL_DF)</span>
-<span id="cb11-44"><a href="#cb11-44" aria-hidden="true" tabindex="-1"></a>    ProduccionDiarioDF <span class="ot">&lt;-</span> ProduccionDiarioDF[, <span class="sc">-</span><span class="fu">ncol</span>(ProduccionDiarioDF)]</span>
-<span id="cb11-45"><a href="#cb11-45" aria-hidden="true" tabindex="-1"></a>    <span class="fu">names</span>(ProduccionDiarioDF) <span class="ot">&lt;-</span> columnas_Produccion_total_df</span>
-<span id="cb11-46"><a href="#cb11-46" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-47"><a href="#cb11-47" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-48"><a href="#cb11-48" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Eliminación de Duplicados:** Después de fusionar los datos, se eliminan posibles filas duplicadas utilizando la función <span class="in">`FiltrarDuplicadosTOTALDIARIO`</span> para garantizar que los datos sean únicos y no haya redundancias.</span>
-<span id="cb11-49"><a href="#cb11-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-50"><a href="#cb11-50" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-51"><a href="#cb11-51" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Eliminación de filas duplicadas</span></span>
-<span id="cb11-52"><a href="#cb11-52" aria-hidden="true" tabindex="-1"></a>    ProduccionDiario_TOTAL_DF <span class="ot">&lt;-</span> <span class="fu">FiltrarDuplicadosTOTALDIARIO</span>(ProduccionDiario_TOTAL_DF, ProduccionDiarioDF)</span>
-<span id="cb11-53"><a href="#cb11-53" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-54"><a href="#cb11-54" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-55"><a href="#cb11-55" aria-hidden="true" tabindex="-1"></a><span class="ss">4.  </span>**Guardar y Sobrescribir los Datos:** Finalmente, los datos fusionados y limpios se guardan en los archivos correspondientes, tanto en formato <span class="in">`.RData`</span> como en <span class="in">`.CSV`</span> para su posterior uso y análisis.</span>
-<span id="cb11-56"><a href="#cb11-56" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-57"><a href="#cb11-57" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-58"><a href="#cb11-58" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Guardar archivos actualizados</span></span>
-<span id="cb11-59"><a href="#cb11-59" aria-hidden="true" tabindex="-1"></a>    <span class="fu">GuardarRData</span>(ProduccionDiarioDF, archivo_diario)</span>
-<span id="cb11-60"><a href="#cb11-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">GuardarRData</span>(ProduccionDiario_TOTAL_DF, archivo_total)</span>
-<span id="cb11-61"><a href="#cb11-61" aria-hidden="true" tabindex="-1"></a>    <span class="fu">GuardarCSV</span>(ProduccionDiario_TOTAL_DF, <span class="st">"Produccion_Diario_TOTAL"</span>, <span class="st">"./Output/CSV"</span>)</span>
-<span id="cb11-62"><a href="#cb11-62" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-63"><a href="#cb11-63" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-64"><a href="#cb11-64" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb11-65"><a href="#cb11-65" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-66"><a href="#cb11-66" aria-hidden="true" tabindex="-1"></a><span class="fu">## [3_Trasformacion_Y_Limpieza.R]{style="color:#5DAFD5;"}</span></span>
-<span id="cb11-67"><a href="#cb11-67" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-68"><a href="#cb11-68" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Transformaciones y Limpiezas de Datos:]{style="color:#D99A2B;"}</span></span>
-<span id="cb11-69"><a href="#cb11-69" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-70"><a href="#cb11-70" aria-hidden="true" tabindex="-1"></a>Este script realiza la transformación y limpieza de varios DataFrames relacionados con los datos tanto de **Producción** como lo **Planificado.**</span>
-<span id="cb11-71"><a href="#cb11-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-72"><a href="#cb11-72" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Carga de Datos:]{style="color:#F2B134;"}</span></span>
-<span id="cb11-73"><a href="#cb11-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-74"><a href="#cb11-74" aria-hidden="true" tabindex="-1"></a>El primer paso consiste en cargar los datos de las diferentes fuentes, incluyendo archivos <span class="in">`.RData`</span> y <span class="in">`.CSV`</span>. Esto proporciona los datos necesarios para realizar las transformaciones posteriores.</span>
-<span id="cb11-75"><a href="#cb11-75" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-76"><a href="#cb11-76" aria-hidden="true" tabindex="-1"></a>  <span class="in">``` r        </span></span>
-<span id="cb11-77"><a href="#cb11-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">cat</span>(<span class="fu">paste</span>(<span class="st">"🔄 Iniciando la Limpieza de Datos de OLANET:</span><span class="sc">\n</span><span class="st">"</span>))</span>
-<span id="cb11-78"><a href="#cb11-78" aria-hidden="true" tabindex="-1"></a>  DF_CANTIDAD <span class="ot">&lt;-</span><span class="fu">CargarRData</span>(<span class="st">"./Output/DatosPrevistos/Datos_OF_Cantidad.RData"</span>)</span>
-<span id="cb11-79"><a href="#cb11-79" aria-hidden="true" tabindex="-1"></a>  DF_PRODUCIDO <span class="ot">&lt;-</span> <span class="fu">CargarCSV</span>(<span class="st">"./Output/CSV/Produccion_TOTAL.csv"</span>)</span>
-<span id="cb11-80"><a href="#cb11-80" aria-hidden="true" tabindex="-1"></a>  DF_PLANIFICADO <span class="ot">&lt;-</span> <span class="fu">CargarCSV</span>(<span class="st">"./Output/CSV/Olanet_Planificado.csv"</span>)</span>
-<span id="cb11-81"><a href="#cb11-81" aria-hidden="true" tabindex="-1"></a>  <span class="in">```</span></span>
-<span id="cb11-82"><a href="#cb11-82" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-83"><a href="#cb11-83" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Tranformaciones y Limpieza:]{style="color:#F2B134;"}</span></span>
-<span id="cb11-84"><a href="#cb11-84" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-85"><a href="#cb11-85" aria-hidden="true" tabindex="-1"></a><span class="ss">1.  </span>**Procesamiento de Datos Planificados con Cantidades:** Se fusiona el DataFrame <span class="in">`DF_PLANIFICADO`</span> con la información de cantidades previstas de <span class="in">`DF_CANTIDAD`</span>. Esto permite enriquecer los datos planificados con información sobre las cantidades que se esperan producir.</span>
-<span id="cb11-86"><a href="#cb11-86" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-87"><a href="#cb11-87" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-88"><a href="#cb11-88" aria-hidden="true" tabindex="-1"></a>           DF_PLANIFICADO_CANTIDAD <span class="ot">&lt;-</span> <span class="fu">merge</span>(DF_PLANIFICADO, DF_CANTIDAD[, <span class="fu">c</span>(<span class="st">"smOrdenId"</span>, <span class="st">"SmfaseId"</span>, <span class="st">"smMaterialId"</span>, <span class="st">"smMaterialnme"</span>, <span class="st">"CantidadaProducirnbr"</span>)], </span>
-<span id="cb11-89"><a href="#cb11-89" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">by.x =</span> <span class="fu">c</span>(<span class="st">"OF"</span>, <span class="st">"FASE"</span>), </span>
-<span id="cb11-90"><a href="#cb11-90" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">by.y =</span> <span class="fu">c</span>(<span class="st">"smOrdenId"</span>, <span class="st">"SmfaseId"</span>), </span>
-<span id="cb11-91"><a href="#cb11-91" aria-hidden="true" tabindex="-1"></a>                                        <span class="at">all.x =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb11-92"><a href="#cb11-92" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-93"><a href="#cb11-93" aria-hidden="true" tabindex="-1"></a>        <span class="fu">colnames</span>(DF_PLANIFICADO_CANTIDAD)[<span class="fu">colnames</span>(DF_PLANIFICADO_CANTIDAD) <span class="sc">==</span> <span class="st">"CantidadaProducirnbr"</span>] <span class="ot">&lt;-</span> <span class="st">"CantidadPrevista"</span></span>
-<span id="cb11-94"><a href="#cb11-94" aria-hidden="true" tabindex="-1"></a>        DF_PLANIFICADO_CANTIDAD <span class="ot">&lt;-</span> DF_PLANIFICADO_CANTIDAD[, <span class="sc">-</span><span class="fu">c</span>(<span class="fu">ncol</span>(DF_PLANIFICADO_CANTIDAD)<span class="sc">-</span><span class="dv">1</span>, <span class="fu">ncol</span>(DF_PLANIFICADO_CANTIDAD)<span class="sc">-</span><span class="dv">2</span>)]</span>
-<span id="cb11-95"><a href="#cb11-95" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-96"><a href="#cb11-96" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-97"><a href="#cb11-97" aria-hidden="true" tabindex="-1"></a><span class="ss">2.  </span>**Filtrado de Datos Planificados:** Se aplica un filtro para eliminar referencias que comienzan con "MTO" o que contienen espacios, lo que asegura que solo se consideren referencias válidas en el análisis.</span>
-<span id="cb11-98"><a href="#cb11-98" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-99"><a href="#cb11-99" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-100"><a href="#cb11-100" aria-hidden="true" tabindex="-1"></a>       DF_PLANIFICADO_CANTIDAD <span class="ot">&lt;-</span> DF_PLANIFICADO_CANTIDAD <span class="sc">%&gt;%</span></span>
-<span id="cb11-101"><a href="#cb11-101" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^MTO"</span>, REFERENCIA) <span class="sc">&amp;</span> <span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"</span><span class="sc">\\</span><span class="st">s"</span>, REFERENCIA))</span>
-<span id="cb11-102"><a href="#cb11-102" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-103"><a href="#cb11-103" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-104"><a href="#cb11-104" aria-hidden="true" tabindex="-1"></a><span class="ss">3.  </span>**Limpieza de Datos de Producción:** Se procesan los datos de producción, asegurando que el campo OF contiene solo valores numéricos válidos y filtrando aquellos que empiezan con "24-". Además, se eliminan las filas que no tienen valor en MATERIAL_SALIDA.</span>
-<span id="cb11-105"><a href="#cb11-105" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-106"><a href="#cb11-106" aria-hidden="true" tabindex="-1"></a>    <span class="in">``` r</span></span>
-<span id="cb11-107"><a href="#cb11-107" aria-hidden="true" tabindex="-1"></a>      DF_PRODUCIDO <span class="ot">&lt;-</span> DF_PRODUCIDO <span class="sc">%&gt;%</span></span>
-<span id="cb11-108"><a href="#cb11-108" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">is.na</span>(OF) <span class="sc">&amp;</span> <span class="fu">grepl</span>(<span class="st">"^[0-9]+$"</span>, OF)) <span class="sc">%&gt;%</span></span>
-<span id="cb11-109"><a href="#cb11-109" aria-hidden="true" tabindex="-1"></a>      <span class="fu">mutate</span>(<span class="at">OF =</span> <span class="fu">as.numeric</span>(OF)) <span class="sc">%&gt;%</span></span>
-<span id="cb11-110"><a href="#cb11-110" aria-hidden="true" tabindex="-1"></a>      <span class="fu">filter</span>(<span class="sc">!</span><span class="fu">grepl</span>(<span class="st">"^24-"</span>, OF))</span>
-<span id="cb11-111"><a href="#cb11-111" aria-hidden="true" tabindex="-1"></a>    DF_PRODUCIDO <span class="ot">&lt;-</span> DF_PRODUCIDO[<span class="sc">!</span><span class="fu">is.na</span>(DF_PRODUCIDO<span class="sc">$</span>MATERIAL_SALIDA), ]</span>
-<span id="cb11-112"><a href="#cb11-112" aria-hidden="true" tabindex="-1"></a>    <span class="in">```</span></span>
-<span id="cb11-113"><a href="#cb11-113" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-114"><a href="#cb11-114" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Guardar los Archivos Resultantes:]{style="color:#F2B134;"}</span></span>
-<span id="cb11-115"><a href="#cb11-115" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-116"><a href="#cb11-116" aria-hidden="true" tabindex="-1"></a>Después de realizar todas las transformaciones y limpiezas necesarias, los DataFrames resultantes se guardan en archivos <span class="in">`.CSV`</span> para su posterior análisis y uso.</span>
-<span id="cb11-117"><a href="#cb11-117" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-118"><a href="#cb11-118" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb11-119"><a href="#cb11-119" aria-hidden="true" tabindex="-1"></a><span class="co"># Guardar los DataFrames resultantes en CSV</span></span>
-<span id="cb11-120"><a href="#cb11-120" aria-hidden="true" tabindex="-1"></a><span class="fu">GuardarCSV</span>(DF_PLANIFICADO_CANTIDAD,<span class="st">"Olanet_Planificado"</span>,<span class="st">"./OlanetDatos"</span>)</span>
-<span id="cb11-121"><a href="#cb11-121" aria-hidden="true" tabindex="-1"></a><span class="fu">GuardarCSV</span>(DF_PRODUCIDO,<span class="st">"Olanet_Producido"</span>,<span class="st">"./OlanetDatos"</span>)</span>
-<span id="cb11-122"><a href="#cb11-122" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb11-123"><a href="#cb11-123" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-124"><a href="#cb11-124" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb11-125"><a href="#cb11-125" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-126"><a href="#cb11-126" aria-hidden="true" tabindex="-1"></a><span class="fu">## [Resumen Final]{style="color:#5DAFD5;"}</span></span>
-<span id="cb11-127"><a href="#cb11-127" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-128"><a href="#cb11-128" aria-hidden="true" tabindex="-1"></a>En resumen, este conjunto de scripts realiza las siguientes operaciones:</span>
-<span id="cb11-129"><a href="#cb11-129" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-130"><a href="#cb11-130" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Carga de datos de diferentes fuentes.</span>
-<span id="cb11-131"><a href="#cb11-131" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Fusión de datos, eliminación de duplicados y valores no validos</span>
-<span id="cb11-132"><a href="#cb11-132" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Guardado de los datos procesados en archivos <span class="in">`.CSV`</span> para su uso posterior.</span>
-<span id="cb11-133"><a href="#cb11-133" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb11-134"><a href="#cb11-134" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 
 

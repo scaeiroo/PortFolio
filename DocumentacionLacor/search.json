@@ -22,11 +22,33 @@
     ]
   },
   {
+    "objectID": "index.html#objetivos-del-proyecto",
+    "href": "index.html#objetivos-del-proyecto",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Objetivos del Proyecto",
+    "text": "Objetivos del Proyecto\nEl proyecto se enfoca en optimizar los procesos industriales mediante el análisis de datos planificados y producidos. Se estructura en torno a dos objetivos principales:\n1- Desarrollo de un sistema integral para el análisis de secuencias productivas:\n\nComparación entre la planificación y la producción real\nIdentificación de desviaciones para la mejora continua\nOptimización de recursos y procesos industriales\n\n2- Implementación de una solución automatizada que permita:\n\nExtracción diaria de datos de planificación y producción\nLimpieza y validación de los datos históricos\nAlmacenamiento centralizado en una base de datos\nVisualización clara y accesible para facilitar la toma de decisiones",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
     "objectID": "index.html#configuración-del-entorno",
     "href": "index.html#configuración-del-entorno",
     "title": "LacorDual Sandra Caeiro",
     "section": "Configuración del Entorno",
     "text": "Configuración del Entorno\nLa primera fase consistió en crear una máquina virtual con Ubuntu 24.04.1. En ella, instalé las herramientas necesarias para trabajar en este proyecto:\n\nR 4.4.2: Herramienta principal para la manipulación y análisis de datos.\nRStudio: Entorno de desarrollo integrado (IDE) utilizado para trabajar con R.\nPython 3.10.16: Utilizado para scripts adicionales y la integración con otras herramientas.\nGitHub Desktop: Para el control de versiones y la colaboración en el proyecto.\nVisual Studio Code: Utilizado principalmente para el desarrollo de scripts en Python y otros lenguajes.\n\n\n    \n\nEste entorno proporcionó una base robusta y flexible, permitiendo realizar pruebas y ajustes en las soluciones de manera eficiente. Además, la configuración de la máquina virtual permitió que los recursos del sistema se aislaran, mejorando el rendimiento y la seguridad de los procesos.",
+    "crumbs": [
+      "Introducción",
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#metodología-de-trabajo",
+    "href": "index.html#metodología-de-trabajo",
+    "title": "LacorDual Sandra Caeiro",
+    "section": "Metodología de Trabajo",
+    "text": "Metodología de Trabajo\nEl proyecto se desarrolla siguiendo una metodología iterativa, basada en etapas definidas que garantizan un avance ordenado y validado:\n1- Extracción automatizada:\n\nImplementación de sistemas que recojan datos de planificación y producción de forma diaria\nEstandarización del formato de entrada de datos\n\n2- Limpieza y comprobación de datos:\n\nDetección y resolución de duplicados e inconsistencias\nValidación de la calidad de los datos históricos recopilados\n\n3- Centralización:\n\nCreación de una base de datos estructurada\nAutomatización de los procesos de carga y actualización de información\n\n4- Visualización:\n\nDesarrollo de gráficos y dashboards sencillos\nFacilitar la interpretación y el análisis por parte de los usuarios finales\nEste enfoque modular permite construir una solución robusta y escalable, orientada a maximizar el valor de los datos industriales.",
     "crumbs": [
       "Introducción",
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
@@ -316,28 +338,6 @@
     "crumbs": [
       "Visualización",
       "<span class='chapter-number'>9</span>  <span class='chapter-title'>Visualización en Grafana</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#objetivos-del-proyecto",
-    "href": "index.html#objetivos-del-proyecto",
-    "title": "LacorDual Sandra Caeiro",
-    "section": "Objetivos del Proyecto",
-    "text": "Objetivos del Proyecto\nEl proyecto se enfoca en optimizar los procesos industriales mediante el análisis de datos planificados y producidos. Se estructura en torno a dos objetivos principales:\n1- Desarrollo de un sistema integral para el análisis de secuencias productivas:\n\nComparación entre la planificación y la producción real\nIdentificación de desviaciones para la mejora continua\nOptimización de recursos y procesos industriales\n\n2- Implementación de una solución automatizada que permita:\n\nExtracción diaria de datos de planificación y producción\nLimpieza y validación de los datos históricos\nAlmacenamiento centralizado en una base de datos\nVisualización clara y accesible para facilitar la toma de decisiones",
-    "crumbs": [
-      "Introducción",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#metodología-de-trabajo",
-    "href": "index.html#metodología-de-trabajo",
-    "title": "LacorDual Sandra Caeiro",
-    "section": "Metodología de Trabajo",
-    "text": "Metodología de Trabajo\nEl proyecto se desarrolla siguiendo una metodología iterativa, basada en etapas definidas que garantizan un avance ordenado y validado:\n1- Extracción automatizada:\n\nImplementación de sistemas que recojan datos de planificación y producción de forma diaria\nEstandarización del formato de entrada de datos\n\n2- Limpieza y comprobación de datos:\n\nDetección y resolución de duplicados e inconsistencias\nValidación de la calidad de los datos históricos recopilados\n\n3- Centralización:\n\nCreación de una base de datos estructurada\nAutomatización de los procesos de carga y actualización de información\n\n4- Visualización:\n\nDesarrollo de gráficos y dashboards sencillos\nFacilitar la interpretación y el análisis por parte de los usuarios finales\nEste enfoque modular permite construir una solución robusta y escalable, orientada a maximizar el valor de los datos industriales.",
-    "crumbs": [
-      "Introducción",
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Introducción</span>"
     ]
   }
 ]

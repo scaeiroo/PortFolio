@@ -72,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-c5ba3ce9f3bca652ae79623c25ac8478.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-95b62f042ab9d4bf515f17af017dd8d8.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -276,7 +276,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./Automatizacion_Proceso.html">Desarrollo</a></li><li class="breadcrumb-item"><a href="./PreparacionDatos_Visualizacion.html"><span class="chapter-title">Preparacion Datos</span></a></li></ol></nav>
 <div class="quarto-title">
-<div class="quarto-title-block"><div><h1 class="title"><span class="chapter-title">Preparacion Datos</span></h1><button type="button" class="btn code-tools-button" id="quarto-code-tools-source"><i class="bi"></i> Code</button></div></div>
+<h1 class="title"><span class="chapter-title">Preparacion Datos</span></h1>
 </div>
 
 
@@ -483,8 +483,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb11-11"><a href="#cb11-11" aria-hidden="true" tabindex="-1"></a>}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
-<!-- -->
-
 </section>
 </section>
 </section>
@@ -577,57 +575,6 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       container: window.document.getElementById('quarto-embedded-source-code-modal')
     });
     clipboardModal.on('success', onCopySuccess);
-  }
-  const viewSource = window.document.getElementById('quarto-view-source') ||
-                     window.document.getElementById('quarto-code-tools-source');
-  if (viewSource) {
-    const sourceUrl = viewSource.getAttribute("data-quarto-source-url");
-    viewSource.addEventListener("click", function(e) {
-      if (sourceUrl) {
-        // rstudio viewer pane
-        if (/\bcapabilities=\b/.test(window.location)) {
-          window.open(sourceUrl);
-        } else {
-          window.location.href = sourceUrl;
-        }
-      } else {
-        const modal = new bootstrap.Modal(document.getElementById('quarto-embedded-source-code-modal'));
-        modal.show();
-      }
-      return false;
-    });
-  }
-  function toggleCodeHandler(show) {
-    return function(e) {
-      const detailsSrc = window.document.querySelectorAll(".cell > details > .sourceCode");
-      for (let i=0; i<detailsSrc.length; i++) {
-        const details = detailsSrc[i].parentElement;
-        if (show) {
-          details.open = true;
-        } else {
-          details.removeAttribute("open");
-        }
-      }
-      const cellCodeDivs = window.document.querySelectorAll(".cell > .sourceCode");
-      const fromCls = show ? "hidden" : "unhidden";
-      const toCls = show ? "unhidden" : "hidden";
-      for (let i=0; i<cellCodeDivs.length; i++) {
-        const codeDiv = cellCodeDivs[i];
-        if (codeDiv.classList.contains(fromCls)) {
-          codeDiv.classList.remove(fromCls);
-          codeDiv.classList.add(toCls);
-        } 
-      }
-      return false;
-    }
-  }
-  const hideAllCode = window.document.getElementById("quarto-hide-all-code");
-  if (hideAllCode) {
-    hideAllCode.addEventListener("click", toggleCodeHandler(false));
-  }
-  const showAllCode = window.document.getElementById("quarto-show-all-code");
-  if (showAllCode) {
-    showAllCode.addEventListener("click", toggleCodeHandler(true));
   }
     var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
     var mailtoRegex = new RegExp(/^mailto:/);
@@ -969,244 +916,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         <span class="nav-page-text"><span class="chapter-title">Visualización de Datos</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
-</nav><div class="modal fade" id="quarto-embedded-source-code-modal" tabindex="-1" aria-labelledby="quarto-embedded-source-code-modal-label" aria-hidden="true"><div class="modal-dialog modal-dialog-scrollable"><div class="modal-content"><div class="modal-header"><h5 class="modal-title" id="quarto-embedded-source-code-modal-label">Source Code</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="">
-<div class="sourceCode" id="cb12" data-shortcodes="false"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "Preparacion Datos"</span></span>
-<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> html_document</span></span>
-<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="an">editor:</span><span class="co"> visual</span></span>
-<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
-<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="fu">## [4_ProcesarDatos.R]{style="color:#5DAFD5;"}</span></span>
-<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-9"><a href="#cb12-9" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Procesamiento de Datos]{style="color:#D99A2B;"}</span></span>
-<span id="cb12-10"><a href="#cb12-10" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-11"><a href="#cb12-11" aria-hidden="true" tabindex="-1"></a>Este script se encarga de cargar, transformar, fusionar y enriquecer los datos</span>
-<span id="cb12-12"><a href="#cb12-12" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-13"><a href="#cb12-13" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Carga de Datos]{style="color:#F2B134;"}</span></span>
-<span id="cb12-14"><a href="#cb12-14" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-15"><a href="#cb12-15" aria-hidden="true" tabindex="-1"></a>**Función Inicial:** El script inicia cargando los datos básicos de producción desde archivos CSV:</span>
-<span id="cb12-16"><a href="#cb12-16" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-17"><a href="#cb12-17" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-18"><a href="#cb12-18" aria-hidden="true" tabindex="-1"></a>Olanet_Producido <span class="ot">&lt;-</span> <span class="fu">CargarCSV</span>(<span class="st">"./OlanetDatos/Olanet_Producido.csv"</span>)</span>
-<span id="cb12-19"><a href="#cb12-19" aria-hidden="true" tabindex="-1"></a>Olanet_Planificado <span class="ot">&lt;-</span> <span class="fu">CargarCSV</span>(<span class="st">"./OlanetDatos/Olanet_Planificado.csv"</span>)</span>
-<span id="cb12-20"><a href="#cb12-20" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-21"><a href="#cb12-21" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-22"><a href="#cb12-22" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Limpieza y Transformación Inicial]{style="color:#F2B134;"}</span></span>
-<span id="cb12-23"><a href="#cb12-23" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-24"><a href="#cb12-24" aria-hidden="true" tabindex="-1"></a>**Normalización de identificadores:** Se normalizan los campos EXPEDIENTE y OF para asegurar que sean numéricos:</span>
-<span id="cb12-25"><a href="#cb12-25" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-26"><a href="#cb12-26" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-27"><a href="#cb12-27" aria-hidden="true" tabindex="-1"></a>Olanet_Producido<span class="sc">$</span>EXPEDIENTE <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, Olanet_Producido<span class="sc">$</span>EXPEDIENTE))</span>
-<span id="cb12-28"><a href="#cb12-28" aria-hidden="true" tabindex="-1"></a>Olanet_Planificado<span class="sc">$</span>EXPEDIENTE <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, Olanet_Planificado<span class="sc">$</span>EXPEDIENTE))</span>
-<span id="cb12-29"><a href="#cb12-29" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-30"><a href="#cb12-30" aria-hidden="true" tabindex="-1"></a>Olanet_Producido<span class="sc">$</span>OF <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, Olanet_Producido<span class="sc">$</span>OF))</span>
-<span id="cb12-31"><a href="#cb12-31" aria-hidden="true" tabindex="-1"></a>Olanet_Planificado<span class="sc">$</span>OF <span class="ot">&lt;-</span> <span class="fu">as.numeric</span>(<span class="fu">gsub</span>(<span class="st">"[^0-9]"</span>, <span class="st">""</span>, Olanet_Planificado<span class="sc">$</span>OF))</span>
-<span id="cb12-32"><a href="#cb12-32" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-33"><a href="#cb12-33" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-34"><a href="#cb12-34" aria-hidden="true" tabindex="-1"></a>Esta normalización elimina cualquier carácter no numérico y convierte los valores a tipo numérico, facilitando las operaciones posteriores.</span>
-<span id="cb12-35"><a href="#cb12-35" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-36"><a href="#cb12-36" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Agregación de Datos Producidos]{style="color:#F2B134;"}</span></span>
-<span id="cb12-37"><a href="#cb12-37" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-38"><a href="#cb12-38" aria-hidden="true" tabindex="-1"></a>**Creación de resumen por claves:** Se agregan los datos de producción por claves principales:</span>
-<span id="cb12-39"><a href="#cb12-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-40"><a href="#cb12-40" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-41"><a href="#cb12-41" aria-hidden="true" tabindex="-1"></a>Olanet_Producido_Agg <span class="ot">&lt;-</span> Olanet_Producido <span class="sc">%&gt;%</span></span>
-<span id="cb12-42"><a href="#cb12-42" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb12-43"><a href="#cb12-43" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaInicio_pr =</span> <span class="fu">as.POSIXct</span>(FechaInicio_pr, <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%OS"</span>),</span>
-<span id="cb12-44"><a href="#cb12-44" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaFin_pr =</span> <span class="fu">as.POSIXct</span>(FechaFin_pr, <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%OS"</span>)</span>
-<span id="cb12-45"><a href="#cb12-45" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb12-46"><a href="#cb12-46" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(EXPEDIENTE, REFERENCIA, OF, FASE, MAQUINA) <span class="sc">%&gt;%</span></span>
-<span id="cb12-47"><a href="#cb12-47" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(...)</span>
-<span id="cb12-48"><a href="#cb12-48" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-49"><a href="#cb12-49" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-50"><a href="#cb12-50" aria-hidden="true" tabindex="-1"></a>Este proceso:</span>
-<span id="cb12-51"><a href="#cb12-51" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-52"><a href="#cb12-52" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Convierte fechas al formato POSIXct para manipulación temporal</span>
-<span id="cb12-53"><a href="#cb12-53" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-54"><a href="#cb12-54" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Agrupa por las claves principales de negocio</span>
-<span id="cb12-55"><a href="#cb12-55" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-56"><a href="#cb12-56" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Calcula métricas agregadas como fechas mínimas/máximas y sumas de cantidades</span>
-<span id="cb12-57"><a href="#cb12-57" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-58"><a href="#cb12-58" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Calculo de Tiempos Operativos]{style="color:#F2B134;"}</span></span>
-<span id="cb12-59"><a href="#cb12-59" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-60"><a href="#cb12-60" aria-hidden="true" tabindex="-1"></a>**Tiempos de Producción** Se calculan los tiempos efectivos de producción:</span>
-<span id="cb12-61"><a href="#cb12-61" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-62"><a href="#cb12-62" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-63"><a href="#cb12-63" aria-hidden="true" tabindex="-1"></a>DF_En_Produccion <span class="ot">&lt;-</span> Olanet_Producido <span class="sc">%&gt;%</span></span>
-<span id="cb12-64"><a href="#cb12-64" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Estado <span class="sc">==</span> <span class="st">"PRODUCCION"</span>) <span class="sc">%&gt;%</span>  </span>
-<span id="cb12-65"><a href="#cb12-65" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(OF, FASE, MAQUINA, REFERENCIA, EXPEDIENTE) <span class="sc">%&gt;%</span></span>
-<span id="cb12-66"><a href="#cb12-66" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb12-67"><a href="#cb12-67" aria-hidden="true" tabindex="-1"></a>    <span class="at">Tiempo_Total_Produccion_min =</span> <span class="fu">sum</span>(Duracion_min, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb12-68"><a href="#cb12-68" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb12-69"><a href="#cb12-69" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb12-70"><a href="#cb12-70" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-71"><a href="#cb12-71" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-72"><a href="#cb12-72" aria-hidden="true" tabindex="-1"></a>**Tiempos de Preparación** Se calculan los tiempos de preparación:</span>
-<span id="cb12-73"><a href="#cb12-73" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-74"><a href="#cb12-74" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-75"><a href="#cb12-75" aria-hidden="true" tabindex="-1"></a>DF_En_Preparacion <span class="ot">&lt;-</span> Olanet_Producido <span class="sc">%&gt;%</span></span>
-<span id="cb12-76"><a href="#cb12-76" aria-hidden="true" tabindex="-1"></a>  <span class="fu">filter</span>(Estado <span class="sc">==</span> <span class="st">"PREPARACION"</span>) <span class="sc">%&gt;%</span>  </span>
-<span id="cb12-77"><a href="#cb12-77" aria-hidden="true" tabindex="-1"></a>  <span class="fu">group_by</span>(OF, FASE, MAQUINA, REFERENCIA, EXPEDIENTE) <span class="sc">%&gt;%</span></span>
-<span id="cb12-78"><a href="#cb12-78" aria-hidden="true" tabindex="-1"></a>  <span class="fu">summarise</span>(</span>
-<span id="cb12-79"><a href="#cb12-79" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoRealPreparacion_min =</span> <span class="fu">sum</span>(Duracion_min, <span class="at">na.rm =</span> <span class="cn">TRUE</span>), </span>
-<span id="cb12-80"><a href="#cb12-80" aria-hidden="true" tabindex="-1"></a>    <span class="at">.groups =</span> <span class="st">"drop"</span></span>
-<span id="cb12-81"><a href="#cb12-81" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb12-82"><a href="#cb12-82" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-83"><a href="#cb12-83" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-84"><a href="#cb12-84" aria-hidden="true" tabindex="-1"></a>Estos cálculos separan los tiempos por tipo de actividad para análisis detallados.</span>
-<span id="cb12-85"><a href="#cb12-85" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-86"><a href="#cb12-86" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Fusión y Cálculo de KPIs]{style="color:#F2B134;"}</span></span>
-<span id="cb12-87"><a href="#cb12-87" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-88"><a href="#cb12-88" aria-hidden="true" tabindex="-1"></a>**Creación del Dataset Completo** Se fusionan los datos planificados y reales, calculando métricas de rendimiento:</span>
-<span id="cb12-89"><a href="#cb12-89" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-90"><a href="#cb12-90" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-91"><a href="#cb12-91" aria-hidden="true" tabindex="-1"></a>pr_COMPLETO <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-92"><a href="#cb12-92" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb12-93"><a href="#cb12-93" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaInicio_Plani =</span> <span class="fu">as.POSIXct</span>(<span class="fu">paste</span>(FechaInicio_Plani, <span class="st">"00:00:00"</span>), <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%S"</span>),</span>
-<span id="cb12-94"><a href="#cb12-94" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaFin_Plani =</span> <span class="fu">as.POSIXct</span>(<span class="fu">paste</span>(FechaFin_Plani, <span class="st">"00:00:00"</span>), <span class="at">format =</span> <span class="st">"%Y-%m-%d %H:%M:%S"</span>)</span>
-<span id="cb12-95"><a href="#cb12-95" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb12-96"><a href="#cb12-96" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(Olanet_Producido_Agg, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"EXPEDIENTE"</span>, <span class="st">"REFERENCIA"</span>, <span class="st">"OF"</span>, <span class="st">"FASE"</span>, <span class="st">"MAQUINA"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb12-97"><a href="#cb12-97" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(DF_En_Produccion, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"EXPEDIENTE"</span>, <span class="st">"REFERENCIA"</span>, <span class="st">"OF"</span>, <span class="st">"FASE"</span>, <span class="st">"MAQUINA"</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb12-98"><a href="#cb12-98" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(DF_En_Preparacion, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"EXPEDIENTE"</span>, <span class="st">"REFERENCIA"</span>, <span class="st">"OF"</span>, <span class="st">"FASE"</span>, <span class="st">"MAQUINA"</span>)) <span class="sc">%&gt;%</span> </span>
-<span id="cb12-99"><a href="#cb12-99" aria-hidden="true" tabindex="-1"></a>  <span class="fu">mutate</span>(</span>
-<span id="cb12-100"><a href="#cb12-100" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaInicio_pr_trunc =</span> <span class="fu">as.Date</span>(FechaInicio_pr),</span>
-<span id="cb12-101"><a href="#cb12-101" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaFin_pr_trunc =</span> <span class="fu">as.Date</span>(FechaFin_pr),</span>
-<span id="cb12-102"><a href="#cb12-102" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaInicio_Plani_trunc =</span> <span class="fu">as.Date</span>(FechaInicio_Plani),</span>
-<span id="cb12-103"><a href="#cb12-103" aria-hidden="true" tabindex="-1"></a>    <span class="at">FechaFin_Plani_trunc =</span> <span class="fu">as.Date</span>(FechaFin_Plani),</span>
-<span id="cb12-104"><a href="#cb12-104" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-105"><a href="#cb12-105" aria-hidden="true" tabindex="-1"></a>    <span class="at">DiasDiferenciaInicio =</span> <span class="fu">as.numeric</span>(FechaInicio_pr_trunc <span class="sc">-</span> FechaInicio_Plani_trunc),</span>
-<span id="cb12-106"><a href="#cb12-106" aria-hidden="true" tabindex="-1"></a>    <span class="at">DiasDiferenciaFin =</span> <span class="fu">as.numeric</span>(FechaFin_pr_trunc <span class="sc">-</span> FechaFin_Plani_trunc),</span>
-<span id="cb12-107"><a href="#cb12-107" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-108"><a href="#cb12-108" aria-hidden="true" tabindex="-1"></a>    <span class="at">CantidadPendiente =</span> CantidadPrevista <span class="sc">-</span> CantidadRealizada,</span>
-<span id="cb12-109"><a href="#cb12-109" aria-hidden="true" tabindex="-1"></a>    <span class="at">CompletadoCantidad =</span> <span class="fu">ifelse</span>(CantidadPrevista <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="fu">coalesce</span>(<span class="fu">round</span>(CantidadRealizada <span class="sc">/</span> CantidadPrevista, <span class="dv">2</span>), <span class="dv">0</span>), <span class="dv">0</span>),</span>
-<span id="cb12-110"><a href="#cb12-110" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-111"><a href="#cb12-111" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoProduccionReal_min =</span> TiempoReal_min,</span>
-<span id="cb12-112"><a href="#cb12-112" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoProduccionPlanificado_min =</span> (TiempoPreparacion<span class="sc">*</span>CantidadPrevista) <span class="sc">/</span> <span class="dv">60</span> <span class="sc">+</span> (TiempoTeorico<span class="sc">*</span><span class="dv">60</span>),</span>
-<span id="cb12-113"><a href="#cb12-113" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-114"><a href="#cb12-114" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoPrevistoPreparacionUnitario_min =</span> TiempoPreparacion,</span>
-<span id="cb12-115"><a href="#cb12-115" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-116"><a href="#cb12-116" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoRealPreparacion_min =</span> <span class="fu">coalesce</span>(TiempoRealPreparacion_min, <span class="dv">0</span>), </span>
-<span id="cb12-117"><a href="#cb12-117" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoPrevistoPreparacion_min =</span> (TiempoPreparacion <span class="sc">*</span> CantidadPrevista) <span class="sc">/</span> <span class="dv">60</span> ,</span>
-<span id="cb12-118"><a href="#cb12-118" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-119"><a href="#cb12-119" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoPrevistoProduccion_min =</span> TiempoTeorico<span class="sc">*</span><span class="dv">60</span>,</span>
-<span id="cb12-120"><a href="#cb12-120" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoProduccion_min =</span> Tiempo_Total_Produccion_min,</span>
-<span id="cb12-121"><a href="#cb12-121" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb12-122"><a href="#cb12-122" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoPrevistoUnitario_min =</span> TiempoCiclo, </span>
-<span id="cb12-123"><a href="#cb12-123" aria-hidden="true" tabindex="-1"></a>    <span class="at">TiempoProducidoUnitario_min =</span> <span class="fu">ifelse</span>(CantidadRealizada <span class="sc">&gt;</span> <span class="dv">0</span>, Tiempo_Total_Produccion_min <span class="sc">/</span> CantidadRealizada, <span class="cn">NA</span>),</span>
-<span id="cb12-124"><a href="#cb12-124" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-125"><a href="#cb12-125" aria-hidden="true" tabindex="-1"></a>    <span class="at">Disponibilidad =</span> <span class="fu">ifelse</span>(Tiempo_Total_Produccion_min <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="fu">format</span>(<span class="fu">round</span>((TiempoReal_min <span class="sc">/</span> Tiempo_Total_Produccion_min) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>), <span class="at">decimal.mark =</span> <span class="st">","</span>), <span class="cn">NA</span>),  </span>
-<span id="cb12-126"><a href="#cb12-126" aria-hidden="true" tabindex="-1"></a>    <span class="at">Calidad =</span> <span class="fu">ifelse</span>((CantidadRealizada <span class="sc">+</span> CantidadMalas) <span class="sc">&gt;</span> <span class="dv">0</span>, (CantidadRealizada <span class="sc">/</span> (CantidadRealizada <span class="sc">+</span> CantidadMalas)) <span class="sc">*</span> <span class="dv">100</span>, <span class="cn">NA</span>),</span>
-<span id="cb12-127"><a href="#cb12-127" aria-hidden="true" tabindex="-1"></a>    <span class="at">Productividad =</span><span class="fu">ifelse</span>(CantidadPrevista <span class="sc">&gt;</span> <span class="dv">0</span>, <span class="fu">format</span>(<span class="fu">round</span>((CantidadRealizada <span class="sc">/</span> CantidadPrevista) <span class="sc">*</span> <span class="dv">100</span>, <span class="dv">2</span>), <span class="at">decimal.mark =</span> <span class="st">","</span>), <span class="cn">NA</span>)         </span>
-<span id="cb12-128"><a href="#cb12-128" aria-hidden="true" tabindex="-1"></a>  ) <span class="sc">%&gt;%</span></span>
-<span id="cb12-129"><a href="#cb12-129" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(</span>
-<span id="cb12-130"><a href="#cb12-130" aria-hidden="true" tabindex="-1"></a>    EXPEDIENTE, REFERENCIA, OF, FASE, FASE_DESCR, MATERIAL_ENTRADA, MATERIAL_ENTRADA_DESCR,MATERIAL_SALIDA, MAQUINA, MAQ_DESC, ESTADO_OLANET, </span>
-<span id="cb12-131"><a href="#cb12-131" aria-hidden="true" tabindex="-1"></a>    FechaInicio_Plani, FechaInicio_pr, DiasDiferenciaInicio, FechaFin_Plani, FechaFin_pr, DiasDiferenciaFin, </span>
-<span id="cb12-132"><a href="#cb12-132" aria-hidden="true" tabindex="-1"></a>    CantidadPrevista, CantidadRealizada, CantidadPendiente, CompletadoCantidad, CantidadMalas, </span>
-<span id="cb12-133"><a href="#cb12-133" aria-hidden="true" tabindex="-1"></a>    TiempoProduccionPlanificado_min,TiempoProduccionReal_min, </span>
-<span id="cb12-134"><a href="#cb12-134" aria-hidden="true" tabindex="-1"></a>    TiempoPrevistoPreparacionUnitario_min, </span>
-<span id="cb12-135"><a href="#cb12-135" aria-hidden="true" tabindex="-1"></a>    TiempoPrevistoPreparacion_min, TiempoRealPreparacion_min, </span>
-<span id="cb12-136"><a href="#cb12-136" aria-hidden="true" tabindex="-1"></a>    TiempoPrevistoProduccion_min, TiempoProduccion_min, </span>
-<span id="cb12-137"><a href="#cb12-137" aria-hidden="true" tabindex="-1"></a>    TiempoPrevistoUnitario_min, TiempoProducidoUnitario_min</span>
-<span id="cb12-138"><a href="#cb12-138" aria-hidden="true" tabindex="-1"></a>  )</span>
-<span id="cb12-139"><a href="#cb12-139" aria-hidden="true" tabindex="-1"></a>pr_COMPLETO <span class="ot">&lt;-</span> pr_COMPLETO[, <span class="sc">!</span>(<span class="fu">names</span>(pr_COMPLETO) <span class="sc">%in%</span> <span class="fu">c</span>(<span class="st">"MATERIAL_ENTRADA"</span>, <span class="st">"MATERIAL_ENTRADA_DESCR"</span>))]</span>
-<span id="cb12-140"><a href="#cb12-140" aria-hidden="true" tabindex="-1"></a>pr_COMPLETO <span class="ot">&lt;-</span> <span class="fu">unique</span>(pr_COMPLETO)</span>
-<span id="cb12-141"><a href="#cb12-141" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-142"><a href="#cb12-142" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-143"><a href="#cb12-143" aria-hidden="true" tabindex="-1"></a>**Cálculos de KPIs importantes:**</span>
-<span id="cb12-144"><a href="#cb12-144" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-145"><a href="#cb12-145" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Diferencias en días entre fechas planificadas y reales</span>
-<span id="cb12-146"><a href="#cb12-146" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-147"><a href="#cb12-147" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Cantidades pendientes y porcentajes de completitud</span>
-<span id="cb12-148"><a href="#cb12-148" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-149"><a href="#cb12-149" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Tiempos de producción real vs. planificado</span>
-<span id="cb12-150"><a href="#cb12-150" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-151"><a href="#cb12-151" aria-hidden="true" tabindex="-1"></a><span class="ss">-   </span>Indicadores de rendimiento: Disponibilidad, Calidad y Productividad</span>
-<span id="cb12-152"><a href="#cb12-152" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-153"><a href="#cb12-153" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Enriquecimiento para Producción]{style="color:#F2B134;"}</span></span>
-<span id="cb12-154"><a href="#cb12-154" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-155"><a href="#cb12-155" aria-hidden="true" tabindex="-1"></a>**Enriquecimiento del Dataset Original** Se añaden datos de planificación al dataset original:</span>
-<span id="cb12-156"><a href="#cb12-156" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-157"><a href="#cb12-157" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-158"><a href="#cb12-158" aria-hidden="true" tabindex="-1"></a>Olanet_Planificado_Key <span class="ot">&lt;-</span> pr_COMPLETO <span class="sc">%&gt;%</span></span>
-<span id="cb12-159"><a href="#cb12-159" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(OF, FASE, MAQUINA, REFERENCIA, EXPEDIENTE, CantidadPrevista, </span>
-<span id="cb12-160"><a href="#cb12-160" aria-hidden="true" tabindex="-1"></a>         TiempoProduccionPlanificado_min, TiempoPrevistoPreparacion_min, </span>
-<span id="cb12-161"><a href="#cb12-161" aria-hidden="true" tabindex="-1"></a>         TiempoPrevistoProduccion_min) <span class="sc">%&gt;%</span></span>
-<span id="cb12-162"><a href="#cb12-162" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
-<span id="cb12-163"><a href="#cb12-163" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-164"><a href="#cb12-164" aria-hidden="true" tabindex="-1"></a>Olanet_Producido <span class="ot">&lt;-</span> Olanet_Producido <span class="sc">%&gt;%</span></span>
-<span id="cb12-165"><a href="#cb12-165" aria-hidden="true" tabindex="-1"></a>  <span class="fu">left_join</span>(Olanet_Planificado_Key, <span class="at">by =</span> <span class="fu">c</span>(<span class="st">"OF"</span>, <span class="st">"FASE"</span>, <span class="st">"MAQUINA"</span>, <span class="st">"REFERENCIA"</span>, <span class="st">"EXPEDIENTE"</span>))</span>
-<span id="cb12-166"><a href="#cb12-166" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-167"><a href="#cb12-167" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-168"><a href="#cb12-168" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Guardar Datos creados]{style="color:#F2B134;"}</span></span>
-<span id="cb12-169"><a href="#cb12-169" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-170"><a href="#cb12-170" aria-hidden="true" tabindex="-1"></a>**Exportación de Resultados** Los datasets procesados se guardan en archivos CSV:</span>
-<span id="cb12-171"><a href="#cb12-171" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-172"><a href="#cb12-172" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-173"><a href="#cb12-173" aria-hidden="true" tabindex="-1"></a><span class="fu">GuardarCSV</span>(Olanet_Producido, <span class="st">"Olanet_Producido"</span>, <span class="st">"./OlanetDatos"</span>)</span>
-<span id="cb12-174"><a href="#cb12-174" aria-hidden="true" tabindex="-1"></a><span class="fu">GuardarCSV</span>(pr_COMPLETO, <span class="st">"Olanet_Completo"</span>, <span class="st">"./OlanetDatos"</span>)</span>
-<span id="cb12-175"><a href="#cb12-175" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-176"><a href="#cb12-176" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-177"><a href="#cb12-177" aria-hidden="true" tabindex="-1"></a>------------------------------------------------------------------------</span>
-<span id="cb12-178"><a href="#cb12-178" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-179"><a href="#cb12-179" aria-hidden="true" tabindex="-1"></a><span class="fu">## [5_CrearMaestros.R]{style="color:#5DAFD5;"}</span></span>
-<span id="cb12-180"><a href="#cb12-180" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-181"><a href="#cb12-181" aria-hidden="true" tabindex="-1"></a><span class="fu">### [Creación de Maestros Identificadores para Modelo en Estrella]{style="color:#D99A2B;"}</span></span>
-<span id="cb12-182"><a href="#cb12-182" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-183"><a href="#cb12-183" aria-hidden="true" tabindex="-1"></a>Este script genera tablas maestras para la gestión de identificadores y categorías.</span>
-<span id="cb12-184"><a href="#cb12-184" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-185"><a href="#cb12-185" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Carga de Datos Base]{style="color:#F2B134;"}</span></span>
-<span id="cb12-186"><a href="#cb12-186" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-187"><a href="#cb12-187" aria-hidden="true" tabindex="-1"></a>**Carga del Dataset Planificado** Se carga el dataset de planificación para extraer datos maestros:</span>
-<span id="cb12-188"><a href="#cb12-188" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-189"><a href="#cb12-189" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-190"><a href="#cb12-190" aria-hidden="true" tabindex="-1"></a>Olanet_Planificado <span class="ot">&lt;-</span> <span class="fu">CargarCSV</span>(<span class="st">"./OlanetDatos/Olanet_Planificado.csv"</span>)</span>
-<span id="cb12-191"><a href="#cb12-191" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-192"><a href="#cb12-192" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-193"><a href="#cb12-193" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Generación de Tablas Maestras]{style="color:#F2B134;"}</span></span>
-<span id="cb12-194"><a href="#cb12-194" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-195"><a href="#cb12-195" aria-hidden="true" tabindex="-1"></a>**Extracción de Identificadores Únicos** Se crean tablas maestras para las principales entidades con registros unicos:</span>
-<span id="cb12-196"><a href="#cb12-196" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-197"><a href="#cb12-197" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-198"><a href="#cb12-198" aria-hidden="true" tabindex="-1"></a>Maestro_Maquina <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-199"><a href="#cb12-199" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(MAQUINA, MAQ_DESC) <span class="sc">%&gt;%</span></span>
-<span id="cb12-200"><a href="#cb12-200" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()  <span class="sc">%&gt;%</span> </span>
-<span id="cb12-201"><a href="#cb12-201" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
-<span id="cb12-202"><a href="#cb12-202" aria-hidden="true" tabindex="-1"></a>Maestro_Expediente <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-203"><a href="#cb12-203" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(EXPEDIENTE) <span class="sc">%&gt;%</span></span>
-<span id="cb12-204"><a href="#cb12-204" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()  <span class="sc">%&gt;%</span> </span>
-<span id="cb12-205"><a href="#cb12-205" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
-<span id="cb12-206"><a href="#cb12-206" aria-hidden="true" tabindex="-1"></a>Maestro_OF <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-207"><a href="#cb12-207" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(OF) <span class="sc">%&gt;%</span></span>
-<span id="cb12-208"><a href="#cb12-208" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb12-209"><a href="#cb12-209" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() </span>
-<span id="cb12-210"><a href="#cb12-210" aria-hidden="true" tabindex="-1"></a>Maestro_Referencia <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-211"><a href="#cb12-211" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(REFERENCIA) <span class="sc">%&gt;%</span></span>
-<span id="cb12-212"><a href="#cb12-212" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>() <span class="sc">%&gt;%</span></span>
-<span id="cb12-213"><a href="#cb12-213" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>() </span>
-<span id="cb12-214"><a href="#cb12-214" aria-hidden="true" tabindex="-1"></a>Maestro_EstadoOlanet <span class="ot">&lt;-</span> Olanet_Planificado <span class="sc">%&gt;%</span></span>
-<span id="cb12-215"><a href="#cb12-215" aria-hidden="true" tabindex="-1"></a>  <span class="fu">select</span>(ESTADO_OLANET) <span class="sc">%&gt;%</span></span>
-<span id="cb12-216"><a href="#cb12-216" aria-hidden="true" tabindex="-1"></a>  <span class="fu">drop_na</span>()  <span class="sc">%&gt;%</span> </span>
-<span id="cb12-217"><a href="#cb12-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">distinct</span>()</span>
-<span id="cb12-218"><a href="#cb12-218" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
-<span id="cb12-219"><a href="#cb12-219" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-220"><a href="#cb12-220" aria-hidden="true" tabindex="-1"></a><span class="fu">#### [Exportación de Maestros]{style="color:#F2B134;"}</span></span>
-<span id="cb12-221"><a href="#cb12-221" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-222"><a href="#cb12-222" aria-hidden="true" tabindex="-1"></a>**Guardado de Tablas Maestras** Se utiliza un bucle para guardar todas las tablas maestras:</span>
-<span id="cb12-223"><a href="#cb12-223" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-224"><a href="#cb12-224" aria-hidden="true" tabindex="-1"></a><span class="in">``` r</span></span>
-<span id="cb12-225"><a href="#cb12-225" aria-hidden="true" tabindex="-1"></a>XX_MAESTROS_OLANET <span class="ot">&lt;-</span> <span class="fu">list</span>(</span>
-<span id="cb12-226"><a href="#cb12-226" aria-hidden="true" tabindex="-1"></a>  <span class="at">Maestro_Maquina =</span> <span class="st">"Maestro_Maquina"</span>,</span>
-<span id="cb12-227"><a href="#cb12-227" aria-hidden="true" tabindex="-1"></a>  <span class="at">Maestro_Expediente =</span> <span class="st">"Maestro_Expediente"</span>,</span>
-<span id="cb12-228"><a href="#cb12-228" aria-hidden="true" tabindex="-1"></a>  <span class="at">Maestro_OF =</span> <span class="st">"Maestro_OF"</span>,</span>
-<span id="cb12-229"><a href="#cb12-229" aria-hidden="true" tabindex="-1"></a>  <span class="at">Maestro_Referencia =</span> <span class="st">"Maestro_Referencia"</span>,</span>
-<span id="cb12-230"><a href="#cb12-230" aria-hidden="true" tabindex="-1"></a>  <span class="at">Maestro_EstadoOlanet =</span> <span class="st">"Maestro_EstadoOlanet"</span></span>
-<span id="cb12-231"><a href="#cb12-231" aria-hidden="true" tabindex="-1"></a>)</span>
-<span id="cb12-232"><a href="#cb12-232" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb12-233"><a href="#cb12-233" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (nombre <span class="cf">in</span> <span class="fu">names</span>(XX_MAESTROS_OLANET)) {</span>
-<span id="cb12-234"><a href="#cb12-234" aria-hidden="true" tabindex="-1"></a>  <span class="fu">GuardarCSV</span>(<span class="fu">get</span>(nombre), XX_MAESTROS_OLANET[[nombre]], <span class="st">"./OlanetDatos/MaestrosIdentificadores"</span>)</span>
-<span id="cb12-235"><a href="#cb12-235" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb12-236"><a href="#cb12-236" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button" data-in-quarto-modal=""><i class="bi"></i></button></pre></div>
-</div></div></div></div></div>
+</nav>
 </div> <!-- /content -->
 
 

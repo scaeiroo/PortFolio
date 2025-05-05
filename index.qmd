@@ -6,7 +6,7 @@ page-layout: full
 
 ::::::: columns
 ::: {.column width="60%"}
-# Analista de Datos \| Data Scientist \| Data Analyst
+# Analista de Datos <br> Data Scientist \| Data Analyst
 
 Soy **Sandra Caeiro Pires**, especializada en análisis de datos, programación, visualización y procesos ETL. A lo largo de mi formación y experiencia profesional, he desarrollado soluciones automatizadas para el monitoreo de datos de producción en tiempo real, así como dashboards interactivos que permiten mejorar la eficiencia y apoyar la toma de decisiones estratégicas.
 
@@ -33,9 +33,7 @@ Me considero una persona proactiva, con gran capacidad para el trabajo en equipo
 ::::
 :::::::
 
-## Áreas de Especialización
-
-### ETL
+## Áreas de Especialización: ETL
 
 :::::: grid
 ::: {.g-col-4 .specialty-box}
@@ -79,29 +77,26 @@ Optimización de procesos productivos mediante análisis de datos y algoritmos d
 
 Debido a acuerdos de confidencialidad con las empresas, los repositorios de GitHub no pueden ser publicados. No obstante, si está interesado en revisar más a fondo la lógica de los scripts o los flujos de procesamiento implementados, puede contactarme para proporcionar ejemplos o explicaciones adicionales bajo acuerdo.
 
-::::: grid
-::: g-col-6
-### [Visualización y Automatización en Lacor](DocumentacionLacor/index.html)
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: center; ">
 
-![](Images/Lacor.jpg)
+<div style="flex: 0 0 48%; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+  <h3><a href="DocumentacionLacor/index.html" style="text-decoration: none; color: #007BFF;">Visualización y Automatización en Lacor</a></h3>
+  <img src="Images/Proyecto1.jpg" alt="Proyecto 1" style="width:100%; height:200px; object-fit: cover; border-radius: 6px;">
+  <p>Desarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R.</p>
+  <p>Implementación de dashboards interactivos para el seguimiento en tiempo real y toma de decisiones estratégicas.</p>
+  <p><a href="DocumentacionLacor/index.html" style="font-weight: bold; color: #0056b3;">Explorar proyecto →</a></p>
+</div>
 
-Desarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R. Gestión de bases de datos y creación de reportes interactivos.
+<div style="flex: 0 0 48%; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+  <h3><a href="DocumentacionConsumos/index.html" style="text-decoration: none; color: #007BFF;">Extracción de datos de Consumos WebScraping en Lacor</a></h3>
+  <img src="Images/Proyecto2.jpg" alt="Proyecto 2" style="width:100%; height:200px; object-fit: cover; border-radius: 6px;">
+  <p>Extracción de informes de consumos de máquinas, planta y placas solares.</p>
+  <p>Base para el análisis del coste energético por fuente y área de producción.</p>
+  <p><a href="DocumentacionConsumos/index.html" style="font-weight: bold; color: #0056b3;">Explorar proyecto →</a></p>
+</div>
 
-Implementación de sistemas de visualización para seguimiento en tiempo real de consumos de máquinas y diseño de dashboards interactivos para la toma de decisiones estratégicas.
+</div>
 
-[Explorar proyecto →](DocumentacionLacor/index.html)
-:::
-
-::: g-col-6
-### [Extracción de datos de Consumos WebScraping en Lacor](DocumentacionConsumos/index.html)
-
-![](Images/Lacor.jpg)
-
-Extracción de Informes de los consumos tanto de las maquinas como de la planta y las placas solares para un futuro implemento de saber cuantos gastos tiene cada una.
-
-[Explorar proyecto →](DocumentacionConsumos/index.html)
-:::
-:::::
 
 ### Experiencia Laboral
 
@@ -304,5 +299,5 @@ HTML/SVG
 ::::::
 
 ::: cta-container
-<a href="skills-qmd" class="btn btn-primary">Conocer más sobre mis Habilidades</a> 
+<a href="skills.qmd" class="btn btn-primary">Conocer más sobre mis Habilidades</a> 
 :::
