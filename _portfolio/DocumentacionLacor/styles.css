@@ -1,0 +1,218 @@
+/* Variables de color */
+:root {
+  --primary-color: #33546D;
+  --secondary-color: #5DAFD5;
+  --accent-color: #3B82F6;
+  --light-bg: #F0F7FA;
+  --dark-text: #333333;
+  --light-text: #FFFFFF;
+}
+
+/* Mejoras generales */
+body {
+  font-family: 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Estilos para encabezados */
+h1, h2, h3, h4 {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--primary-color);
+}
+
+h1 {
+  font-size: 2.2rem;
+  border-bottom: 3px solid var(--secondary-color);
+  padding-bottom: 0.5rem;
+}
+
+h2 {
+  font-size: 1.8rem;
+  border-bottom: 1px solid var(--secondary-color);
+  padding-bottom: 0.3rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+/* Estilo para enlaces */
+a {
+  color: var(--accent-color);
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Estilos para código */
+pre {
+  border-radius: 5px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  margin: 1.5rem 0;
+}
+
+code {
+  color: var(--accent-color);
+  font-family: 'Fira Code', 'Courier New', Courier, monospace;
+}
+
+/* Estilos para imágenes */
+img {
+  border-radius: 5px;
+  max-width: 100%;
+  margin: 1rem 0;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* styles.css */
+/* Resaltado de sintaxis personalizado */
+code span.kw { color: #33546D; }          /* Palabras clave (h1 color) */
+code span.dt { color: #5DAFD5; }          /* Tipos de datos (h2 color) */
+code span.dv { color: #D99A2B; }          /* Valores numéricos (h3 color) */
+code span.st { color: #5DAFD5; }          /* Cadenas de texto */
+code span.co { color: #33546D; }          /* Comentarios (h4 color) */
+code span.op { color: #33546D; }          /* Operadores */
+code span.cf { color: #33546D; }          /* Control de flujo */
+code span.fu { color: #D99A2B; }          /* Funciones */
+code span.va { color: #333333; }          /* Variables */
+
+/* Fondo del bloque de código */
+pre.sourceCode {
+  background-color: #F8F9FA;
+  border: 1px solid #e1e4e8;
+  border-radius: 6px;
+  padding: 1em;
+  overflow-x: auto;
+}
+
+/* Título del chunk */
+div.sourceCode + pre.sourceCode::before {
+  content: attr(data-lang);
+  display: block;
+  font-family: 'Fira Code', monospace;
+  font-size: 0.9em;
+  color: #F2B134;
+  background-color: #33546D10;
+  padding: 0.3em 1em;
+  border-bottom: 2px solid #5DAFD5;
+  margin-bottom: 0.5em;
+}
+/* Estilos para tablas */
+table {
+  border-collapse: collapse;
+  margin: 1.5rem 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+}
+
+th {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 0.8rem;
+  text-align: left;
+}
+
+td {
+  padding: 0.8rem;
+  border-bottom: 1px solid #eee;
+}
+
+tr:nth-child(even) {
+  background-color: var(--light-bg);
+}
+
+/* Estilos para citas */
+blockquote {
+  border-left: 4px solid var(--secondary-color);
+  padding: 0.5rem 1rem;
+  margin: 1.5rem 0;
+  background-color: var(--light-bg);
+  font-style: italic;
+  color: #555;
+}
+
+/* Mejoras para la barra lateral */
+.sidebar-item {
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.sidebar-item:hover {
+  background-color: var(--light-bg);
+}
+
+.sidebar-item.active {
+  background-color: var(--light-bg);
+  border-left: 3px solid var(--secondary-color);
+}
+
+/* Estilizar botones */
+.btn-primary {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-color) !important;
+  border-color: var(--primary-color) !important;
+}
+
+/* Estilo para cajas de información */
+.callout {
+  border-radius: 5px;
+  padding: 1rem;
+  margin: 1.5rem 0;
+  border-left: 5px solid var(--secondary-color);
+  background-color: var(--light-bg);
+}
+
+/* Navbar más grande y clara */
+.navbar {
+  height: 100px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  align-items: center;
+  font-size: 1.2rem;
+  padding: 0 2rem;
+  background-color: var(--primary-color);
+  color: var(--light-text);
+}
+
+/* Contenedor principal sin fondo */
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.9rem; /* Espacio entre logo y texto si lo hay */
+}
+
+/* Fondo blanco SOLO para el logo */
+.navbar-brand img {
+  background-color: #FFF;      /* Aquí está el fondo blanco */
+  padding: 0.2rem;
+  border-radius: 8px;
+  max-height: 75px;
+}
+
+
+
+/* Ajuste para los elementos a la derecha */
+.navbar .navbar-right a,
+.navbar .navbar-right span {
+  font-size: 1rem;
+  padding: 0 0.5rem;
+}
+
+/* Pie de página estilizado */
+.footer {
+  margin-top: 3rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #eee;
+  color: #777;
+  font-size: 0.9rem;
+}

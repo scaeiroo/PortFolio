@@ -6,7 +6,8 @@ website:
   title: "Sandra Caeiro Pires"
   description: "Portfolio de Analista de Datos / Data Scientist"
   favicon: Images/favicon.png
-  
+
+  # INCLUIMOS LOS SUB-PROYECTOS COMO PÁGINAS
   navbar:
     background: "#33546D"
     foreground: "#ffffff"
@@ -18,11 +19,12 @@ website:
       - text: "Proyectos"
         menu:
           - text: "Visualización y Automatización en Lacor"
-            file: DocumentacionConsumos/index.html)
+            file: DocumentacionLacor/index.html
           - text: "Extracción de datos de Consumos WebScraping en Lacor"
-            file: projects/bigdata/index.qmd
+            file: DocumentacionConsumos/index.html
       - text: "Habilidades"
         file: skills.qmd
+
     right:
       - icon: linkedin
         href: https://www.linkedin.com/in/sandra-caeiro-pires-3547b3293/
@@ -32,7 +34,7 @@ website:
         href: mailto:sandracapi03@gmail.com
 
   page-footer:
-    left: "© 2025 Sandra Caeiro Pires | Data Scientist & Analista de Datos"
+    left: "© 2025 Sandra Caeiro Pires | Data Scientist & Data Analyst"
     right: 
       - icon: github
         href: https://github.com/scaeiroo
@@ -40,6 +42,10 @@ website:
         href: https://www.linkedin.com/in/sandra-caeiro-pires-3547b3293/
       - icon: envelope
         href: mailto:sandracapi03@gmail.com
+
+resources:
+  - DocumentacionLacor/**
+  - DocumentacionConsumos/**
 
 format:
   html:
