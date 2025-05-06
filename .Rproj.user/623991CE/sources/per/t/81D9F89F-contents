@@ -1,0 +1,303 @@
+---
+title: "Portfolio"
+subtitle: "Sandra Caeiro Pires"
+page-layout: full
+---
+
+::::::: columns
+::: {.column width="60%"}
+# Analista de Datos <br> Data Scientist \| Data Analyst
+
+Soy **Sandra Caeiro Pires**, especializada en análisis de datos, programación, visualización y procesos ETL. A lo largo de mi formación y experiencia profesional, he desarrollado soluciones automatizadas para el monitoreo de datos de producción en tiempo real, así como dashboards interactivos que permiten mejorar la eficiencia y apoyar la toma de decisiones estratégicas.
+
+He trabajado conectando y transformando datos desde múltiples fuentes mediante **procesos ETL**, automatizando flujos de datos y asegurando su integridad y calidad para su análisis. Utilizo herramientas como **Power BI, Grafana, Python, R y SQL, además de bases de datos como InfluxDB, SQL Server y MongoDB.**
+
+Cuento con una especialización en **Inteligencia Artificial y Big Data**, donde me enfoqué en la extracción, limpieza y consolidación de datos, así como en la creación de reportes interactivos y sistemas automatizados. También tengo formación en programación y entornos visuales, lo que me permite aportar una visión técnica y creativa a los proyectos.
+
+Me considero una persona proactiva, con gran capacidad para el trabajo en equipo y muchas ganas de seguir aprendiendo y aplicando soluciones basadas en datos para resolver problemas reales.
+:::
+
+::: {.column width="5%"}
+:::
+
+:::: {.column width="35%"}
+![](Images/Sandra.png){.rounded width="250px"}
+
+::: contact-info
+<p><i class="bi bi-geo-alt"></i> Mendaro, Guipuzkoa</p>
+
+<p><i class="bi bi-telephone"></i> 688 607 204</p>
+
+<p><i class="bi bi-envelope"></i> <a href="mailto:sandracapi03@gmail.com">sandracapi03\@gmail.com</a></p>
+:::
+::::
+:::::::
+
+## Áreas de Especialización: ETL
+
+:::::: grid
+::: {.g-col-4 .specialty-box}
+<img src="Images/visualizacion.png" class="specialty-icon" width="80" style="display:block; margin: 0 auto;"/>
+
+<h3 style="text-align: center; color: #007acc;">
+
+Visualización de Datos
+
+</h3>
+
+Creación de dashboards interactivos y sistemas de seguimiento en tiempo real utilizando Power BI, Grafana, Matplotlib y Tableau.
+:::
+
+::: {.g-col-4 .specialty-box}
+<img src="Images/automatizacion.png" class="specialty-icon" width="80" style="display:block; margin: 0 auto;"/>
+
+<h3 style="text-align: center; color: #007acc;">
+
+Automatización
+
+</h3>
+
+Desarrollo de scripts y soluciones automatizadas para extracción, transformación y monitoreo de datos de producción.
+:::
+
+::: {.g-col-4 .specialty-box}
+<img src="Images/analisis.png" class="specialty-icon" width="80" style="display:block; margin: 0 auto;"/>
+
+<h3 style="text-align: center; color: #007acc;">
+
+Análisis Avanzado
+
+</h3>
+
+Optimización de procesos productivos mediante análisis de datos y algoritmos de eficiencia.
+:::
+::::::
+
+## Proyectos Destacados
+
+Debido a acuerdos de confidencialidad con las empresas, los repositorios de GitHub no pueden ser publicados. No obstante, si está interesado en revisar más a fondo la lógica de los scripts o los flujos de procesamiento implementados, puede contactarme para proporcionar ejemplos o explicaciones adicionales bajo acuerdo.
+
+<div style="display: flex; flex-wrap: wrap; gap: 20px; justify-content: space-between; text-align: center; ">
+
+<div style="flex: 0 0 48%; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+  <h3><a href="DocumentacionLacor/index.html" style="text-decoration: none; color: #007BFF;">Visualización y Automatización en Lacor</a></h3>
+  <img src="Images/Proyecto1.jpg" alt="Proyecto 1" style="width:100%; height:200px; object-fit: cover; border-radius: 6px;">
+  <p>Desarrollo de scripts para extracción, limpieza y análisis de datos usando Python y R.</p>
+  <p>Implementación de dashboards interactivos para el seguimiento en tiempo real y toma de decisiones estratégicas.</p>
+  <p><a href="DocumentacionLacor/index.html" style="font-weight: bold; color: #0056b3;">Explorar proyecto →</a></p>
+</div>
+
+<div style="flex: 0 0 48%; border: 1px solid #ccc; padding: 20px; border-radius: 8px;">
+  <h3><a href="DocumentacionConsumos/index.html" style="text-decoration: none; color: #007BFF;">Extracción de datos de Consumos WebScraping en Lacor</a></h3>
+  <img src="Images/Proyecto2.jpg" alt="Proyecto 2" style="width:100%; height:200px; object-fit: cover; border-radius: 6px;">
+  <p>Extracción de informes de consumos de máquinas, planta y placas solares.</p>
+  <p>Base para el análisis del coste energético por fuente y área de producción.</p>
+  <p><a href="DocumentacionConsumos/index.html" style="font-weight: bold; color: #0056b3;">Explorar proyecto →</a></p>
+</div>
+
+</div>
+
+
+### Experiencia Laboral
+
+#### Especialista en Visualización y Automatización
+
+**Lacor Menaje**\
+*Diciembre 2024 - Mayo 2025*
+
+-   Desarrollo e implementación de procesos ETL utilizando Python y R para la extracción, transformación y carga de datos de producción desde múltiples fuentes (SQL Server, InfluxDB).
+-   Diseño y programación de dashboards en Power BI con análisis avanzado mediante DAX para seguimiento de KPIs críticos de producción y eficiencia operativa.
+-   Implementación de sistema de monitorización en tiempo real con Grafana conectado a bases de datos de series temporales para supervisión continua del rendimiento de maquinaria industrial.
+-   Automatización de flujos de datos mediante scripts en Python para procesamiento y limpieza de información procedente de sensores IoT industriales.
+-   Desarrollo de soluciones de predicción utilizando bibliotecas scikit-learn y pandas para anticipar mantenimientos preventivos y optimizar tiempos de producción.
+
+#### Animador 3D
+
+**IMH Campus**\
+*Abril 2021 - Junio 2021*
+
+-   DModelado 3D detallado: Creación precisa del torno Pinacho, asegurando fidelidad en dimensiones y detalles técnicos.
+-   Texturizado y materiales: Aplicación de texturas y materiales realistas para mejorar la apariencia visual del modelo.
+-   Rigging del torno: Configuración de elementos móviles del torno para garantizar movimientos funcionales y realistas.
+-   Animación explicativa: Desarrollo de animaciones que simulan el funcionamiento real de la máquina, destacando sus partes y procesos clave.
+-   Aplicación educativa: Diseño del proyecto con un enfoque pedagógico, facilitando la comprensión de los alumnos sobre el funcionamiento del torno.
+
+### Lenguajes de Programación
+
+::::::: {style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;"}
+::: {style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"}
+<img src="Images/PythonLogo.png" width="60" style="display: block; margin: 0 auto 10px;"/>
+
+<h3 style="color: #007acc; margin: 0 0 10px;">
+
+Python
+
+</h3>
+
+<p>Análisis de datos, automatización y desarrollo de scripts para ETL (Extract, Transform, Load).</p>
+:::
+
+::: {style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"}
+<img src="Images/RLogo.png" width="60" style="display: block; margin: 0 auto 10px;"/>
+
+<h3 style="color: #007acc; margin: 0 0 10px;">
+
+R
+
+</h3>
+
+<p>Análisis estadístico y visualización de datos para proyectos de data science.</p>
+:::
+
+::: {style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"}
+<img src="Images/SQLlogo.png" width="60" style="display: block; margin: 0 auto 10px;"/>
+
+<h3 style="color: #007acc; margin: 0 0 10px;">
+
+SQL
+
+</h3>
+
+<p>Gestión, consulta y optimización de bases de datos relacionales.</p>
+:::
+
+::: {style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);"}
+<img src="Images/HTMLlogo.png" width="60" style="display: block; margin: 0 auto 10px;"/>
+
+<h3 style="color: #007acc; margin: 0 0 10px;">
+
+HTML/SVG
+
+</h3>
+
+<p>Desarrollo de interfaces web y gráficos vectoriales para visualizaciones.</p>
+:::
+:::::::
+
+### Visualización de Datos
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;">
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/PBIlogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Power BI</h3>
+<p>Creación de dashboards interactivos y análisis de datos empresariales.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/grafanaLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Grafana</h3>
+<p>Implementación de sistemas de monitoreo y visualización en tiempo real.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/MatplotLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Matplotlib</h3>
+<p>Visualización de datos científicos con librerías de Python.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/TableauLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Tableau</h3>
+<p>Desarrollo de visualizaciones dinámicas para análisis de negocio.</p>
+</div>
+</div>
+
+### Bases de Datos
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;">
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/MongoDBLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">MongoDB</h3>
+<p>Gestión de bases de datos NoSQL para datos no estructurados.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/SQLServerLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">SQL Server</h3>
+<p>Administración de bases de datos empresariales.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/InfluxDBLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">InfluxDB</h3>
+<p>Bases de datos de series temporales para monitoreo.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/MySQLLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">MySQL</h3>
+<p>Gestión de bases de datos relacionales open source.</p>
+</div>
+</div>
+
+### Herramientas y Tecnologías
+
+<div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; text-align: center;">
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/GitHubLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Git/GitHub</h3>
+<p>Control de versiones y colaboración en desarrollo de software.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/ExcelLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Excel Avanzado</h3>
+<p>Análisis, modelado y visualización de datos corporativos.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/AdobeLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Adobe Suite</h3>
+<p>Photoshop, Premiere Pro, After Effects para edición visual.</p>
+</div>
+<div style="width: 220px; padding: 15px; background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 2px 4px rgba(0,0,0,0.1);">
+<img src="Images/AutodeskLogo.png" width="60" style="display: block; margin: 0 auto 10px;" />
+<h3 style="color: #007acc; margin: 0 0 10px;">Modelado 3D</h3>
+<p>Autodesk Maya, 3ds Max, MudBox para diseño tridimensional.</p>
+</div>
+</div>
+
+## Formación Académica
+
+::::: education-container
+::: education-item
+### Especialización en Inteligencia Artificial y Big Data
+
+**Miguel Altuna** \| Septiembre 2024 - Mayo 2025
+
+-   Desarrollo de scripts para la extracción, limpieza y consolidación de datos desde diversas fuentes
+-   Análisis, limpieza y transformación de datos mediante programación en Python y R
+-   Gestión y análisis de diferentes Bases de Datos
+-   Creación de dashboards y reportes interactivos
+-   Automatización de flujos de datos y mejora de la infraestructura
+:::
+
+::: education-item
+### Grado Superior en Animación 3D y Programación
+
+**Ceinpro** \| Septiembre 2019 - Junio 2021
+
+-   Diseño y desarrollo de entornos interactivos y multimedia
+-   Programación de aplicaciones y sistemas visuales
+:::
+:::::
+
+## Idiomas y Habilidades Adicionales
+
+:::::: columns
+::: {.column width="45%"}
+### Idiomas
+
+-   Español: Nativo
+-   Euskera: Nativo, B2
+-   Inglés: B2
+:::
+
+::: {.column width="10%"}
+:::
+
+::: {.column width="45%"}
+### Cualidades Personales
+
+-   Alta capacidad para trabajo en equipo
+-   Actitud positiva y proactiva
+-   Orientación a resultados
+-   Carné de conducir y vehículo propio
+:::
+::::::
+
+::: cta-container
+<a href="skills.qmd" class="btn btn-primary">Conocer más sobre mis Habilidades</a> 
+:::
