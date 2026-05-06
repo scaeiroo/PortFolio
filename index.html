@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandra Caeiro Pires — Full-Stack Data Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --black: #000000;
+            --white: #ffffff;
+            --accent: #5B9FFF;
+            --gray-light: #f8f8f8;
+            --gray-medium: #e0e0e0;
+            --text-gray: #333333;
+            --border-width: 3px;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
+            background: var(--white);
+            color: var(--text-gray);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* HEADER */
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: var(--white);
+            border-bottom: var(--border-width) solid var(--black);
+            padding: 20px 40px;
+            z-index: 1000;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-weight: 900;
+            font-size: 18px;
+            color: var(--black);
+            text-transform: uppercase;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 30px;
+            list-style: none;
+        }
+
+        .nav-links a {
+            color: var(--text-gray);
+            text-decoration: none;
+            font-weight: 600;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            transition: color 0.2s;
+        }
+
+        .nav-links a:hover {
+            color: var(--accent);
+        }
+
+        /* HERO SECTION */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 120px 40px 80px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .hero h1 {
+            font-size: clamp(48px, 8vw, 96px);
+            font-weight: 900;
+            line-height: 1.1;
+            color: var(--black);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: -2px;
+        }
+
+        .hero h2 {
+            font-size: clamp(24px, 4vw, 42px);
+            font-weight: 700;
+            color: var(--text-gray);
+            margin-bottom: 40px;
+            line-height: 1.3;
+        }
+
+        .hero-description {
+            max-width: 800px;
+            font-size: 18px;
+            line-height: 1.8;
+            color: var(--text-gray);
+            margin-bottom: 50px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: var(--black);
+            color: var(--white);
+            padding: 18px 40px;
+            font-size: 16px;
+            font-weight: 700;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            border: var(--border-width) solid var(--black);
+            box-shadow: 6px 6px 0 var(--accent);
+            transition: all 0.2s ease;
+        }
+
+        .cta-button:hover {
+            transform: translate(3px, 3px);
+            box-shadow: 3px 3px 0 var(--accent);
+        }
+
+        /* SECTION COMMON */
+        section {
+            padding: 100px 40px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            font-size: clamp(36px, 6vw, 64px);
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 60px;
+            text-transform: uppercase;
+            letter-spacing: -1px;
+        }
+
+        /* CURRENT WORK SECTION */
+        .current-work {
+            background: var(--gray-light);
+            border: var(--border-width) solid var(--black);
+            padding: 60px;
+            margin-bottom: 100px;
+            position: relative;
+        }
+
+        .current-work::before {
+            content: 'ACTUALMENTE';
+            position: absolute;
+            top: -18px;
+            left: 40px;
+            background: var(--accent);
+            color: var(--white);
+            padding: 8px 20px;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+            border: var(--border-width) solid var(--black);
+        }
+
+        .current-work h3 {
+            font-size: 28px;
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        .current-work .company {
+            font-size: 18px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 30px;
+        }
+
+        .work-description {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            margin-top: 30px;
+        }
+
+        .work-block {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            padding: 30px;
+        }
+
+        .work-block h4 {
+            font-size: 20px;
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .work-block ul {
+            list-style: none;
+        }
+
+        .work-block ul li {
+            padding-left: 20px;
+            margin-bottom: 12px;
+            position: relative;
+            font-size: 15px;
+            line-height: 1.6;
+        }
+
+        .work-block ul li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        /* SKILLS SECTION */
+        .skills {
+            background: var(--white);
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .skill-card {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            padding: 35px;
+            transition: transform 0.2s ease;
+        }
+
+        .skill-card:hover {
+            transform: translate(-4px, -4px);
+            box-shadow: 4px 4px 0 var(--accent);
+        }
+
+        .skill-card h3 {
+            font-size: 18px;
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .skill-tag {
+            display: inline-block;
+            background: var(--gray-light);
+            color: var(--text-gray);
+            padding: 8px 16px;
+            margin: 6px 6px 6px 0;
+            font-size: 13px;
+            font-weight: 600;
+            border: 2px solid var(--black);
+        }
+
+        /* EXPERIENCE SECTION */
+        .experience {
+            background: var(--gray-light);
+            padding: 100px 40px;
+        }
+
+        .experience-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .timeline-item {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            padding: 50px;
+            margin-bottom: 40px;
+            position: relative;
+        }
+
+        .timeline-item::before {
+            content: attr(data-date);
+            position: absolute;
+            top: -18px;
+            right: 30px;
+            background: var(--black);
+            color: var(--white);
+            padding: 8px 20px;
+            font-size: 12px;
+            font-weight: 900;
+            letter-spacing: 1px;
+        }
+
+        .timeline-item h3 {
+            font-size: 26px;
+            font-weight: 900;
+            color: var(--black);
+            margin-bottom: 8px;
+            text-transform: uppercase;
+        }
+
+        .timeline-item h4 {
+            font-size: 18px;
+            color: var(--accent);
+            font-weight: 700;
+            margin-bottom: 25px;
+        }
+
+        .timeline-item ul {
+            list-style: none;
+        }
+
+        .timeline-item ul li {
+            padding-left: 25px;
+            margin-bottom: 15px;
+            position: relative;
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+        .timeline-item ul li::before {
+            content: '▪';
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-size: 20px;
+        }
+
+        /* CONTACT SECTION */
+        .contact {
+            background: var(--white);
+            padding: 100px 40px;
+            text-align: center;
+        }
+
+        .contact-container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-info {
+            background: var(--gray-light);
+            border: var(--border-width) solid var(--black);
+            padding: 60px;
+            margin-top: 40px;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .contact-item {
+            background: var(--white);
+            border: var(--border-width) solid var(--black);
+            padding: 25px;
+        }
+
+        .contact-item h4 {
+            font-size: 12px;
+            font-weight: 900;
+            color: var(--text-gray);
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .contact-item p {
+            font-size: 18px;
+            font-weight: 700;
+            color: var(--black);
+        }
+
+        .contact-item a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* FOOTER */
+        footer {
+            background: var(--black);
+            color: var(--white);
+            padding: 40px;
+            text-align: center;
+        }
+
+        footer p {
+            font-size: 14px;
+            opacity: 0.8;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            header {
+                padding: 20px;
+            }
+
+            .nav-links {
+                display: none;
+            }
+
+            .hero {
+                padding: 100px 20px 60px;
+            }
+
+            section {
+                padding: 60px 20px;
+            }
+
+            .work-description {
+                grid-template-columns: 1fr;
+            }
+
+            .current-work {
+                padding: 40px 20px;
+            }
+
+            .timeline-item {
+                padding: 30px 20px;
+            }
+
+            .contact-info {
+                padding: 40px 20px;
+            }
+
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* SCROLL PROGRESS */
+        .scroll-progress {
+            position: fixed;
+            top: 0;
+            left: 0;
+            height: 4px;
+            background: var(--accent);
+            z-index: 9999;
+            transition: width 0.1s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="scroll-progress" id="scrollProgress"></div>
+
+    <header>
+        <div class="logo">Sandra Caeiro Pires</div>
+        <nav>
+            <ul class="nav-links">
+                <li><a href="#trabajo">Trabajo</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- HERO -->
+        <section class="hero">
+            <h1>Full-Stack Data Developer</h1>
+            <h2>Desarrollo de sistemas empresariales y soluciones de Business Intelligence</h2>
+            <p class="hero-description">
+                Especializada en crear aplicaciones empresariales robustas con Java y Oracle, 
+                complementadas con análisis avanzado de datos mediante Power BI y procesos ETL automatizados. 
+                Transformo datos complejos en soluciones tecnológicas que impulsan la toma de decisiones estratégicas.
+            </p>
+            <a href="#contacto" class="cta-button">Hablemos</a>
+        </section>
+
+        <!-- CURRENT WORK -->
+        <section id="trabajo">
+            <div class="current-work">
+                <h3>Especialista en Visualización y Automatización</h3>
+                <p class="company">Grupo Marcos Larrañaga • Diciembre 2024 - Presente</p>
+                
+                <p style="font-size: 17px; line-height: 1.8; margin-bottom: 30px;">
+                    Desarrollo la aplicación empresarial completa de la compañía utilizando Java, 
+                    gestionando módulos críticos de compras, ventas y almacén con Oracle Database. 
+                    Paralelamente, diseño e implemento dashboards en Power BI y automatizo procesos 
+                    ETL para análisis de datos de producción en tiempo real.
+                </p>
+
+                <div class="work-description">
+                    <div class="work-block">
+                        <h4>Desarrollo de Software</h4>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de aplicación ERP en Java</li>
+                            <li>Diseño e implementación de módulos de gestión (Compras, Ventas, Almacén)</li>
+                            <li>Gestión de Oracle Database como sistema central de datos</li>
+                            <li>Optimización de consultas SQL complejas para rendimiento</li>
+                            <li>Integración de componentes HTML/CSS personalizados</li>
+                        </ul>
+                    </div>
+
+                    <div class="work-block">
+                        <h4>Business Intelligence & ETL</h4>
+                        <ul>
+                            <li>Diseño de dashboards interactivos en Power BI con DAX</li>
+                            <li>Procesos ETL para consolidación de datos de múltiples fuentes</li>
+                            <li>Paneles de monitorización en Grafana para maquinaria industrial</li>
+                            <li>Automatización con Power Automate y scripts Python</li>
+                            <li>Análisis de KPIs críticos de producción y eficiencia operativa</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section id="skills" class="skills">
+            <h2 class="section-title">Competencias Técnicas</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Desarrollo Backend</h3>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">R</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Bases de Datos</h3>
+                    <span class="skill-tag">Oracle</span>
+                    <span class="skill-tag">SQL Server</span>
+                    <span class="skill-tag">MySQL</span>
+                    <span class="skill-tag">MongoDB</span>
+                    <span class="skill-tag">InfluxDB</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Business Intelligence</h3>
+                    <span class="skill-tag">Microsoft Power BI</span>
+                    <span class="skill-tag">DAX</span>
+                    <span class="skill-tag">Grafana</span>
+                    <span class="skill-tag">Tableau</span>
+                    <span class="skill-tag">Procesos ETL</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Automatización</h3>
+                    <span class="skill-tag">Power Automate</span>
+                    <span class="skill-tag">Scripts Python</span>
+                    <span class="skill-tag">Workflows</span>
+                    <span class="skill-tag">Git/GitHub</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Visualización</h3>
+                    <span class="skill-tag">Matplotlib</span>
+                    <span class="skill-tag">Seaborn</span>
+                    <span class="skill-tag">SVG</span>
+                    <span class="skill-tag">D3.js</span>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Herramientas</h3>
+                    <span class="skill-tag">DAX Studio</span>
+                    <span class="skill-tag">Excel Avanzado</span>
+                    <span class="skill-tag">Adobe Creative Suite</span>
+                    <span class="skill-tag">Maya / 3ds Max</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- EXPERIENCE -->
+        <section id="experiencia" class="experience">
+            <div class="experience-container">
+                <h2 class="section-title">Experiencia & Formación</h2>
+                
+                <div class="timeline-item" data-date="DIC 2024 - ACTUAL">
+                    <h3>Especialista en Visualización y Automatización</h3>
+                    <h4>Lacor Menaje</h4>
+                    <ul>
+                        <li>Desarrollo de la aplicación empresarial completa en Java integrando módulos de compras, ventas y almacén con Oracle Database</li>
+                        <li>Implementación de procesos ETL con SQL para extracción, transformación y carga de datos de producción desde múltiples fuentes</li>
+                        <li>Diseño de dashboards interactivos en Power BI utilizando DAX para análisis avanzado de KPIs críticos</li>
+                        <li>Creación de paneles de monitorización en Grafana conectados a bases de datos de series temporales para supervisión de maquinaria industrial</li>
+                        <li>Desarrollo de componentes personalizados en HTML/CSS para integración en dashboards</li>
+                        <li>Automatización de flujos de trabajo mediante Power Automate y scripts Python para procesamiento de datos IoT</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" data-date="SEP 2024 - MAY 2025">
+                    <h3>Especialización en Inteligencia Artificial y Big Data</h3>
+                    <h4>Miguel Altuna</h4>
+                    <ul>
+                        <li>Desarrollo de scripts para extracción, limpieza y consolidación de datos desde diversas fuentes</li>
+                        <li>Análisis y transformación de datos mediante programación en Python y R</li>
+                        <li>Gestión y análisis de diferentes bases de datos relacionales y no relacionales</li>
+                        <li>Creación de dashboards y reportes interactivos para visualización de insights</li>
+                        <li>Automatización de flujos de datos y mejora de infraestructura analítica</li>
+                    </ul>
+                </div>
+
+                <div class="timeline-item" data-date="SEP 2019 - JUN 2021">
+                    <h3>Grado Superior en Animación 3D y Programación</h3>
+                    <h4>Ceinpro</h4>
+                    <ul>
+                        <li>Diseño y desarrollo de entornos interactivos y multimedia</li>
+                        <li>Programación de aplicaciones y sistemas visuales</li>
+                        <li>Fundamentos de desarrollo de software y arquitectura de sistemas</li>
+                        <li>Modelado 3D y animación con Maya y 3ds Max</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section id="contacto" class="contact">
+            <div class="contact-container">
+                <h2 class="section-title">Contacto</h2>
+                <p style="font-size: 18px; color: var(--text-gray); margin-bottom: 20px;">
+                    ¿Buscas una desarrolladora con visión estratégica de datos?
+                </p>
+                
+                <div class="contact-info">
+                    <div class="contact-grid">
+                        <div class="contact-item">
+                            <h4>Email</h4>
+                            <p><a href="mailto:sandracapi03@gmail.com">sandracapi03@gmail.com</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>Teléfono</h4>
+                            <p><a href="tel:+34688607204">688 607 204</a></p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>Ubicación</h4>
+                            <p>Mendaro, Guipúzcoa</p>
+                        </div>
+
+                        <div class="contact-item">
+                            <h4>Movilidad</h4>
+                            <p>Carné B • Vehículo propio</p>
+                        </div>
+                    </div>
+
+                    <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--black);">
+                        <p style="font-size: 15px; color: var(--text-gray);">
+                            <strong>Idiomas:</strong> Español (Nativo) • Euskera (B2) • Inglés (B2)
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Sandra Caeiro Pires — Full-Stack Data Developer</p>
+        <p style="margin-top: 10px; font-size: 12px;">Diseñado con enfoque en claridad y profesionalismo</p>
+    </footer>
+
+    <script>
+        // SCROLL PROGRESS BAR
+        window.addEventListener('scroll', () => {
+            const scrollProgress = document.getElementById('scrollProgress');
+            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (window.scrollY / windowHeight) * 100;
+            scrollProgress.style.width = scrolled + '%';
+        });
+
+        // SMOOTH SCROLL FOR NAVIGATION
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    window.scrollTo({
+                        top: target.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
