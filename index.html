@@ -1,697 +1,440 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sandra Caeiro Pires — Full-Stack Data Developer</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        :root {
-            --black: #000000;
-            --white: #ffffff;
-            --accent: #5B9FFF;
-            --gray-light: #f8f8f8;
-            --gray-medium: #e0e0e0;
-            --text-gray: #333333;
-            --border-width: 3px;
-        }
-
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Arial', sans-serif;
-            background: var(--white);
-            color: var(--text-gray);
-            line-height: 1.6;
-            overflow-x: hidden;
-        }
-
-        /* HEADER */
-        header {
-            position: fixed;
-            top: 0;
-            left: 0;
-            width: 100%;
-            background: var(--white);
-            border-bottom: var(--border-width) solid var(--black);
-            padding: 20px 40px;
-            z-index: 1000;
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-        }
-
-        .logo {
-            font-weight: 900;
-            font-size: 18px;
-            color: var(--black);
-            text-transform: uppercase;
-            letter-spacing: -0.5px;
-        }
-
-        .nav-links {
-            display: flex;
-            gap: 30px;
-            list-style: none;
-        }
-
-        .nav-links a {
-            color: var(--text-gray);
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 14px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            transition: color 0.2s;
-        }
-
-        .nav-links a:hover {
-            color: var(--accent);
-        }
-
-        /* HERO SECTION */
-        .hero {
-            min-height: 100vh;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            padding: 120px 40px 80px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
-            font-size: clamp(48px, 8vw, 96px);
-            font-weight: 900;
-            line-height: 1.1;
-            color: var(--black);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: -2px;
-        }
-
-        .hero h2 {
-            font-size: clamp(24px, 4vw, 42px);
-            font-weight: 700;
-            color: var(--text-gray);
-            margin-bottom: 40px;
-            line-height: 1.3;
-        }
-
-        .hero-description {
-            max-width: 800px;
-            font-size: 18px;
-            line-height: 1.8;
-            color: var(--text-gray);
-            margin-bottom: 50px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: var(--black);
-            color: var(--white);
-            padding: 18px 40px;
-            font-size: 16px;
-            font-weight: 700;
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            border: var(--border-width) solid var(--black);
-            box-shadow: 6px 6px 0 var(--accent);
-            transition: all 0.2s ease;
-        }
-
-        .cta-button:hover {
-            transform: translate(3px, 3px);
-            box-shadow: 3px 3px 0 var(--accent);
-        }
-
-        /* SECTION COMMON */
-        section {
-            padding: 100px 40px;
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-title {
-            font-size: clamp(36px, 6vw, 64px);
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 60px;
-            text-transform: uppercase;
-            letter-spacing: -1px;
-        }
-
-        /* CURRENT WORK SECTION */
-        .current-work {
-            background: var(--gray-light);
-            border: var(--border-width) solid var(--black);
-            padding: 60px;
-            margin-bottom: 100px;
-            position: relative;
-        }
-
-        .current-work::before {
-            content: 'ACTUALMENTE';
-            position: absolute;
-            top: -18px;
-            left: 40px;
-            background: var(--accent);
-            color: var(--white);
-            padding: 8px 20px;
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: 1px;
-            border: var(--border-width) solid var(--black);
-        }
-
-        .current-work h3 {
-            font-size: 28px;
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-        }
-
-        .current-work .company {
-            font-size: 18px;
-            color: var(--accent);
-            font-weight: 700;
-            margin-bottom: 30px;
-        }
-
-        .work-description {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 40px;
-            margin-top: 30px;
-        }
-
-        .work-block {
-            background: var(--white);
-            border: var(--border-width) solid var(--black);
-            padding: 30px;
-        }
-
-        .work-block h4 {
-            font-size: 20px;
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .work-block ul {
-            list-style: none;
-        }
-
-        .work-block ul li {
-            padding-left: 20px;
-            margin-bottom: 12px;
-            position: relative;
-            font-size: 15px;
-            line-height: 1.6;
-        }
-
-        .work-block ul li::before {
-            content: '→';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-weight: bold;
-        }
-
-        /* SKILLS SECTION */
-        .skills {
-            background: var(--white);
-        }
-
-        .skills-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-        }
-
-        .skill-card {
-            background: var(--white);
-            border: var(--border-width) solid var(--black);
-            padding: 35px;
-            transition: transform 0.2s ease;
-        }
-
-        .skill-card:hover {
-            transform: translate(-4px, -4px);
-            box-shadow: 4px 4px 0 var(--accent);
-        }
-
-        .skill-card h3 {
-            font-size: 18px;
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-
-        .skill-tag {
-            display: inline-block;
-            background: var(--gray-light);
-            color: var(--text-gray);
-            padding: 8px 16px;
-            margin: 6px 6px 6px 0;
-            font-size: 13px;
-            font-weight: 600;
-            border: 2px solid var(--black);
-        }
-
-        /* EXPERIENCE SECTION */
-        .experience {
-            background: var(--gray-light);
-            padding: 100px 40px;
-        }
-
-        .experience-container {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .timeline-item {
-            background: var(--white);
-            border: var(--border-width) solid var(--black);
-            padding: 50px;
-            margin-bottom: 40px;
-            position: relative;
-        }
-
-        .timeline-item::before {
-            content: attr(data-date);
-            position: absolute;
-            top: -18px;
-            right: 30px;
-            background: var(--black);
-            color: var(--white);
-            padding: 8px 20px;
-            font-size: 12px;
-            font-weight: 900;
-            letter-spacing: 1px;
-        }
-
-        .timeline-item h3 {
-            font-size: 26px;
-            font-weight: 900;
-            color: var(--black);
-            margin-bottom: 8px;
-            text-transform: uppercase;
-        }
-
-        .timeline-item h4 {
-            font-size: 18px;
-            color: var(--accent);
-            font-weight: 700;
-            margin-bottom: 25px;
-        }
-
-        .timeline-item ul {
-            list-style: none;
-        }
-
-        .timeline-item ul li {
-            padding-left: 25px;
-            margin-bottom: 15px;
-            position: relative;
-            font-size: 16px;
-            line-height: 1.7;
-        }
-
-        .timeline-item ul li::before {
-            content: '▪';
-            position: absolute;
-            left: 0;
-            color: var(--accent);
-            font-size: 20px;
-        }
-
-        /* CONTACT SECTION */
-        .contact {
-            background: var(--white);
-            padding: 100px 40px;
-            text-align: center;
-        }
-
-        .contact-container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        .contact-info {
-            background: var(--gray-light);
-            border: var(--border-width) solid var(--black);
-            padding: 60px;
-            margin-top: 40px;
-        }
-
-        .contact-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-
-        .contact-item {
-            background: var(--white);
-            border: var(--border-width) solid var(--black);
-            padding: 25px;
-        }
-
-        .contact-item h4 {
-            font-size: 12px;
-            font-weight: 900;
-            color: var(--text-gray);
-            margin-bottom: 10px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
-        .contact-item p {
-            font-size: 18px;
-            font-weight: 700;
-            color: var(--black);
-        }
-
-        .contact-item a {
-            color: var(--accent);
-            text-decoration: none;
-            font-weight: 700;
-        }
-
-        .contact-item a:hover {
-            text-decoration: underline;
-        }
-
-        /* FOOTER */
-        footer {
-            background: var(--black);
-            color: var(--white);
-            padding: 40px;
-            text-align: center;
-        }
-
-        footer p {
-            font-size: 14px;
-            opacity: 0.8;
-        }
-
-        /* RESPONSIVE */
-        @media (max-width: 768px) {
-            header {
-                padding: 20px;
-            }
-
-            .nav-links {
-                display: none;
-            }
-
-            .hero {
-                padding: 100px 20px 60px;
-            }
-
-            section {
-                padding: 60px 20px;
-            }
-
-            .work-description {
-                grid-template-columns: 1fr;
-            }
-
-            .current-work {
-                padding: 40px 20px;
-            }
-
-            .timeline-item {
-                padding: 30px 20px;
-            }
-
-            .contact-info {
-                padding: 40px 20px;
-            }
-
-            .skills-grid {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        /* SCROLL PROGRESS */
-        .scroll-progress {
-            position: fixed;
-            top: 0;
-            left: 0;
-            height: 4px;
-            background: var(--accent);
-            z-index: 9999;
-            transition: width 0.1s ease;
-        }
-    </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sandra Caeiro Pires — Analista de Datos & Desarrolladora</title>
+<meta name="description" content="Portfolio de Sandra Caeiro Pires. Analista de Datos evolucionando hacia el desarrollo de software: ETL, Power BI, Grafana, Python, Java y automatización.">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Space+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="scroll-progress" id="scrollProgress"></div>
 
-    <header>
-        <div class="logo">Sandra Caeiro Pires</div>
-        <nav>
-            <ul class="nav-links">
-                <li><a href="#trabajo">Trabajo</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+<div class="scroll-bar" id="scrollBar" aria-hidden="true"></div>
 
-    <main>
-        <!-- HERO -->
-        <section class="hero">
-            <h1>Full-Stack Data Developer</h1>
-            <h2>Desarrollo de sistemas empresariales y soluciones de Business Intelligence</h2>
-            <p class="hero-description">
-                Especializada en crear aplicaciones empresariales robustas con Java y Oracle, 
-                complementadas con análisis avanzado de datos mediante Power BI y procesos ETL automatizados. 
-                Transformo datos complejos en soluciones tecnológicas que impulsan la toma de decisiones estratégicas.
-            </p>
-            <a href="#contacto" class="cta-button">Hablemos</a>
-        </section>
+<a class="skip-link" href="#contenido">Saltar al contenido</a>
 
-        <!-- CURRENT WORK -->
-        <section id="trabajo">
-            <div class="current-work">
-                <h3>Especialista en Visualización y Automatización</h3>
-                <p class="company">Grupo Marcos Larrañaga • Diciembre 2024 - Presente</p>
-                
-                <p style="font-size: 17px; line-height: 1.8; margin-bottom: 30px;">
-                    Desarrollo la aplicación empresarial completa de la compañía utilizando Java, 
-                    gestionando módulos críticos de compras, ventas y almacén con Oracle Database. 
-                    Paralelamente, diseño e implemento dashboards en Power BI y automatizo procesos 
-                    ETL para análisis de datos de producción en tiempo real.
-                </p>
+<header class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#inicio" class="nav-mark" aria-label="Ir al inicio">SC<span class="nav-mark-dot">_</span></a>
+    <nav class="nav-links" aria-label="Navegación principal">
+      <a href="#sobre-mi">Sobre mí</a>
+      <a href="#experiencia">Experiencia</a>
+      <a href="#proyectos">Proyectos</a>
+      <a href="#formacion">Formación</a>
+      <a href="#skills">Skills</a>
+      <a href="#contacto" class="nav-cta">Contacto</a>
+    </nav>
+    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="navLinksMobile">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-links-mobile" id="navLinksMobile" aria-label="Navegación móvil">
+    <a href="#sobre-mi">Sobre mí</a>
+    <a href="#experiencia">Experiencia</a>
+    <a href="#proyectos">Proyectos</a>
+    <a href="#formacion">Formación</a>
+    <a href="#certificados">Certificados</a>
+    <a href="#skills">Skills</a>
+    <a href="#contacto">Contacto</a>
+  </nav>
+</header>
 
-                <div class="work-description">
-                    <div class="work-block">
-                        <h4>Desarrollo de Software</h4>
-                        <ul>
-                            <li>Desarrollo y mantenimiento de aplicación ERP en Java</li>
-                            <li>Diseño e implementación de módulos de gestión (Compras, Ventas, Almacén)</li>
-                            <li>Gestión de Oracle Database como sistema central de datos</li>
-                            <li>Optimización de consultas SQL complejas para rendimiento</li>
-                            <li>Integración de componentes HTML/CSS personalizados</li>
-                        </ul>
-                    </div>
+<main id="contenido">
 
-                    <div class="work-block">
-                        <h4>Business Intelligence & ETL</h4>
-                        <ul>
-                            <li>Diseño de dashboards interactivos en Power BI con DAX</li>
-                            <li>Procesos ETL para consolidación de datos de múltiples fuentes</li>
-                            <li>Paneles de monitorización en Grafana para maquinaria industrial</li>
-                            <li>Automatización con Power Automate y scripts Python</li>
-                            <li>Análisis de KPIs críticos de producción y eficiencia operativa</li>
-                        </ul>
-                    </div>
-                </div>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="inicio">
+    <div class="hero-grid" aria-hidden="true"></div>
+    <div class="hero-inner">
+      <p class="hero-eyebrow mono">$ whoami</p>
+      <h1 class="hero-title">SANDRA<br>CAEIRO PIRES</h1>
+      <p class="hero-role">Analista de Datos <span class="amp">&amp;</span> Desarrolladora de Aplicaciones <span class="dot">·</span> Java</p>
+
+      <p class="hero-typed mono">
+        <span id="typedText"></span><span class="caret" aria-hidden="true"></span>
+      </p>
+
+      <div class="hero-stamps">
+        <span class="stamp stamp-red">GUIPÚZCOA · ES</span>
+        <span class="stamp stamp-ink">GRUPO MARCOS LARRAÑAGA · ACTUALIDAD</span>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#proyectos" class="btn btn-primary">Ver proyectos</a>
+        <a href="#contacto" class="btn btn-ghost">Contacto</a>
+      </div>
+    </div>
+    <div class="hero-ruler" aria-hidden="true"></div>
+  </section>
+
+  <!-- ============ SOBRE MI ============ -->
+  <section class="section" id="sobre-mi">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-yellow rotate-neg">// SOBRE MÍ</span>
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lede">
+            Analista de Datos evolucionando hacia el desarrollo de software, con base sólida en
+            <strong>ETL</strong>, limpieza y transformación de datos, y programación en <strong>Java</strong>
+            para dar soporte a procesos productivos, comerciales y administrativos.
+          </p>
+          <p>
+            Mi eje de trabajo es la <strong>precisión</strong>: que cada dato sea coherente, trazable y
+            confiable antes de convertirse en un dashboard, una decisión o una línea de código. Disfruto
+            tanto ordenar un pipeline desordenado como diseñar la pantalla que finalmente enseña ese dato
+            a quien tiene que tomar una decisión con él.
+          </p>
+        </div>
+
+        <aside class="about-card reveal">
+          <pre class="ticket-pre mono">&gt; ubicación   : Mendaro, Guipúzcoa (País Vasco)
+&gt; enfoque     : ETL · dashboards · automatización · Java
+&gt; idiomas     : Español (nativo) · Euskera (nativo) · Inglés (B2)
+&gt; actualmente : Grupo Marcos Larrañaga — Dpto. Informática</pre>
+        </aside>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERIENCIA ============ -->
+  <section class="section section-alt" id="experiencia">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-red rotate-pos">// EXPERIENCIA</span>
+      </div>
+
+      <p class="section-intro reveal">
+        Una única trayectoria dentro del mismo grupo empresarial, con evolución de rol: de analista de
+        datos a desarrollo de aplicaciones internas.
+      </p>
+
+      <div class="timeline">
+        <div class="timeline-spine" aria-hidden="true"></div>
+
+        <article class="ticket ticket-timeline reveal">
+          <div class="ticket-id mono">EXPEDIENTE Nº 02 · ACTUAL</div>
+          <div class="ticket-head">
+            <h3>Técnico Informático — Desarrollo de Aplicaciones</h3>
+            <span class="ticket-date mono">Nov 2025 — Actualidad</span>
+          </div>
+          <p class="ticket-org">Grupo Marcos Larrañaga · Dpto. Informática</p>
+          <ul class="ticket-list">
+            <li>Desarrollo y mantenimiento de una aplicación de gestión empresarial interna, programando en Java para dar soporte a procesos productivos, comerciales y administrativos.</li>
+            <li>Diseño y ejecución de tareas programadas para la integración y actualización periódica de datos entre sistemas.</li>
+            <li>Gestión y optimización de bases de datos y tablas, garantizando integridad, disponibilidad y trazabilidad.</li>
+            <li>Continuidad y evolución de los dashboards y automatizaciones iniciados en la etapa anterior.</li>
+          </ul>
+        </article>
+
+        <article class="ticket ticket-timeline reveal">
+          <div class="ticket-id mono">EXPEDIENTE Nº 01</div>
+          <div class="ticket-head">
+            <h3>Analista de Datos</h3>
+            <span class="ticket-date mono">Dic 2024 — Nov 2025</span>
+          </div>
+          <p class="ticket-org">Lacor Menaje Profesional S.L.</p>
+          <ul class="ticket-list">
+            <li>Procesos ETL con SQL para extracción, transformación y carga de datos de producción desde múltiples fuentes.</li>
+            <li>Dashboards interactivos en Power BI (DAX) para KPIs de producción y rendimiento comercial.</li>
+            <li>Paneles de monitorización en Grafana sobre series temporales, para supervisión de maquinaria industrial.</li>
+            <li>Scripts en Python para limpieza, transformación y automatización del tratamiento de datos.</li>
+            <li>Flujos automatizados con Power Automate y componentes HTML/CSS integrados en dashboards.</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PROYECTOS ============ -->
+  <section class="section" id="proyectos">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-blue rotate-neg">// PROYECTOS</span>
+      </div>
+
+      <p class="section-intro reveal">
+        Casos de uso técnicos anonimizados. Por confidencialidad no se muestran datos, nombres de
+        empresas, proveedores ni código fuente — el foco está en la arquitectura y el problema resuelto.
+      </p>
+
+      <div class="projects-grid">
+
+        <details class="ticket ticket-project reveal" open>
+          <summary>
+            <div class="ticket-id mono">EXPEDIENTE Nº 01</div>
+            <h3>Pipeline ETL + Planificador de Producción + Visualización Dual</h3>
+            <p class="ticket-tagline">Sistema integral de análisis de producción industrial</p>
+            <span class="ticket-toggle mono" aria-hidden="true">[ + ]</span>
+          </summary>
+          <div class="ticket-body">
+            <p><strong>Problema:</strong> una planta industrial necesitaba centralizar datos de producción
+            dispersos entre un sistema de planta (MES) y un ERP, limpiarlos y visualizarlos en tiempo real
+            tanto para operarios como para dirección.</p>
+
+            <p><strong>Fase A · ETL:</strong> scripts programados vía cron con extracción incremental desde
+            SQL Server, deduplicación con lógica de priorización por incidencias, fechas y cantidades, carga
+            centralizada en MySQL y alertas automáticas por correo ante fallos en cualquier etapa.</p>
+
+            <p><strong>Fase B · Planificador:</strong> motor de recálculo de fechas que respeta calendarios
+            laborales distintos por máquina, aplica márgenes configurables por el propio equipo vía Excel, y
+            encadena órdenes en cascada según prioridad.</p>
+
+            <p><strong>Fase C · Visualización dual:</strong> panel en Grafana con el plano interactivo de la
+            planta (HTML/SVG embebido) donde cada máquina cambia de color según su estado en tiempo real;
+            además de dos dashboards en Power BI con modelo en estrella y medidas DAX — uno de análisis
+            operativo (líneas, operarios, incidencias, OEE) y otro dedicado al planificador (por máquina,
+            prioridad y desviaciones).</p>
+
+            <div class="ticket-stack">
+              <span class="chip">R</span><span class="chip">SQL Server</span><span class="chip">MySQL</span>
+              <span class="chip">Power BI · DAX</span><span class="chip">Grafana</span><span class="chip">HTML/SVG</span>
+              <span class="chip">Cron</span>
             </div>
-        </section>
+            <span class="privacy-tag mono">🔒 Código privado — proyecto profesional</span>
+          </div>
+        </details>
 
-        <!-- SKILLS -->
-        <section id="skills" class="skills">
-            <h2 class="section-title">Competencias Técnicas</h2>
-            <div class="skills-grid">
-                <div class="skill-card">
-                    <h3>Desarrollo Backend</h3>
-                    <span class="skill-tag">Java</span>
-                    <span class="skill-tag">SQL</span>
-                    <span class="skill-tag">Python</span>
-                    <span class="skill-tag">JavaScript</span>
-                    <span class="skill-tag">R</span>
-                    <span class="skill-tag">HTML/CSS</span>
-                </div>
+        <details class="ticket ticket-project reveal">
+          <summary>
+            <div class="ticket-id mono">EXPEDIENTE Nº 02</div>
+            <h3>Motor de Recomendación de Productos</h3>
+            <p class="ticket-tagline">Sistema híbrido de recomendación para equipo comercial B2B</p>
+            <span class="ticket-toggle mono" aria-hidden="true">[ + ]</span>
+          </summary>
+          <div class="ticket-body">
+            <p><strong>Problema:</strong> el equipo comercial necesitaba sugerencias de producto
+            personalizadas por cliente, sin depender únicamente de la intuición del comercial de turno.</p>
 
-                <div class="skill-card">
-                    <h3>Bases de Datos</h3>
-                    <span class="skill-tag">Oracle</span>
-                    <span class="skill-tag">SQL Server</span>
-                    <span class="skill-tag">MySQL</span>
-                    <span class="skill-tag">MongoDB</span>
-                    <span class="skill-tag">InfluxDB</span>
-                </div>
+            <p><strong>Enfoque híbrido:</strong> combina el perfil individual de cada cliente (categorías y
+            rango de precio habituales) con filtrado colaborativo, que detecta patrones entre clientes con
+            comportamientos de compra similares. El filtrado colaborativo es el factor con mayor peso en la
+            puntuación final, seguido por las categorías ya conocidas del cliente, la similitud textual entre
+            productos, la señal geográfica, el precio preferido y la novedad.</p>
 
-                <div class="skill-card">
-                    <h3>Business Intelligence</h3>
-                    <span class="skill-tag">Microsoft Power BI</span>
-                    <span class="skill-tag">DAX</span>
-                    <span class="skill-tag">Grafana</span>
-                    <span class="skill-tag">Tableau</span>
-                    <span class="skill-tag">Procesos ETL</span>
-                </div>
+            <p><strong>Pipeline en 5 pasos:</strong> extracción desde Oracle → limpieza y segmentación por
+            franja de precio → modelado de perfiles individuales → filtrado colaborativo → generación de
+            puntuación y ranking final por categoría.</p>
 
-                <div class="skill-card">
-                    <h3>Automatización</h3>
-                    <span class="skill-tag">Power Automate</span>
-                    <span class="skill-tag">Scripts Python</span>
-                    <span class="skill-tag">Workflows</span>
-                    <span class="skill-tag">Git/GitHub</span>
-                </div>
+            <p><strong>Escala:</strong> procesa un histórico amplio de transacciones y una base de clientes
+            activos considerable, generando recomendaciones diferenciadas por segmento (hostelería,
+            doméstico, online).</p>
 
-                <div class="skill-card">
-                    <h3>Visualización</h3>
-                    <span class="skill-tag">Matplotlib</span>
-                    <span class="skill-tag">Seaborn</span>
-                    <span class="skill-tag">SVG</span>
-                    <span class="skill-tag">D3.js</span>
-                </div>
-
-                <div class="skill-card">
-                    <h3>Herramientas</h3>
-                    <span class="skill-tag">DAX Studio</span>
-                    <span class="skill-tag">Excel Avanzado</span>
-                    <span class="skill-tag">Adobe Creative Suite</span>
-                    <span class="skill-tag">Maya / 3ds Max</span>
-                </div>
+            <div class="ticket-stack">
+              <span class="chip">Python</span><span class="chip">pandas</span><span class="chip">scikit-learn</span>
+              <span class="chip">TF-IDF</span><span class="chip">Filtrado colaborativo</span><span class="chip">Oracle</span>
             </div>
-        </section>
+            <span class="privacy-tag mono">🔒 Código privado — proyecto profesional</span>
+          </div>
+        </details>
 
-        <!-- EXPERIENCE -->
-        <section id="experiencia" class="experience">
-            <div class="experience-container">
-                <h2 class="section-title">Experiencia & Formación</h2>
-                
-                <div class="timeline-item" data-date="DIC 2024 - ACTUAL">
-                    <h3>Especialista en Visualización y Automatización</h3>
-                    <h4>Lacor Menaje</h4>
-                    <ul>
-                        <li>Desarrollo de la aplicación empresarial completa en Java integrando módulos de compras, ventas y almacén con Oracle Database</li>
-                        <li>Implementación de procesos ETL con SQL para extracción, transformación y carga de datos de producción desde múltiples fuentes</li>
-                        <li>Diseño de dashboards interactivos en Power BI utilizando DAX para análisis avanzado de KPIs críticos</li>
-                        <li>Creación de paneles de monitorización en Grafana conectados a bases de datos de series temporales para supervisión de maquinaria industrial</li>
-                        <li>Desarrollo de componentes personalizados en HTML/CSS para integración en dashboards</li>
-                        <li>Automatización de flujos de trabajo mediante Power Automate y scripts Python para procesamiento de datos IoT</li>
-                    </ul>
-                </div>
+        <details class="ticket ticket-project reveal">
+          <summary>
+            <div class="ticket-id mono">EXPEDIENTE Nº 03</div>
+            <h3>Cliente Git con Sincronización Segura On-Premise</h3>
+            <p class="ticket-tagline">Herramienta de escritorio para versionar y respaldar datos sin depender de la nube</p>
+            <span class="ticket-toggle mono" aria-hidden="true">[ + ]</span>
+          </summary>
+          <div class="ticket-body">
+            <p><strong>Problema:</strong> necesidad de un flujo de trabajo tipo GitHub pero sobre un
+            servidor propio en red local, para poder versionar y respaldar datos sin depender de un
+            servicio en la nube.</p>
 
-                <div class="timeline-item" data-date="SEP 2024 - MAY 2025">
-                    <h3>Especialización en Inteligencia Artificial y Big Data</h3>
-                    <h4>Miguel Altuna</h4>
-                    <ul>
-                        <li>Desarrollo de scripts para extracción, limpieza y consolidación de datos desde diversas fuentes</li>
-                        <li>Análisis y transformación de datos mediante programación en Python y R</li>
-                        <li>Gestión y análisis de diferentes bases de datos relacionales y no relacionales</li>
-                        <li>Creación de dashboards y reportes interactivos para visualización de insights</li>
-                        <li>Automatización de flujos de datos y mejora de infraestructura analítica</li>
-                    </ul>
-                </div>
+            <p><strong>Solución:</strong> interfaz de escritorio que gestiona repositorios remotos vía SSH,
+            con autenticación no interactiva usuario + contraseña mediante scripts temporales de tipo
+            <em>SSH_ASKPASS</em> que se generan, se usan y se destruyen en el mismo ciclo, sin persistir
+            credenciales en disco. Incluye sincronización automática de los archivos de trabajo vía SCP
+            tras cada operación de subida o descarga de cambios.</p>
 
-                <div class="timeline-item" data-date="SEP 2019 - JUN 2021">
-                    <h3>Grado Superior en Animación 3D y Programación</h3>
-                    <h4>Ceinpro</h4>
-                    <ul>
-                        <li>Diseño y desarrollo de entornos interactivos y multimedia</li>
-                        <li>Programación de aplicaciones y sistemas visuales</li>
-                        <li>Fundamentos de desarrollo de software y arquitectura de sistemas</li>
-                        <li>Modelado 3D y animación con Maya y 3ds Max</li>
-                    </ul>
-                </div>
+            <p><strong>Detalles técnicos:</strong> gestión de estado del repositorio, historial de commits
+            desde la propia interfaz, y empaquetado como ejecutable independiente para distribuirlo sin
+            requerir un entorno Python instalado.</p>
+
+            <div class="ticket-stack">
+              <span class="chip">Python</span><span class="chip">Tkinter</span><span class="chip">Git</span>
+              <span class="chip">SSH / SCP</span><span class="chip">PyInstaller</span>
             </div>
-        </section>
+            <span class="privacy-tag mono">🔒 Código privado — proyecto profesional</span>
+          </div>
+        </details>
 
-        <!-- CONTACT -->
-        <section id="contacto" class="contact">
-            <div class="contact-container">
-                <h2 class="section-title">Contacto</h2>
-                <p style="font-size: 18px; color: var(--text-gray); margin-bottom: 20px;">
-                    ¿Buscas una desarrolladora con visión estratégica de datos?
-                </p>
-                
-                <div class="contact-info">
-                    <div class="contact-grid">
-                        <div class="contact-item">
-                            <h4>Email</h4>
-                            <p><a href="mailto:sandracapi03@gmail.com">sandracapi03@gmail.com</a></p>
-                        </div>
+      </div>
+    </div>
+  </section>
 
-                        <div class="contact-item">
-                            <h4>Teléfono</h4>
-                            <p><a href="tel:+34688607204">688 607 204</a></p>
-                        </div>
+  <!-- ============ FORMACION ============ -->
+  <section class="section section-alt" id="formacion">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-yellow rotate-pos">// FORMACIÓN</span>
+      </div>
 
-                        <div class="contact-item">
-                            <h4>Ubicación</h4>
-                            <p>Mendaro, Guipúzcoa</p>
-                        </div>
+      <div class="edu-grid">
+        <article class="ticket reveal">
+          <div class="ticket-id mono">2024 — 2025</div>
+          <h3>Especialización en Inteligencia Artificial y Big Data</h3>
+          <p class="ticket-org">Miguel Altuna</p>
+          <ul class="ticket-list">
+            <li>Extracción, limpieza y consolidación de datos desde diversas fuentes.</li>
+            <li>Análisis y transformación de datos con Python y R.</li>
+            <li>Gestión y análisis de distintas bases de datos.</li>
+            <li>Creación de dashboards y reportes interactivos.</li>
+          </ul>
+        </article>
 
-                        <div class="contact-item">
-                            <h4>Movilidad</h4>
-                            <p>Carné B • Vehículo propio</p>
-                        </div>
-                    </div>
+        <article class="ticket reveal">
+          <div class="ticket-id mono">2019 — 2021</div>
+          <h3>Grado Superior en Animación 3D y Programación</h3>
+          <p class="ticket-org">Ceinpro</p>
+          <ul class="ticket-list">
+            <li>Diseño y desarrollo de entornos interactivos y multimedia.</li>
+            <li>Programación de aplicaciones y sistemas visuales.</li>
+            <li>Base en lógica de programación previa al enfoque en datos.</li>
+          </ul>
+        </article>
+      </div>
 
-                    <div style="margin-top: 40px; padding-top: 30px; border-top: 2px solid var(--black);">
-                        <p style="font-size: 15px; color: var(--text-gray);">
-                            <strong>Idiomas:</strong> Español (Nativo) • Euskera (B2) • Inglés (B2)
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-    </main>
+      <!-- ============ CERTIFICADOS ============ -->
+      <div id="certificados" class="certs-block">
+        <div class="stamp-heading stamp-heading-sm">
+          <span class="stamp stamp-ink rotate-neg">// CERTIFICADOS</span>
+        </div>
+        <div class="certs-grid">
+          <div class="seal reveal">
+            <div class="seal-ring mono">✓</div>
+            <p>Oracle Java Foundations</p>
+          </div>
+          <div class="seal reveal">
+            <div class="seal-ring mono">✓</div>
+            <p>ChatGPT e Inteligencia Artificial</p>
+          </div>
+          <div class="seal reveal">
+            <div class="seal-ring mono">✓</div>
+            <p>Primeros Auxilios</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2025 Sandra Caeiro Pires — Full-Stack Data Developer</p>
-        <p style="margin-top: 10px; font-size: 12px;">Diseñado con enfoque en claridad y profesionalismo</p>
-    </footer>
+  <!-- ============ SKILLS ============ -->
+  <section class="section" id="skills">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-red rotate-neg">// STACK Y HERRAMIENTAS</span>
+      </div>
 
-    <script>
-        // SCROLL PROGRESS BAR
-        window.addEventListener('scroll', () => {
-            const scrollProgress = document.getElementById('scrollProgress');
-            const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
-            const scrolled = (window.scrollY / windowHeight) * 100;
-            scrollProgress.style.width = scrolled + '%';
-        });
+      <div class="skills-grid">
+        <div class="skill-cat reveal">
+          <h4 class="mono">Lenguajes</h4>
+          <div class="chip-row">
+            <span class="chip">Python</span><span class="chip">R</span><span class="chip">SQL</span>
+            <span class="chip">JavaScript</span><span class="chip">Java</span><span class="chip">HTML/CSS</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h4 class="mono">Visualización</h4>
+          <div class="chip-row">
+            <span class="chip">Power BI · DAX</span><span class="chip">Grafana</span>
+            <span class="chip">Matplotlib / Seaborn</span><span class="chip">Tableau</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h4 class="mono">Automatización</h4>
+          <div class="chip-row">
+            <span class="chip">Power Automate</span><span class="chip">Scripts Python</span>
+            <span class="chip">Procesos ETL</span><span class="chip">Workflows</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h4 class="mono">Bases de datos</h4>
+          <div class="chip-row">
+            <span class="chip">SQL Server</span><span class="chip">MySQL</span><span class="chip">Oracle</span>
+            <span class="chip">MongoDB</span><span class="chip">InfluxDB</span>
+          </div>
+        </div>
+        <div class="skill-cat reveal">
+          <h4 class="mono">Herramientas</h4>
+          <div class="chip-row">
+            <span class="chip">Git / GitHub</span><span class="chip">DAX Studio</span><span class="chip">Excel</span>
+          </div>
+        </div>
+      </div>
 
-        // SMOOTH SCROLL FOR NAVIGATION
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    window.scrollTo({
-                        top: target.offsetTop - 80,
-                        behavior: 'smooth'
-                    });
-                }
-            });
-        });
-    </script>
+      <div class="languages reveal">
+        <h4 class="mono">Idiomas</h4>
+        <div class="lang-row">
+          <span class="lang-name">Español</span>
+          <div class="lang-ticks" aria-label="Nivel nativo"><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span></div>
+          <span class="lang-level mono">Nativo</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">Euskera</span>
+          <div class="lang-ticks" aria-label="Nivel nativo"><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span></div>
+          <span class="lang-level mono">Nativo</span>
+        </div>
+        <div class="lang-row">
+          <span class="lang-name">Inglés</span>
+          <div class="lang-ticks" aria-label="Nivel B2"><span class="tick on"></span><span class="tick on"></span><span class="tick on"></span><span class="tick"></span><span class="tick"></span></div>
+          <span class="lang-level mono">B2</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACTO ============ -->
+  <section class="section section-contact" id="contacto">
+    <div class="section-inner">
+      <div class="stamp-heading">
+        <span class="stamp stamp-yellow rotate-pos">// CONTACTO</span>
+      </div>
+
+      <div class="contact-panel reveal">
+        <p class="contact-lede">¿Un proyecto de datos, un pipeline que ordenar, o simplemente quieres saludar?</p>
+
+        <div class="contact-grid">
+          <a class="contact-item" href="mailto:sandracapi03@gmail.com" id="emailLink">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="1"/><path d="M2 6l10 7 10-7"/></svg>
+            </span>
+            <span class="contact-label mono">Email</span>
+            <span class="contact-value">sandracapi03@gmail.com</span>
+          </a>
+
+          <a class="contact-item" href="https://www.linkedin.com/in/sandra-caeiro-pires-3547b3293/" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/><path d="M10 9v12M10 13c0-2 2-4 4-4s4 1.5 4 4v8"/></svg>
+            </span>
+            <span class="contact-label mono">LinkedIn</span>
+            <span class="contact-value">sandra-caeiro-pires</span>
+          </a>
+
+          <a class="contact-item" href="https://github.com/scaeiroo" target="_blank" rel="noopener noreferrer">
+            <span class="contact-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-4 1.5-4-2-6-2m12 4v-3.4c0-1 .1-1.4-.5-2 2.8-.3 5.5-1.4 5.5-6a4.6 4.6 0 0 0-1.3-3.2 4.2 4.2 0 0 0-.1-3.2s-1.1-.3-3.5 1.3a12.3 12.3 0 0 0-6.2 0C6.5 1.9 5.4 2.2 5.4 2.2a4.2 4.2 0 0 0-.1 3.2A4.6 4.6 0 0 0 4 8.6c0 4.6 2.7 5.7 5.5 6-.6.6-.6 1.2-.5 2V21"/></svg>
+            </span>
+            <span class="contact-label mono">GitHub</span>
+            <span class="contact-value">scaeiroo</span>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-inner">
+    <p class="mono"><span class="footer-prompt">$</span> echo "gracias por pasarte por aquí"<span class="caret" aria-hidden="true"></span></p>
+    <p class="mono footer-version">v2026</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
